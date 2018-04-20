@@ -10,9 +10,14 @@ namespace church_of_the_emporer_as_messiah.Pages {
             get;
             set;
         }
+        public string content {
+            get;
+            set;
+        }
 
         public void OnGet () {
-            Message = "Testing";
+            Message = "THE HIGH COUNCIL AND THE TEN BRANCHES";
+            content = "";
         }
     }
 }
