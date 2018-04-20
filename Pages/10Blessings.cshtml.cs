@@ -105,8 +105,8 @@ namespace church_of_the_emporer_as_messiah.Pages {
             recitation_5 = "Recitation: “We must strive to see the world in its truth and shape it according to God’s will.” Wisdom is exemplified by perceived the flawed world as it is, but never losing sight of what it should be.  Daily reflection upon the sacred texts and their application to our lives is essential to Wisdom.";
             blessing_6 = "The Sixth Virtue is Temperance, which flows from Wisdom. ";
             recitation_6 = "Recitation: “We must show prudent moderation and diligent control over our desires.” Temperance is exemplified by self-restraint in all facets, particularly regular fasting and avoidance of intoxicants.";
-            blessing_7 = "The Seventh Virtue is Chastity, which reinforces Temperance. ";
-            recitation_7 = "Recitation: “We must control our passions as to avoid distraction from God’s holiness.” Chastity is the sacrifice of sexual pleasure to demonstrate devotion, through abstinence and marital fidelity.";
+            blessing_7 = "The Seventh Virtue is Diligence, which reinforces Temperence ";
+            recitation_7 = "Recitation: “We must be ever persistent and expend all effort and attention in keeping ourselves and others on the true path. Diligence is exemplified by constant, tireless vigilance against temptation and treachery in all aspects of life.";
             blessing_8 = "The Eighth Virtue is Charity, which echoes Justice. ";
             recitation_8 = "Recitation: “We must show compassion to those worthy of God’s mercy.” Charity is exemplified by philanthropic acts and outreach to faithful sufferers.";
             blessing_9 = "The Ninth Virtue is Integrity, which echoes Propriety. ";
