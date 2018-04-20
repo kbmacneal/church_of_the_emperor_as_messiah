@@ -36,7 +36,7 @@ body {
 
 /* Custom CSS */
 /* Contain demo size */
-/* .container {
+ .container {
     width: 400px;
   }
   
@@ -61,7 +61,7 @@ body {
   }
   
   /* Reset */
-  /* blockquote {
+  blockquote {
     padding: 0;
     margin: 0;
   }
@@ -76,4 +76,4 @@ body {
     display: block;
     right: 75%;
     position: relative;
-  }  */
+  } 
