@@ -15,35 +15,35 @@ namespace church_of_the_emporer_as_messiah.Pages {
             get;
             set;
         }
-         public string blessing_2 {
+        public string blessing_2 {
             get;
             set;
         }
-         public string blessing_3 {
+        public string blessing_3 {
             get;
             set;
         }
-         public string blessing_4 {
+        public string blessing_4 {
             get;
             set;
         }
-         public string blessing_5 {
+        public string blessing_5 {
             get;
             set;
         }
-         public string blessing_6 {
+        public string blessing_6 {
             get;
             set;
         }
-         public string blessing_7 {
+        public string blessing_7 {
             get;
             set;
         }
-         public string blessing_8 {
+        public string blessing_8 {
             get;
             set;
         }
-         public string blessing_9 {
+        public string blessing_9 {
             get;
             set;
         }
@@ -53,6 +53,7 @@ namespace church_of_the_emporer_as_messiah.Pages {
         }
         public void OnGet () {
             Message = "The 10 Blessings of our Faith";
+
         }
     }
 }
