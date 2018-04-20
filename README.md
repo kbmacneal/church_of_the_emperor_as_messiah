@@ -6,8 +6,11 @@
 
 ## Development
 - Install the latest dotnet core sdk (v2)
+	- choco install dotnet -y
 - Install git
+	- choco install git -y
 - Clone the Repo
+	- git clone https://github.com/kbmacneal/church_of_the_emperor_as_messiah.git
 - Add your changes
 - File a pull request.
 - That's it!
