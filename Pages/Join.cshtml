@@ -4,6 +4,20 @@
     ViewData["Title"] = "Join the Church";
 }
 <h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
+<!-- <h3>@Model.Message</h3> -->
+
+<div class="container">
+<div class="quote-box">
+    <div class="quote">
+        <blockquote>
+            @Model.Quote
+        </blockquote>
+    </div>
+    <div class="name">
+        @Model.Name
+    </div>
+</div>
+
+</div>
 
 <p>Use this area to provide additional information.</p>

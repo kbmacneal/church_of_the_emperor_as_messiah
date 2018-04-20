@@ -33,3 +33,48 @@ body {
         display: none;
     }
 }
+
+.container {
+    width: 20%;
+    align-content: center;
+}
+
+.quote {
+    background-color:lightgray;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: darkslategray;
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Reset */
+blockquote {
+    padding: 0;
+    margin: 0;
+    color:darkslategray;
+    font-family: cursive;
+}
+
+.name {
+    background-color: #333;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  blockquote::after {
+    border-color: transparent #6b936a transparent transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 20px;
+    top: 40px;
+    content: " ";
+    display: block;
+    right: 75%;
+    position: relative;
+  }
