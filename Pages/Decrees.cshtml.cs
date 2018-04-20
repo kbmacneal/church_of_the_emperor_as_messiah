@@ -15,8 +15,8 @@ namespace church_of_the_emporer_as_messiah.Pages {
             set;
         }
         public void OnGet () {
-            Message = "Decrees";
-            Decree = "A guideline was constructed on how one can be genetically modified and still faithful";
+            Message = "Decree - gene modification and the Sanctity of the Soul";
+            Decree = "";
         }
     }
 }
