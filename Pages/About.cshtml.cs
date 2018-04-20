@@ -12,7 +12,7 @@ namespace church_of_the_emporer_as_messiah.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            Message = "Testing";
         }
     }
 }
