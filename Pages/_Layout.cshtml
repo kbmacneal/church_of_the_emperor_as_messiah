@@ -21,6 +21,7 @@
     </environment>
 </head>
 <body>
+
     <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: whitesmoke">
         <div class="container">
             <div class="navbar-header" style="background-color: whitesmoke">
@@ -44,13 +45,24 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <table>
+        <tr>
+            <td valign="top">
+                <iframe src="https://open.spotify.com/embed/user/kaysorb/playlist/4UsjQy7xNq6jxy7LAsBrGn"
+              width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </td>
+            <td>
+                <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
             <p>&copy; 2017 - Holy Works Industries</p>
         </footer>
     </div>
+            </td>
+        </tr>
+    </table>
+    
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -74,5 +86,6 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+    
 </body>
 </html>
