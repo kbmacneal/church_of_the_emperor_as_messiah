@@ -8,7 +8,7 @@
     <h1>News and Events</h1>
 
     <div class="jumbotron">
-  <h3 class="display-3">From the Sermons of High Priest Callixus Pius</h3>
+  <h3 class="display-3">From the Sermons of High Priest Callixtus Pius</h3>
   <p class="lead">Title</p>
   <hr class="my-4">
   <p class="lead">
