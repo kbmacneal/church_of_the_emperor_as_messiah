@@ -1,0 +1,9 @@
+﻿<%@ Page Title="Join the Church" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Join.aspx.cs" Inherits="emperor3.Contact" %>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <h2><%: Title %>.</h2>
+    <blockquote>
+        Look at the stars! I cast you among them, to populate them, and bring humanity to the greatest reaches of the universe!
+    </blockquote>
+    <p>The High Church always welcomes Children of the Empire to its ranks. Live a faithful life in service of God and the Messiah. Dental plans may or may not be included - ask your local Priest if they apply to you. If you are somewhere without a local Priest, do not despair, and contact the Church via Discord or Twitter.</p>
+</asp:Content>
