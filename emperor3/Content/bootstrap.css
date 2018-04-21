@@ -4257,6 +4257,7 @@ input[type="button"].btn-block {
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
+    font-size:xx-small 16pt;
 }
 
     .nav-link:hover, .nav-link:focus {
@@ -4279,6 +4280,7 @@ input[type="button"].btn-block {
         border: 1px solid transparent;
         border-top-left-radius: 0.25rem;
         border-top-right-radius: 0.25rem;
+        font-size:16px;
     }
 
         .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
@@ -4352,6 +4354,7 @@ input[type="button"].btn-block {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    margin-bottom:50px;
 }
 
     .navbar > .container,

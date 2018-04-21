@@ -52,11 +52,11 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Decrees">Decrees</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Join">Join the Church</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/10Blessings">The Ten Blessings</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Social">Social Media</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/" style="font-size:x-large;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Decrees" style="font-size:x-large;">Decrees</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Join" style="font-size:x-large;">Join the Church</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/10Blessings" style="font-size:x-large;">The Ten Blessings</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Social" style="font-size:x-large;">Social Media</a></li>
                     </ul>
                 </div>
             </div>
