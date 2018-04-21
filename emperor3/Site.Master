@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - Church of the Emperor-as-Messiah</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -17,6 +17,7 @@
 
 </head>
 <body>
+    <div class="background"></div>
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -42,12 +43,12 @@
         <div class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="display:none">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">The High Church of the Emperor-as-Messiah</a>
+                    <a class="navbar-brand" runat="server" href="~/"><asp:Image ImageUrl="~/Twitter_Header.png" runat="server" Width="300px"/></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
@@ -55,13 +56,23 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Decrees">Decrees</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Join">Join the Church</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/10Blessings">The Ten Blessings</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Social">Social Media</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <div class="container">
+
+            </div>
+            <div class="container">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+            </div>
+            <div class="container">
+            </div>
+            
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Holy Works Industries</p>
