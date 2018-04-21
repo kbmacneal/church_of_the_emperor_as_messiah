@@ -39,7 +39,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -51,10 +51,10 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/Decrees">Decrees</a></li>
-                        <li><a runat="server" href="~/Join">Join the Church</a></li>
-                        <li><a runat="server" href="~/10Blessings">The Ten Blessings</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Decrees">Decrees</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Join">Join the Church</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/10Blessings">The Ten Blessings</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,7 +64,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Holy Works Industries</p>
             </footer>
         </div>
 
