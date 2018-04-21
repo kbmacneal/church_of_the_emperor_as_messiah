@@ -76,6 +76,7 @@
             
             <hr />
             <footer>
+                <p><a href="Support.aspx">Support the Developers</a></p>
                 <p>&copy; <%: DateTime.Now.Year %> - Holy Works Industries</p>
             </footer>
         </div>
