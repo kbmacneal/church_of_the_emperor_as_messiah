@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - Church of the Emperor-as-Messiah</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -17,6 +17,7 @@
 
 </head>
 <body>
+    <div class="background"></div>
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -60,9 +61,18 @@
                 </div>
             </div>
         </div>
+        
         <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            <div class="container">
+
+            </div>
+            <div class="container">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
+            </div>
+            <div class="container">
+            </div>
+            
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Holy Works Industries</p>
