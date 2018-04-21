@@ -129,6 +129,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="10Blessings.aspx" />
+    <Content Include="Social.aspx" />
     <Content Include="Decrees.aspx" />
     <Content Include="Join.aspx" />
     <Content Include="Contact.aspx" />
@@ -198,6 +199,13 @@
     </Compile>
     <Compile Include="10Blessings.aspx.designer.cs">
       <DependentUpon>10Blessings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Social.aspx.cs">
+      <DependentUpon>Social.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Social.aspx.designer.cs">
+      <DependentUpon>Social.aspx</DependentUpon>
     </Compile>
     <Compile Include="Decrees.aspx.cs">
       <DependentUpon>Decrees.aspx</DependentUpon>

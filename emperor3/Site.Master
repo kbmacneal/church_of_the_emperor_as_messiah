@@ -55,6 +55,7 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Decrees">Decrees</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Join">Join the Church</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/10Blessings">The Ten Blessings</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Social">Social Media</a></li>
                     </ul>
                 </div>
             </div>
