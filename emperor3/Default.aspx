@@ -9,10 +9,10 @@
 
     <div class="jumbotron">
   <h3 class="display-3">From the Sermons of High Priest Callixtus Pius</h3>
-  <p class="lead">Title</p>
+  <p class="lead">An Introduction to the Ten Virtues</p>
   <hr class="my-4">
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="/Sermons/SermonOne" role="button">Read his latest sermon &raquo;</a>
+    <a class="btn btn-secondary btn-lg" href="/Sermons/SermonOne" role="button">Read his latest sermon &raquo;</a>
   </p>
 </div>
 

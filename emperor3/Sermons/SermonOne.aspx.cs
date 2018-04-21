@@ -13,12 +13,12 @@ namespace emperor3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var filename = Server.MapPath("ideas.md");
+            var filename = Server.MapPath("sermonone.md");
             //string filename = "~/ideas.md";
 
             cls_markdown cls1 = new cls_markdown();
 
-            sermon_header.InnerText = "Test Sermon";
+            sermon_header.InnerText = "An Introduction to the Ten Virtues";
 
             sermon_text.InnerHtml = cls_markdown.ConvertMDtoTXT(filename);
         }
