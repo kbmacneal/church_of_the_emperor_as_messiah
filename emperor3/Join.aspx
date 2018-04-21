@@ -2,8 +2,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <blockquote>
+    <div class="blockquote">
         Look at the stars! I cast you among them, to populate them, and bring humanity to the greatest reaches of the universe!
-    </blockquote>
+    </div>
+    <div class="blockquote-footer">Holy Manual, Sutra 5, Paragraph 1</div>
+    <p></p>
     <p>The High Church always welcomes Children of the Empire to its ranks. Live a faithful life in service of God and the Messiah. Dental plans may or may not be included - ask your local Priest if they apply to you. If you are somewhere without a local Priest, do not despair, and contact the Church via Discord or Twitter.</p>
 </asp:Content>

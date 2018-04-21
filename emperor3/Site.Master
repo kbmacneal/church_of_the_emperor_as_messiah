@@ -42,12 +42,12 @@
         <div class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="display:none">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">The High Church of the Emperor-as-Messiah</a>
+                    <a class="navbar-brand" runat="server" href="~/"><asp:Image ImageUrl="~/Twitter_Header.png" runat="server" Width="300px"/></a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
