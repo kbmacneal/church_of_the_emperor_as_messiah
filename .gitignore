@@ -4,8 +4,8 @@
 
 /.vs
 /emperor3/Properties/PublishProfiles/*
-/bin/*
-/obj/*
+/emperor3/bin/*
+/emperor3/obj/*
 /packages/*
 /emperor3/bin
 /emperor3/obj/Debug
