@@ -3,7 +3,9 @@
 ################################################################################
 
 /.vs
-/emperor3/Properties/*
+/emperor3/Properties/PublishProfiles/*
 /bin/*
 /obj/*
 /packages/*
+/emperor3/bin
+/emperor3/obj/Debug
