@@ -314,3 +314,5 @@ $RECYCLE.BIN/
 /emperor3/bin
 /emperor3/obj/Debug
 /emperor3/obj/Release
+emperor3\bin
+emperor3\obj
