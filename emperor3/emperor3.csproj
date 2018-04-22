@@ -134,6 +134,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FromTheDesk.aspx" />
     <Content Include="Support.aspx" />
     <Content Include="Content\background.jpg" />
     <Content Include="About.aspx" />
@@ -242,6 +243,13 @@
     </Compile>
     <Compile Include="10Blessings.aspx.designer.cs">
       <DependentUpon>10Blessings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FromTheDesk.aspx.cs">
+      <DependentUpon>FromTheDesk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FromTheDesk.aspx.designer.cs">
+      <DependentUpon>FromTheDesk.aspx</DependentUpon>
     </Compile>
     <Compile Include="Support.aspx.cs">
       <DependentUpon>Support.aspx</DependentUpon>

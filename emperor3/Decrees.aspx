@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Decrees" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Decrees.aspx.cs" Inherits="emperor3.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
+    
     <h3 style="font-weight:bold">Decree - gene modification and the Sanctity of the Soul</h3>
 
 <p>Hereby the High Church decrees that gene modification for the betterment of the Empire is within our teachings and adheres to the ten Virtues, as long as the Guidelines set by the Council are adhered to. Guidelines:</p>
