@@ -8,7 +8,7 @@
     <h1>News and Events</h1>
 
     <div class="jumbotron">
-  <h3 class="display-3">From the Desk of the Grand Voice</h3>
+  <h3 class="display-4">From the Desk of the Grand Voice</h3>
   <p class="lead"></p>
   <hr class="my-4">
   <p class="lead">
@@ -17,7 +17,7 @@
 </div>
 
     <div class="jumbotron">
-  <h3 class="display-3">From the Sermons of High Priest Callixtus Pius</h3>
+  <h3 class="display-4">From the Sermons of High Priest Callixtus Pius</h3>
   <p class="lead">An Introduction to the Ten Virtues</p>
   <hr class="my-4">
   <p class="lead">

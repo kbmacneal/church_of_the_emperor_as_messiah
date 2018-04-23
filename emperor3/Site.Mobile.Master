@@ -1,90 +1,97 @@
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="emperor3.Site_Mobile" %>
-    <%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
 
-        <!DOCTYPE html>
-        <html xmlns="http://www.w3.org/1999/xhtml">
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
 
-        <head runat="server">
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>
-                <%: Page.Title %> - Church of the Emperor-as-Messiah</title>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-            <asp:PlaceHolder runat="server">
-                <%: Scripts.Render("~/bundles/modernizr") %>
-            </asp:PlaceHolder>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <%: Page.Title %> - Church of the Emperor-as-Messiah</title>
 
-            <webopt:bundlereference runat="server" path="~/Content/css" />
-            <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        </head>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
 
-        <body>
-            <form id="form1" runat="server">
-                <div>
-                    <asp:ScriptManager runat="server">
-                        <Scripts>
-                            <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                                <%--Framework Scripts--%>
-                                    <asp:ScriptReference Name="MsAjaxBundle" />
-                                    <asp:ScriptReference Name="jquery" />
-                                    <asp:ScriptReference Name="bootstrap" />
-                                    <asp:ScriptReference Name="respond" />
-                                    <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                                    <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                                    <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                                    <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                                    <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                                    <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                                    <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                                    <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                                    <asp:ScriptReference Name="WebFormsBundle" />
-                                    <%--Site Scripts--%>
-                        </Scripts>
-                    </asp:ScriptManager>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
 
-                    <div class="navbar navbar-default">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" runat="server" href="~/">
-                                <asp:Image ImageUrl="~/Twitter_Header.png" runat="server" Width="300px" />
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ScriptManager runat="server">
+                <Scripts>
+                    <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                    <%--Framework Scripts--%>
+                    <asp:ScriptReference Name="MsAjaxBundle" />
+                    <asp:ScriptReference Name="jquery" />
+                    <asp:ScriptReference Name="bootstrap" />
+                    <asp:ScriptReference Name="respond" />
+                    <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                    <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                    <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                    <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                    <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                    <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                    <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                    <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                    <asp:ScriptReference Name="WebFormsBundle" />
+                    <%--Site Scripts--%>
+                </Scripts>
+            </asp:ScriptManager>
+
+            <div class="navbar navbar-default" style="border:none;">
+                <div class="navbar-header">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a class="navbar-brand" runat="server" href="~/" style="width: 30%;">
+                                <img src="Twitter_Header.png" runat="server" />
+                                <%--<asp:Image ImageUrl="~/Twitter_Header.png" runat="server" />--%>
                             </a>
-                            <button type="button" class="navbar-toggle btn btn-secondary" data-toggle="collapse" data-target=".navbar-collapse" style="height: 20px; width:50px; background-color:dimgrey">
+                        </div>
+                        <div class="col-xs-6">
+                            <button type="button" class="navbar-toggle btn btn-outline-secondary" data-toggle="collapse" data-target=".navbar-collapse" style="height: 30px; width: 50px; background-color: dimgrey">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
-                            NAV</button>
+                                NAV</button>
                         </div>
                         <div class="collapse navbar-collapse" id="navigation_bar">
                             <ul class="nav navbar-nav">
                                 <li class="active">
-                                    <a runat="server" href="~/" style="font-size:x-large;">Home</a>
+                                    <a runat="server" href="~/" style="font-size: x-large;">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a runat="server" href="~/Decrees" style="font-size:x-large;">Decrees</a>
+                                    <a runat="server" href="~/Decrees" style="font-size: x-large;">Decrees</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a runat="server" href="~/About" style="font-size:x-large;">About</a>
+                                    <a runat="server" href="~/About" style="font-size: x-large;">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a runat="server" href="~/Join" style="font-size:x-large;">Join the Church</a>
+                                    <a runat="server" href="~/Join" style="font-size: x-large;">Join the Church</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a runat="server" href="~/10Blessings" style="font-size:x-large;">The Ten Blessings</a>
+                                    <a runat="server" href="~/10Blessings" style="font-size: x-large;">The Ten Blessings</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a runat="server" href="~/Social" style="font-size:x-large;">Social Media</a>
+                                    <a runat="server" href="~/Social" style="font-size: x-large;">Social Media</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
-                    <script scr="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-                    <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-                    <section class="content-wrapper main-content clear-fix">
-                        <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-                    </section>
-                    <friendlyUrls:ViewSwitcher runat="server" />
                 </div>
-            </form>
-        </body>
+            </div>
 
-        </html>
+            <script scr="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+            <friendlyUrls:ViewSwitcher runat="server" />
+        </div>
+    </form>
+</body>
+</html>
