@@ -134,6 +134,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-responsive.css" />
+    <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="FromTheDesk.aspx" />
     <Content Include="Support.aspx" />
     <Content Include="Content\background.jpg" />
@@ -344,6 +346,7 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Sermons\sermonone.md" />
+    <Content Include="Site.Mobile.Master.aspx.old" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
