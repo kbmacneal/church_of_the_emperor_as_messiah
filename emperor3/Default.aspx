@@ -5,14 +5,52 @@
         <%--<asp:Image ImageUrl="~/Twitter_Header.png" runat="server" />--%>
     </div>
 
-    
+    <div class=".container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div id="imgCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#imgCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#imgCarousel" data-slide-to="1"></li>
+                    </ol>
+                  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="Propaganda.png" alt="Join the Church">
+                        <div class="carousel-caption">
+                            <a class="btn btn-secondary btn-lg" href="/Join" role="button">Join the Church Today!</a>
+                        </div>
+                      </div>
+                  
+                      <div class="item">
+                        <img src="Twitter_Header.png" alt="From the Desk of the High Voice">
+                        <div class="carousel-caption">
+                            <a class="btn btn-secondary btn-lg" href="/FromTheDesk" role="button">From the High Voice</a>
+                        </div>
+                      </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#imgCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#imgCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </div>
+    </div>
 
     <div class=".container-fluid">
         <div class="row">
             <div class="col-4">
                 <p><a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ExarchTatiana</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
                 <div>
-                    <a class="twitter-timeline" href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw">Tweets by ExarchTatiana</a>
+                    <a class="twitter-timeline" href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw">Tweets by Exarch Tatiana, the High Voice</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>

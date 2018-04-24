@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="emperor3.SiteMaster" %>
-
+<!-- https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp for scrolling while the menu bar is positioned-->
     <!DOCTYPE html>
 
     <html lang="en">
@@ -19,8 +19,7 @@
 
     </head>
 
-    <body>
-        <div class="background"></div>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <form runat="server">
             <asp:ScriptManager runat="server">
                 <Scripts>
@@ -43,7 +42,7 @@
                 </Scripts>
             </asp:ScriptManager>
 
-            <div class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:50px;">
+            <div class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:50px;" data-spy="affix" data-offset-top="197">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="display:none">

@@ -9,7 +9,5 @@
     <a href="http://jgraks-a-p-recap.blubrry.net/feed/podcast/" class="btn btn-secondary">PRISM Network's Podcast</a>
     <div style="height:16px;"></div>    
     <p><a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ExarchTatiana</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-    <div style="height:600px;width:40%">
-        <a class="twitter-timeline" href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw">Tweets by ExarchTatiana</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-       </div> 
+    
 </asp:Content>
