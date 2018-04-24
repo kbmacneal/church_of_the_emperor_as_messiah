@@ -9,9 +9,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-      <meta name="theme-color" content="#000" />
+      <meta name="theme-color" content="#FFFFFF" />
       <title>
         <%: Page.Title %> - Church of the Emperor-as-Messiah</title>
 
@@ -25,7 +23,7 @@
       <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     </head>
 
-    <body style="font-size:16px;">
+    <body style="font-size:16px; widows: 412px;">
       <form id="form1" runat="server">
         <div>
           <asp:ScriptManager runat="server">
