@@ -137,6 +137,7 @@
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="FromTheDesk.aspx" />
+    <Content Include="Propaganda.png" />
     <Content Include="Support.aspx" />
     <Content Include="Content\background.jpg" />
     <Content Include="About.aspx" />
