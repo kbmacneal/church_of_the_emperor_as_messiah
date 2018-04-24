@@ -46,7 +46,10 @@
             </asp:ScriptManager>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"><img src="Twitter_Header.png" runat="server" style="width:200px;" /></a>
+                <a class="navbar-brand" runat="server" href="~/" style="width:20%">
+                  <img src="Twitter_Header.png" runat="server" class="img-responsive"/>
+              </a>
+  <!-- <a class="navbar-brand" href="#"><img src="Twitter_Header.png" runat="server" style="width:200px;" /></a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
