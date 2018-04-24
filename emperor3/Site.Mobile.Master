@@ -57,19 +57,19 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="~/Decrees">Decrees</a>
+        <a class="nav-link" href="Decrees">Decrees</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="~/About">About</a>
+        <a class="nav-link" href="About">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="~/Join">Join the Church</a>
+        <a class="nav-link" href="Join">Join the Church</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="~/10Blessings">The 10 Blessings</a>
+        <a class="nav-link" href="10Blessings">The 10 Blessings</a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="~/Social">Social Media</a>
+        <a class="nav-link" href="Social">Social Media</a>
       </li>
     </ul>
   </div>
