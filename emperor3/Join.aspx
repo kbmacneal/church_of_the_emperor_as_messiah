@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="Join the Church" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Join.aspx.cs" Inherits="emperor3.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
     <div class="blockquote">
         Look at the stars! I cast you among them, to populate them, and bring humanity to the greatest reaches of the universe!
     </div>
