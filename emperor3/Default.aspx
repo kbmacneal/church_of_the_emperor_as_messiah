@@ -10,9 +10,9 @@
     <div class=".container-fluid">
         <div class="row">
             <div class="col-6">
-                <div class="pre-scrollable" style="height:500px">
+                <div style="height:500px">
                     <p><a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ExarchTatiana</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-                <div>
+                <div class="pre-scrollable">
                     <a class="twitter-timeline" href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw">Tweets by Exarch Tatiana, the High Voice</a>
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
