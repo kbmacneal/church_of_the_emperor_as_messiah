@@ -20,8 +20,9 @@
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link rel="stylesheet" href="Content/bootstrap.min.css" />
       <!-- Bootstrap responsive -->
-      <link rel="stylesheet" href="Content/bootstrap-responsive.min.css" />
+      
       <link rel="stylesheet" href="Content/Site.css" />
+      <link rel="stylesheet" href="Content/bootstrap-responsive.min.css" />
     </head>
 
     <body style="widows:inherit;">
