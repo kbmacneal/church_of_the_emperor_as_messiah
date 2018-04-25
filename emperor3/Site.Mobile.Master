@@ -51,7 +51,7 @@
 
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" runat="server" href="~/" style="width:50%">
-              <img src="Twitter_Header.png" runat="server" class="img-responsive" style="width:200px;" />
+              <img src="Twitter_Header.png" runat="server" class="img-fluid" />
             </a>
             <!-- <a class="navbar-brand" href="#"><img src="Twitter_Header.png" runat="server" style="width:200px;" /></a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
@@ -76,7 +76,7 @@
                   <a class="nav-link" href="Join">Join the Church</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="10Blessings">The 10 Blessings</a>
+                  <a class="nav-link" href="10Blessings">The 10 Virtues</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="Social">Social Media</a>
@@ -94,7 +94,15 @@
           </section>
           <friendlyUrls:ViewSwitcher runat="server" />
         </div>
+          <footer>
+                    <p>
+                        <a href="Support.aspx">Support the Developers</a>
+                    </p>
+                    <p>&copy;
+                        <%: DateTime.Now.Year %> - Holy Works Industries</p>
+                </footer>
       </form>
+
     </body>
 
     </html>

@@ -3,7 +3,16 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
     <div class="container">
-        <h2>From the Desk of Exarch Tatiana, The Grand Voice of the High Church</h2>
+        <div class="row">
+            <div class="align-content-center container" style="display:table-cell; vertical-align:middle; text-align:center">
+                <img src="high_order.png" width="300px" style="align-content:center;" class="img-fluid" />
+                <h2>From the Desk of Exarch Tatiana, The Grand Voice of the High Church</h2>
+            </div>
+            
+        </div>
+        <div class="row">
+            <a href="FromTheDesk.aspx">FromTheDesk.aspx</a>
+
 
         <p></p>
 
@@ -19,6 +28,8 @@
 
         <p>For now enjoy the sigil of the High Order, the core of the High Church. Over the next few days we will remind you of our other branches revealing their sigils to you, so you may find the path is right for you.</p>
 
+        </div>
+        
     </div>
     
 

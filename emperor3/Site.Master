@@ -74,7 +74,7 @@
                                 <a class="nav-link" runat="server" href="~/Join" style="font-size:x-large;">Join the Church</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" runat="server" href="~/10Blessings" style="font-size:x-large;">The Ten Blessings</a>
+                                <a class="nav-link" runat="server" href="~/10Blessings" style="font-size:x-large;">The Ten Virtues</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" runat="server" href="~/Social" style="font-size:x-large;">Social Media</a>
