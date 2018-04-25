@@ -91,6 +91,11 @@ blockquote {
         font-size: 12px;
     }
 }
+.pre-scrollable {
+    max-height: 480px;
+    overflow-y: scroll;
+}
+
 
 /*blockquote::after {
         border-color: transparent #6b936a transparent transparent;
