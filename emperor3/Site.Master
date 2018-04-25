@@ -17,21 +17,9 @@
         <webopt:bundlereference runat="server" path="~/Content/css" />
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-         <style>
-  /* Note: Try to remove the following lines to see the effect of CSS positioning */
-  .affix {
-      top: 0;
-      width: 100%;
-      z-index: 9999 !important;
-  }
-
-  .affix + .container {
-      padding-top: 70px;
-  }
-  </style>
     </head>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="50" style="position:relative">
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <form runat="server">
             <asp:ScriptManager runat="server">
                 <Scripts>
@@ -54,28 +42,18 @@
                 </Scripts>
             </asp:ScriptManager>
 
-            <nav class=".navbar-fixed-top">
-
-            
-            <nav class="container navbar-static-top" role="navigation" style="margin-bottom:50px;">
-                <div class="row">
-                     <div class="col-6">
-                    <a class="navbar-brand" runat="server" href="~/" style="width:20%;">
-                            <img src="Twitter_Header.png" runat="server" class="img-responsive"/>
-                            <%--<asp:Image ImageUrl="~/Twitter_Header.png" runat="server" Width="30%" />--%>
-                        </a>
-                </div>
-                <div class="col-6">
-<div class="navbar navbar-expand-lg navbar-inverse navbar-static-top navbar-light bg-light" style="margin-bottom:50px; width: 100%;" data-offset-top="215">
-                
+            <div class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:50px;" data-spy="affix" data-offset-top="197">
+                <div class="container">
                     <div class="navbar-header">
-                        
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="display:none">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        
+                        <a class="navbar-brand" runat="server" href="~/" style="width:20%">
+                            <img src="Twitter_Header.png" runat="server" />
+                            <%--<asp:Image ImageUrl="~/Twitter_Header.png" runat="server" Width="30%" />--%>
+                        </a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -100,13 +78,7 @@
                         </ul>
                     </div>
                 </div>
-               
             </div>
-                </div>
-            </nav>
-
-                </nav>
-            
 
             <div class="container body-content">
                 <div class="container">
@@ -121,7 +93,6 @@
 
                 <hr />
                 <footer>
-                    
                     <p>
                         <a href="Support.aspx">Support the Developers</a>
                     </p>
