@@ -5,33 +5,33 @@
         <%--<asp:Image ImageUrl="~/Twitter_Header.png" runat="server" />--%>
     </div>
 
-    <div class=".container-fluid">
+    <div class="container-fluid">
         <%--<div class="row">
                 <iframe src="https://calendar.google.com/calendar/embed?src=s220v2ajea3lobijhjri5t12j0%40group.calendar.google.com&ctz=UTC"
                     style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>--%>
-        <div class="row">
+        <div class="row-fluid">
             <div class="container">
-                <div class="row">
+                <div class="row-fluid">
                     <p>
                         <a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ExarchTatiana</a>
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </p>
                 </div>
-                <div class="row">
-                    <div class="pre-scrollable">
+                <div class="row-fluid">
+                    <div class="pre-scrollable col-sm-6">
                         <a class="twitter-timeline" href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw">Tweets by Exarch Tatiana, the High Voice</a>
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="container">
+            <div class="row-fluid">
+                <div class="container-fluid">
                     <div class="row">
                         <h3>News and Events</h3>
                     </div>
-                    <div class="row">
+                    <div class="row-fluid">
                         <div class="jumbotron">
                             <h4 class="display-4">From the Desk of the Grand Voice</h4>
                             <p class="lead">
@@ -39,7 +39,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row-fluid">
                         <div class="jumbotron">
                             <h4 class="display-4">From the Sermons of High Priest Callixtus Pius</h4>
                             <p class="lead">An Introduction to the Ten Virtues</p>
