@@ -11,6 +11,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url('bootstrap.css');
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
 
 :root {
@@ -10433,31 +10434,31 @@ a.list-group-item-danger.active {
     html
 
 {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 }
 
 @media (min-width: 780px) {
     html {
-        font-size: 11px;
+        font-size: 15px;
     }
 }
 
 @media (min-width: 702px) {
     html {
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
 @media (min-width: 724px) {
     html {
-        font-size: 9px;
+        font-size: 13px;
     }
 }
 
 @media (max-width: 623px) {
     html {
-        font-size: 8px;
+        font-size: 12px;
     }
 }
