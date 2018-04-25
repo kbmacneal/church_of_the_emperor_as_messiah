@@ -16,11 +16,12 @@
       <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
       </asp:PlaceHolder>
-      <link rel="stylesheet" href="Content/bootstrap.min.css" />
+      <webopt:bundlereference runat="server" path="~/Content/css" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="Content/bootstrap.min.css" />
       <!-- Bootstrap responsive -->
       <link rel="stylesheet" href="Content/bootstrap-responsive.min.css" />
-      <webopt:BundleReference runat="server" Path="~/Content/css" />
-      <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+      <link rel="stylesheet" href="Content/Site.css" />
     </head>
 
     <body style="widows:inherit;">
