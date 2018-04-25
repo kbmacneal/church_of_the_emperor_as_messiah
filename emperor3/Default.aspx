@@ -9,6 +9,9 @@
 
     <div class=".container-fluid">
         <div class="row">
+                <iframe src="https://calendar.google.com/calendar/embed?src=s220v2ajea3lobijhjri5t12j0%40group.calendar.google.com&ctz=UTC" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="row">
             <div class="col-6">
                 <div style="height:500px">
                     <p><a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ExarchTatiana</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
