@@ -8,7 +8,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#FFFFFF" />
     <title>
         <%: Page.Title %> - Church of the Emperor-as-Messiah</title>
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
     <!-- Bootstrap responsive -->
 
-    <link rel="stylesheet" href="Content/Site.css" />
+    <link rel="stylesheet" href="Content/Site.css" media="only screen and (max-device-width: 480px)"/>
     <link rel="stylesheet" href="Content/bootstrap-responsive.min.css" />
 </head>
 
@@ -92,10 +92,9 @@
                 <asp:ContentPlaceHolder runat="server" ID="MainContent1" />
             </section>--%>
 
-            <div class="body-content">
-            <div class=".container-fluid col-centered" style="width:90%;">
-                <div class="row">
-                    <div class="col-lg">
+            <div class="body-content container-fluid col-centered" style="width:90%;">
+                <div class="row-fluid">
+                    <div class="col col-xs-auto">
                         <asp:ContentPlaceHolder ID="MainContent1" runat="server">
                         </asp:ContentPlaceHolder>
                         <div style="height:25px;"></div>
@@ -103,8 +102,6 @@
                         </asp:ContentPlaceHolder>
                     </div>
                     </div>
-            </div>
-
             </div>
 
             <friendlyUrls:ViewSwitcher runat="server" />

@@ -9,7 +9,7 @@
             </p>
         </div>
         <div class="row-fluid">
-            <div class="pre-scrollable col-sm-6">
+            <div class="pre-scrollable">
                 <a class="twitter-timeline" href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw">Tweets by Exarch Tatiana, the High Voice</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>

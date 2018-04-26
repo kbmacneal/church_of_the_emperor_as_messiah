@@ -31,6 +31,7 @@ input, select, textarea {
     }
 }
 
+
 /*.container {
     width: 400px;
 }*/
@@ -125,4 +126,32 @@ blockquote {
 .col-centered {
     float: none;
     margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    div#wrapper {
+        width: 400px;
+    }]
+
+        div#header h1 {
+            font-size: 140%;
+        }
+
+    #content {
+        float: none;
+        width: 100%;
+    }
+
+    #navigation {
+        float: none;
+        width: auto;
+    }
 }
