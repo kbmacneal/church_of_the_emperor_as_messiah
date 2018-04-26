@@ -60,7 +60,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarColor03">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto  offset-sm align-items-end" style="font-size:x-large">
                         <li class="nav-item active">
                             <a class="nav-link" href="/">Home
                     <span class="sr-only">(current)</span>
@@ -92,7 +92,7 @@
                 <asp:ContentPlaceHolder runat="server" ID="MainContent1" />
             </section>--%>
 
-            <div class="body-content container-fluid col-centered" style="width:90%;">
+            <div class="body-content container-fluid col-centered" style="width:90%; font-size:larger;">
                 <div class="row-fluid">
                     <div class="col col-xs-auto">
                         <asp:ContentPlaceHolder ID="MainContent1" runat="server">
