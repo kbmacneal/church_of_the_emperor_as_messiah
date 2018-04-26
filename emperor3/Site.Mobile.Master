@@ -94,7 +94,7 @@
 
             <div class="body-content container-fluid col-centered" style="width:90%; font-size:larger;">
                 <div class="row-fluid">
-                    <div class="col col-xs-auto">
+                    <div class="col col-xs-12">
                         <asp:ContentPlaceHolder ID="MainContent1" runat="server">
                         </asp:ContentPlaceHolder>
                         <div style="height:25px;"></div>
