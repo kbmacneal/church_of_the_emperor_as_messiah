@@ -6,9 +6,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head runat="server">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#FFFFFF" />
     <title>
         <%: Page.Title %> - Church of the Emperor-as-Messiah</title>
@@ -86,7 +86,7 @@
             </nav>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <script scr="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+            <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
             <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
             <%--<section class="content-wrapper main-content clear-fix">
                 <asp:ContentPlaceHolder runat="server" ID="MainContent1" />
