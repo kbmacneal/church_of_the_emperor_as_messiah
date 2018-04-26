@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="emperor3._Default" %>
 
 <asp:Content ID="BodyContent1" ContentPlaceHolderID="MainContent1" runat="server">
-    <div class="container">
+    <div class="container" style="width:auto;">
         <div class="row-fluid">
             <p>
                 <a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ExarchTatiana</a>
@@ -19,7 +19,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent2" runat="server">
 
-        <div class="row">
+        <div class="row" style="width:auto;">
             <h3>News and Events</h3>
         </div>
         <div class="row">
@@ -30,7 +30,7 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="width:auto;">
             <div class="jumbotron">
                 <h4 class="display-4">The Sermons of High Priest Callixtus Pius</h4>
                 <p class="lead"></p>
