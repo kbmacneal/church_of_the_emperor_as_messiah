@@ -88,14 +88,30 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <script scr="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
             <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-            <section class="content-wrapper main-content clear-fix">
-                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
-            </section>
+            <%--<section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent1" />
+            </section>--%>
+
+            <div class="body-content">
+            <div class=".container-fluid col-centered" style="width:90%;">
+                <div class="row">
+                    <div class="col-12" style="padding-left:25px;">
+                        <asp:ContentPlaceHolder ID="MainContent1" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                        <asp:ContentPlaceHolder ID="MainContent2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    </div>
+            </div>
+
+            </div>
+
             <friendlyUrls:ViewSwitcher runat="server" />
         </div>
         <footer>
             <p>
-                <a href="Support.aspx">Support the Developers</a>
+                <a href="/Support.aspx">Support the Developers</a>
             </p>
             <p>
                 &copy;

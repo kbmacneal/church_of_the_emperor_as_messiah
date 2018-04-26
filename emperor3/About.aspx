@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="emperor3.About" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 
     <div class="container text-center" style="font-size:larger;">
         <div class="align-content-center"><h1>The High Council and the Ten Branches</h1></div>

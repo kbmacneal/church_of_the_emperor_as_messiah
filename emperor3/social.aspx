@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Social Media" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Social.aspx.cs" Inherits="emperor3.Social" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 
     <p style="font-size:larger;">Follow the Church on Social Media</p>
     <a href="http://far-verona.wikia.com/wiki/The_High_Church_of_Messiah-as-Emperor" target="_blank" class="btn btn-secondary btn-lg" runat="server">Read the Church Wiki &raquo;</a>

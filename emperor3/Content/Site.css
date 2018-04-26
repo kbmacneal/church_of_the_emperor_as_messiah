@@ -122,3 +122,7 @@ blockquote {
     opacity: 0.4;
     filter: alpha(opacity=40);
 } */
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}

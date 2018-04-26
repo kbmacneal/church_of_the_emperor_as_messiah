@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Support" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Support.aspx.cs" Inherits="emperor3.Support" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 
     <h2>Support the Developer</h2>
     <p style="font-size:larger;">

@@ -1,8 +1,8 @@
-﻿<%@ Page Title="FromTheDesk" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FromTheDesk.aspx.cs" Inherits="emperor3.Contact" %>
+﻿<%@ Page Title="FromTheDesk" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FromTheDesk.aspx.cs" Inherits="emperor3.FromTheDesk" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 
-    <div class="container">
+    <div class="container" style="font-size:larger">
         <div class="row">
             <div class="align-content-center container" style="display: table-cell; vertical-align: middle; text-align: center">
                 <img src="high_order.png" width="300px" style="align-content: center;" class="img-fluid" />
@@ -10,9 +10,6 @@
             </div>
         </div>
         <div class="row">
-            <a href="FromTheDesk.aspx">FromTheDesk.aspx</a>
-
-            <p></p>
 
             <p>The traditional High Church symbol is a decagram around a throne, representing the Ten Virtues and the Emperor. But as the Emperor changes the Church must too.</p>
 

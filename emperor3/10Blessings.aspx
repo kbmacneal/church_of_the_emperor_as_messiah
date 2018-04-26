@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="The Ten Virtues of our Faith" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="10Blessings.aspx.cs" Inherits="emperor3.TenBlessings" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
     <h2>The Ten Virtues</h2>
     <div class="align-content-center">
         <div class="align-content-center container">
