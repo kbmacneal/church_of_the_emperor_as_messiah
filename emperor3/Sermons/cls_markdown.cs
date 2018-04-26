@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using HeyRed.MarkdownSharp;
+﻿using HeyRed.MarkdownSharp;
 
 namespace emperor3.Sermons
 {
@@ -15,7 +11,5 @@ namespace emperor3.Sermons
 
             return mark.Transform(text);
         }
-
-        
     }
 }

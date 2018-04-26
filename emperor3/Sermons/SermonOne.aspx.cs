@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using emperor3.Sermons;
+using System;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using emperor3.Sermons;
-
 
 namespace emperor3
 {
