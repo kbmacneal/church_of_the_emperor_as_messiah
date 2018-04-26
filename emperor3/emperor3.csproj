@@ -134,11 +134,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\conservatives.png" />
+    <Content Include="Assets\crusaders.png" />
+    <Content Include="Assets\guardians.png" />
+    <Content Include="Assets\high_order.png" />
+    <Content Include="Assets\karmists.png" />
+    <Content Include="Assets\masoodites.png" />
+    <Content Include="Assets\observers.png" />
+    <Content Include="Assets\orthodoxy.png" />
+    <Content Include="Assets\purists.png" />
+    <Content Include="Assets\reformists.png" />
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="FromTheDesk.aspx" />
     <Content Include="high_order.png" />
     <Content Include="Propaganda.png" />
+    <Content Include="Sermons\Index.aspx" />
+    <Content Include="Sermons\SermonTwo.aspx" />
     <Content Include="Support.aspx" />
     <Content Include="Content\background.jpg" />
     <Content Include="About.aspx" />
@@ -191,7 +203,6 @@
     <Content Include="Social.aspx" />
     <Content Include="Decrees.aspx" />
     <Content Include="Join.aspx" />
-    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -255,6 +266,20 @@
     <Compile Include="FromTheDesk.aspx.designer.cs">
       <DependentUpon>FromTheDesk.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sermons\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sermons\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sermons\SermonTwo.aspx.cs">
+      <DependentUpon>SermonTwo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sermons\SermonTwo.aspx.designer.cs">
+      <DependentUpon>SermonTwo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Support.aspx.cs">
       <DependentUpon>Support.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -290,13 +315,6 @@
     </Compile>
     <Compile Include="Join.aspx.designer.cs">
       <DependentUpon>Join.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -349,6 +367,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Sermons\sermonone.md" />
     <Content Include="Site.Mobile.Master.aspx.old" />
+    <Content Include="Sermons\SermonTwo.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

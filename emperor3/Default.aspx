@@ -41,10 +41,10 @@
                     </div>
                     <div class="row-fluid">
                         <div class="jumbotron">
-                            <h4 class="display-4">From the Sermons of High Priest Callixtus Pius</h4>
-                            <p class="lead">An Introduction to the Ten Virtues</p>
+                            <h4 class="display-4">The Sermons of High Priest Callixtus Pius</h4>
+                            <p class="lead"></p>
                             <p class="lead">
-                                <a class="btn btn-secondary btn-lg" href="/Sermons/SermonOne" role="button">Read &raquo;</a>
+                                <a class="btn btn-secondary btn-lg" href="/Sermons/Index" role="button">Read &raquo;</a>
                             </p>
                         </div>
                     </div>
