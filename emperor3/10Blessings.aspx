@@ -1,4 +1,4 @@
-﻿<%@ Page Title="The Ten Virtues of our Faith" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="10Blessings.aspx.cs" Inherits="emperor3.Contact" %>
+﻿<%@ Page Title="The Ten Virtues of our Faith" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="10Blessings.aspx.cs" Inherits="emperor3.TenBlessings" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>The Ten Virtues</h2>

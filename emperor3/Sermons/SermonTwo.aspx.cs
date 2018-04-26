@@ -13,7 +13,7 @@ namespace emperor3
 
             cls_markdown cls1 = new cls_markdown();
 
-            sermon_header.InnerText = "An Introduction to the Ten Virtues";
+            sermon_header.InnerText = "";
 
             sermon_text.InnerHtml = cls_markdown.ConvertMDtoTXT(filename);
         }

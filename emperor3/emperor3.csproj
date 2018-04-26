@@ -256,9 +256,6 @@
       <DependentUpon>10Blessings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="10Blessings.aspx.designer.cs">
-      <DependentUpon>10Blessings.aspx</DependentUpon>
-    </Compile>
     <Compile Include="FromTheDesk.aspx.cs">
       <DependentUpon>FromTheDesk.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -10,6 +10,6 @@
 namespace emperor3 {
     
     
-    public partial class Contact {
+    public partial class Social {
     }
 }
