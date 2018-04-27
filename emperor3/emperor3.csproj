@@ -144,8 +144,10 @@
     <Content Include="Assets\orthodoxy.png" />
     <Content Include="Assets\purists.png" />
     <Content Include="Assets\reformists.png" />
+    <Content Include="Assets\saint_mercury.jpg" />
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap-responsive.min.css" />
+    <Content Include="Reading.aspx" />
     <Content Include="FromTheDesk.aspx" />
     <Content Include="high_order.png" />
     <Content Include="Propaganda.png" />
@@ -255,6 +257,13 @@
     <Compile Include="10Blessings.aspx.cs">
       <DependentUpon>10Blessings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reading.aspx.cs">
+      <DependentUpon>Reading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reading.aspx.designer.cs">
+      <DependentUpon>Reading.aspx</DependentUpon>
     </Compile>
     <Compile Include="FromTheDesk.aspx.cs">
       <DependentUpon>FromTheDesk.aspx</DependentUpon>
