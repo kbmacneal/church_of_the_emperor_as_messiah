@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Decrees" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Reading.aspx.cs" Inherits="emperor3.Reading" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent2" runat="server">
 
 
     <div class="container" style="font-size:larger">
@@ -25,6 +25,6 @@
     
 </asp:Content>
 
-<asp:Content id="bodycontent2" ContentPlaceHolderID="MainContent2" runat="server">
+<asp:Content id="bodycontent2" ContentPlaceHolderID="MainContent1" runat="server">
     <img class="img-fluid" src="Assets/saint_mercury.jpg" />
 </asp:Content>
