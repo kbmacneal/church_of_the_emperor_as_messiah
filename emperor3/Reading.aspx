@@ -25,8 +25,7 @@
 <asp:Content ID="bodycontent2" ContentPlaceHolderID="MainContent1" runat="server">
     <div class="container">
         <div class="row text-center">
-<img class="img-fluid" src="Assets/saint_mercury.jpg" />
+            <img class="img-fluid" src="Assets/saint_mercury.jpg" />
         </div>
     </div>
-    
 </asp:Content>
