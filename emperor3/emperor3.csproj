@@ -286,6 +286,20 @@
     <Compile Include="Sermons\SermonTwo.aspx.designer.cs">
       <DependentUpon>SermonTwo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Site.6_6.Master.cs">
+      <DependentUpon>Site.6_6.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.6_6.Master.designer.cs">
+      <DependentUpon>Site.6_6.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.3_9.Master.cs">
+      <DependentUpon>Site.3_9.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.3_9.Master.designer.cs">
+      <DependentUpon>Site.3_9.Master</DependentUpon>
+    </Compile>
     <Compile Include="Support.aspx.cs">
       <DependentUpon>Support.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -374,6 +388,8 @@
     <Content Include="Sermons\sermonone.md" />
     <Content Include="Site.Mobile.Master.aspx.old" />
     <Content Include="Sermons\SermonTwo.md" />
+    <Content Include="Site.3_9.Master" />
+    <Content Include="Site.6_6.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Social Media" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Social.aspx.cs" Inherits="emperor3.Social" %>
+﻿<%@ Page Title="Social Media" Language="C#" MasterPageFile="~/Site.3_9.Master" AutoEventWireup="true" CodeBehind="Social.aspx.cs" Inherits="emperor3.Social" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 

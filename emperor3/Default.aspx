@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="emperor3._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.3_9.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="emperor3._Default" %>
 
 <asp:Content ID="BodyContent1" ContentPlaceHolderID="MainContent1" runat="server">
     <div class="container" style="width:auto;">

@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Decrees" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Decrees.aspx.cs" Inherits="emperor3.Decrees" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent2" runat="server">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 
     <h3 style="font-weight: bold;">Decree - gene modification and the Sanctity of the Soul</h3>
 
