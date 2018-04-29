@@ -5,5 +5,5 @@
     <h2>
         <p id="sermon_header" runat="server"></p>
     </h2>
-    <div id="sermon_text" runat="server" style="font-size: larger;"></div>
+    <div id="sermon_text" runat="server" style="font-size:larger;"></div>
 </asp:Content>

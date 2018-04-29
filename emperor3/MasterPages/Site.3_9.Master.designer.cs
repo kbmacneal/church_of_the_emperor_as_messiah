@@ -10,7 +10,7 @@
 namespace emperor3 {
     
     
-    public partial class SiteMaster {
+    public partial class SiteMaster3_9 {
         
         /// <summary>
         /// MainContent1 control.

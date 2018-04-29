@@ -6,8 +6,8 @@
         <div class="row">
             <p>With the high days of Mercury past, let us once again turn our hearts to the Emperor with these words from St. Mercury.</p>
             <h2>From the Book of Mercury, Second Disk, First Side</h2>
-        </div>
-        <div class="row">
+            </div>
+            <div class="row">
             <div class="div-pad"></div>
             <div class="blockquote">
                 <p>Fear me you lords and lady preachers</p>

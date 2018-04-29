@@ -1,5 +1,6 @@
 ﻿<%@ Master MasterPageFile="~/Site.Master" Language="C#" AutoEventWireup="true" CodeBehind="Site.6_6.Master.cs" Inherits="emperor3.SiteMaster" %>
 
+
 <asp:Content ID="content" runat="server" ContentPlaceHolderID="SubContent">
     <div class="body-content">
         <div class=".container-fluid col-centered" style="width: 90%;">

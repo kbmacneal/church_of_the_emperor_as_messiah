@@ -2,10 +2,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 
-    <div class="container" style="font-size: larger">
+    <div class="container" style="font-size:larger">
         <div class="row">
             <div class="align-content-center container" style="display: table-cell; vertical-align: middle; text-align: center">
-                <img src="high_order.png" style="align-content: center; width: 300px;" class="img-fluid" />
+                <img src="high_order.png" style="align-content: center; width:300px;" class="img-fluid" />
                 <h2>From the Desk of Exarch Tatiana, The Grand Voice of the High Church</h2>
             </div>
         </div>
