@@ -10,6 +10,32 @@
     <a href="http://jgraks-a-p-recap.blubrry.net/feed/podcast/" class="btn btn-secondary">PRISM Network's Podcast &raquo;</a>
     <div style="height: 16px;"></div>
     <p><a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ExarchTatiana</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+    <div class="container">
+        <div class="row" style="font-size: larger;">
+            <div class="col-3">
+                <p>
+                    <h3>From Spacemaster Adam</h3>
+                    Hello @everyone I have some dates for you. While you are eating the imaginary dates, here is the timeline for the next little while of FAR VERONA Faction content.
+                </p>
+
+                <p>May 1st: Deadline for final faction changes. No more switching after this (until after the first faction turn)</p>
+
+                <p>May 1st: Representatives chosen and locked for each faction. By this date I need every faction to tell me who their elected rep is. From there, these are the people who will ask me rules questions, deliver final Faction orders, etc.</p>
+
+                <p>May 4th: Sector history and Lore building stream.</p>
+
+                <p>May 9th: FIRST FAR VERONA STREAM! WOO!</p>
+
+                <p>May 10th: Asset selection locked and submitted by end of day via Faction Representatives.</p>
+
+                <p>May 11th: Faction turn rules review, faction spreadsheet population and mock turn stream.</p>
+
+                <p>May 28th: Inaugural Faction turn!</p>
+
+                <p>Please hold all rules questions until May 1st and your representatives assignment. So far y’all have been really good about respecting not @ing me too often and for that I love you.</p>
+            </div>
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent2" runat="server">
     <img class="img-thumbnail" src="https://i.pinimg.com/originals/dc/40/f4/dc40f4bf7677a459603bba8bb47afc07.jpg" />
