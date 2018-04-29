@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Support" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Support.aspx.cs" Inherits="emperor3.Support" %>
+﻿<%@ Page Title="Support" Language="C#" MasterPageFile="~/MasterPages/Site.Single.Master" AutoEventWireup="true" CodeBehind="Support.aspx.cs" Inherits="emperor3.Support" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 

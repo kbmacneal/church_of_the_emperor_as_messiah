@@ -1,4 +1,4 @@
-﻿<%@ Page Title="FromTheDesk" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FromTheDesk.aspx.cs" Inherits="emperor3.FromTheDesk" %>
+﻿<%@ Page Title="FromTheDesk" Language="C#" MasterPageFile="~/MasterPages/Site.Single.Master" AutoEventWireup="true" CodeBehind="FromTheDesk.aspx.cs" Inherits="emperor3.FromTheDesk" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 

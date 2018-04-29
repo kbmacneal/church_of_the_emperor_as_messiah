@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Join the Church" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Join.aspx.cs" Inherits="emperor3.Join" %>
+﻿<%@ Page Title="Join the Church" Language="C#" MasterPageFile="~/MasterPages/Site.Single.Master" AutoEventWireup="true" CodeBehind="Join.aspx.cs" Inherits="emperor3.Join" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
     <div class="blockquote" style="font-size:larger;">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Sermon Index" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="emperor3.Index" %>
+﻿<%@ Page Title="Sermon Index" Language="C#" MasterPageFile="~/MasterPages/Site.Single.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="emperor3.Index" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 

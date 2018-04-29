@@ -1,4 +1,4 @@
-﻿<%@ Page Title="A Sermon by Callixtus Pious" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SermonTwo.aspx.cs" Inherits="emperor3.SermonTwo" %>
+﻿<%@ Page Title="A Sermon by Callixtus Pious" Language="C#" MasterPageFile="~/MasterPages/Site.Single.Master" AutoEventWireup="true" CodeBehind="SermonTwo.aspx.cs" Inherits="emperor3.SermonTwo" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent1" runat="server">
 
