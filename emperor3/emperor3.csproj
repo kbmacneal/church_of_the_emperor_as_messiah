@@ -151,6 +151,7 @@
     <Content Include="Assets\yakiyah.jpg" />
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap-responsive.min.css" />
+    <Content Include="Burial.aspx" />
     <Content Include="Reading.aspx" />
     <Content Include="FromTheDesk.aspx" />
     <Content Include="high_order.png" />
@@ -263,6 +264,13 @@
     <Compile Include="10Blessings.aspx.cs">
       <DependentUpon>10Blessings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Burial.aspx.cs">
+      <DependentUpon>Burial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Burial.aspx.designer.cs">
+      <DependentUpon>Burial.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPages\Site.Single.Master.cs">
       <DependentUpon>Site.Single.Master</DependentUpon>
