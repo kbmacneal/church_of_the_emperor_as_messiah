@@ -148,6 +148,7 @@
     <Content Include="Assets\purists.png" />
     <Content Include="Assets\reformists.png" />
     <Content Include="Assets\saint_mercury.jpg" />
+    <Content Include="Assets\yakiyah.jpg" />
     <Content Include="Content\bootstrap-responsive.css" />
     <Content Include="Content\bootstrap-responsive.min.css" />
     <Content Include="Reading.aspx" />
