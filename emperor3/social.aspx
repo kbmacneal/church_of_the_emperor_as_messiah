@@ -9,7 +9,7 @@
     <div style="height: 16px;"></div>
     <a href="http://jgraks-a-p-recap.blubrry.net/feed/podcast/" class="btn btn-secondary">PRISM Network's Podcast &raquo;</a>
     <div style="height: 16px;"></div>
-    <a href="Burial" class="btn btn-secondary">On Burial Traditions &raquo;</a>
+    <%--<a href="Burial" class="btn btn-secondary">On Burial Traditions &raquo;</a>--%>
     <div style="height: 16px;"></div>
     <p><a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ExarchTatiana</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
     
