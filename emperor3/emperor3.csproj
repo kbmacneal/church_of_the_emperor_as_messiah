@@ -152,6 +152,7 @@
     <Content Include="high_order.png" />
     <Content Include="Propaganda.png" />
     <Content Include="Sermons\Index.aspx" />
+    <Content Include="Sermons\SermonYakiyah.aspx" />
     <Content Include="Sermons\SermonTwo.aspx" />
     <Content Include="Support.aspx" />
     <Content Include="Content\background.jpg" />
@@ -279,6 +280,13 @@
     <Compile Include="Sermons\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sermons\SermonYakiyah.aspx.cs">
+      <DependentUpon>SermonYakiyah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sermons\SermonYakiyah.aspx.designer.cs">
+      <DependentUpon>SermonYakiyah.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Sermons\SermonTwo.aspx.cs">
       <DependentUpon>SermonTwo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -390,6 +398,8 @@
     <Content Include="Sermons\SermonTwo.md" />
     <Content Include="Site.3_9.Master" />
     <Content Include="Site.6_6.Master" />
+    <Content Include="Sermons\sermonyakiyah1.md" />
+    <Content Include="Sermons\sermonyakiyah2.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

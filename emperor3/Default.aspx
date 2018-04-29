@@ -24,6 +24,14 @@
         </div>
     <div class="row">
             <div class="jumbotron">
+                <h4 class="display-4">A Sermon On Yakiyah</h4>
+                <p class="lead">
+                    <a class="btn btn-secondary btn-lg" href="/Sermons/SermonYakiyah" role="button">Read &raquo;</a>
+                </p>
+            </div>
+        </div>
+    <div class="row">
+            <div class="jumbotron">
                 <h4 class="display-4">Today's Reading</h4>
                 <p class="lead">
                     <a class="btn btn-secondary btn-lg" href="/Reading" role="button">Read &raquo;</a>
