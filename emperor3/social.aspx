@@ -14,9 +14,9 @@
     <p><a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ExarchTatiana</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
     
     <div style="height: 16px;"></div>
-    <div class="container">
-        <div class="row" style="font-size: larger;">
-            <div class="col-3">
+    <div class="container-fluid">
+        <div class="row-fluid" style="font-size: larger;">
+            <div class="col">
                 <p>
                     <h3>From Spacemaster Adam</h3>
                     Hello @everyone I have some dates for you. While you are eating the imaginary dates, here is the timeline for the next little while of FAR VERONA Faction content.
