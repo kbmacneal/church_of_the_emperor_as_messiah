@@ -39,6 +39,9 @@
                 <p>Please hold all rules questions until May 1st and your representatives assignment. So far y’all have been really good about respecting not @ing me too often and for that I love you.</p>
             </div>
         </div>
+        <div class="row-fluid pre-scrollable">
+            <a class="twitter-timeline" href="https://twitter.com/PRISMHeadlines?ref_src=twsrc%5Etfw">Tweets by PRISMHeadlines</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent2" runat="server">
