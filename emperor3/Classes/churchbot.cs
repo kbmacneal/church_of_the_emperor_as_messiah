@@ -16,8 +16,9 @@ namespace emperor3.Classes
         {
             Console.WriteLine(msg.ToString());
             return Task.CompletedTask;
-        
+
         }
 
 
+    }
 }
