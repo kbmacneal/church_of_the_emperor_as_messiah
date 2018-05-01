@@ -7,6 +7,11 @@ namespace churchbot.Modules {
         public async Task PingAsync () {
             await ReplyAsync ("Pong!");
         }
+
+        [Command ("start")]
+        public async Task StartAsync () {
+            await ReplyAsync ("Churchbot has started!");
+        }
     }
 
     public class virtues : ModuleBase<SocketCommandContext> {
@@ -23,7 +28,7 @@ namespace churchbot.Modules {
             await Virtue9Async ();
             await Virtue10Async ();
         }
-        
+
         [Command ("virtue1")]
         public async Task Virtue1Async () {
             await ReplyAsync ("The First Virtue is Faith. Recitation: “Faith above all. We must trust God and their chosen Emperor to guide us.” Faith is exemplified by daily prayer, regular attendance of Church ceremonies, dutiful tithing, and pilgrimage to holy sites.");
