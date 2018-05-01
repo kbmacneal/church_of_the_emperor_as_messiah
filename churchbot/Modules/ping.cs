@@ -1,10 +1,5 @@
 ﻿using Discord.Commands;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using Discord;
 
 namespace churchbot.Modules
 {
@@ -15,7 +10,10 @@ namespace churchbot.Modules
         {
             await ReplyAsync("Pong!");
         }
+    }
 
+    public class virtues : ModuleBase<SocketCommandContext>
+    {
         [Command("virtue1")]
         public async Task Virtue1Async()
         {
@@ -75,6 +73,5 @@ namespace churchbot.Modules
         {
             await ReplyAsync("The Tenth Virtue is Hope, which echoes Faith. Recitation: “We must never despair, no matter how dark the hour, as God shines their light upon us.”  Hope is exemplified by the conquest of despair, symbolized most prominently by the restriction of mourning to a designated period, as well as the teaching of the Virtues to the ignorant.");
         }
-
     }
 }
