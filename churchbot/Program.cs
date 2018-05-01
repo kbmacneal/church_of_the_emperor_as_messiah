@@ -1,6 +1,7 @@
 ﻿using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+using Discord.Rpc;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
@@ -36,6 +37,10 @@ namespace churchbot
             await _client.LoginAsync(TokenType.Bot, botToken);
 
             await _client.StartAsync();
+
+            SocketChannel bot_channel = _client.GetChannel(440690259752386560);
+
+            
 
             await Task.Delay(-1);
         }

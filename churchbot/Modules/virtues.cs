@@ -8,14 +8,8 @@ using Discord;
 
 namespace churchbot.Modules
 {
-    public class ping : ModuleBase<SocketCommandContext>
+    class virtues : ModuleBase<SocketCommandContext>
     {
-        [Command("ping")]
-        public async Task PingAsync()
-        {
-            await ReplyAsync("Pong!");
-        }
-
         [Command("virtue1")]
         public async Task Virtue1Async()
         {
