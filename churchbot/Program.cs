@@ -67,6 +67,10 @@ namespace churchbot
             {
                 var context = new SocketCommandContext(_client, message);
 
+                string logmessage = String.Concat(message.Author, " sent command ", message.Content);
+
+                await Log(new LogMessage(LogSeverity.Info, "VERBOSE", logmessage));
+
                 var result = await _commands.ExecuteAsync(context, argPosition, _services);
 
                 if (!result.IsSuccess)
