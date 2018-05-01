@@ -160,11 +160,9 @@
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\churchoftheemperor - Web Deploy.pubxml" />
     <None Include="Properties\webjob-publish-settings.json" />
-    <None Include="_configuration.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="secret.txt" />
-    <Content Include="virtues.txt" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
