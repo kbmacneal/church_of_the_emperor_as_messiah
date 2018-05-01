@@ -5,18 +5,21 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Reflection;
 using System.Threading.Tasks;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace churchbot
 {
     internal class Program
     {
-        private static void Main(string[] args) => new Program().RunBotAsync(args[0]).GetAwaiter().GetResult();
+        private static void Main(string[] args) => new Program().RunBotAsync().GetAwaiter().GetResult();
 
         private DiscordSocketClient _client;
         private CommandService _commands;
         private IServiceProvider _services;
 
-        public async Task RunBotAsync(string botToken)
+        public async Task RunBotAsync()
         {
             _client = new DiscordSocketClient();
             _commands = new CommandService();
@@ -24,6 +27,9 @@ namespace churchbot
 
             //event subscriptions
             _client.Log += Log;
+
+            //before publish, fill this out
+            string botToken = "";
 
             await RegisterCommandAsync();
 
