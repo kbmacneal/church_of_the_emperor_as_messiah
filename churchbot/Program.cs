@@ -33,12 +33,6 @@ namespace churchbot {
 
             await _client.LoginAsync (TokenType.Bot, botToken);
 
-            SocketMessage start_msg = new SocketMessage ();
-            
-            start_msg = "cb!start";
-
-            HandleCommandAsync (start_msg);
-
             await _client.StartAsync ();
 
             SocketChannel bot_channel = _client.GetChannel (440690259752386560);
