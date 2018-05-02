@@ -1,1 +1,1 @@
-Invoke-Command -ComputerName "127.0.0.1" -Credential (Get-Credential) -ScriptBlock {& E:\churchbot\churchbot.exe}
+Invoke-Command -ComputerName "127.0.0.1" -Credential (Get-Credential) -ScriptBlock {& E:\churchbot\churchbot.exe} -asjob
