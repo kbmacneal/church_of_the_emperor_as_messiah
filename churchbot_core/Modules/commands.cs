@@ -99,14 +99,19 @@ namespace churchbot.Modules {
         [Command ("commands")]
         public async Task CommandsAsync () {
             await ReplyAsync (@"```Here are the commands available to everyone
-                                cb!ping : Make sure the bot is alive
-                                cb!virtues : List all 10 of the Virtues
-                                cb!virtue[1..10] : List a particular virtue
-                                cb!welcome : Welcome a newbie
-                                cb!commands : You're using it right now
-                                cb!website : Link to the website
-                                cb!twitter : Link to the official twitter
-                                cb!pray : :keycap_ten: :pray:```");
+cb!ping : Make sure the bot is alive
+cb!virtues : List all 10 of the Virtues
+cb!virtue[1..10] : List a particular virtue
+cb!welcome : Welcome a newbie
+cb!commands : You're using it right now
+cb!website : Link to the website
+cb!twitter : Link to the official twitter
+cb!pray : :keycap_ten: :pray:```");
+        }
+
+         [Command ("donate")]
+        public async Task DonateAsync () {
+            await ReplyAsync ("_Passes the donation plate around_ http://highchurch.space/support");
         }
 
         //template
