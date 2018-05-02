@@ -7,11 +7,6 @@ namespace churchbot.Modules {
         public async Task PingAsync () {
             await ReplyAsync ("Pong!");
         }
-
-        [Command ("start")]
-        public async Task StartAsync () {
-            await ReplyAsync ("Churchbot has started!");
-        }
     }
 
     public class virtues : ModuleBase<SocketCommandContext> {
@@ -79,4 +74,18 @@ namespace churchbot.Modules {
             await ReplyAsync ("The Tenth Virtue is Hope, which echoes Faith. Recitation: “We must never despair, no matter how dark the hour, as God shines their light upon us.”  Hope is exemplified by the conquest of despair, symbolized most prominently by the restriction of mourning to a designated period, as well as the teaching of the Virtues to the ignorant.");
         }
     }
+
+    public class social : ModuleBase<SocketCommandContext> {
+        [Command ("twitter")]
+        public async Task TwitterAsync(){
+            await ReplyAsync("Follow the church on twitter at https://twitter.com/ExarchTatiana")
+        }
+
+        [Command ("website")]
+        public async Task WebsiteAsync(){
+            await ReplyAsync("The latest news and information on Acheron Rho can be found on the Church's official website at http://highchurch.space")
+        }
+        
+     }
+    
 }
