@@ -106,7 +106,8 @@ cb!welcome : Welcome a newbie
 cb!commands : You're using it right now
 cb!website : Link to the website
 cb!twitter : Link to the official twitter
-cb!pray : :keycap_ten: :pray:```");
+cb!pray : :keycap_ten: :pray:
+cb!donate: pass the donation plate around```");
         }
 
          [Command ("donate")]
