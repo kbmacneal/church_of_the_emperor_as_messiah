@@ -86,6 +86,29 @@ namespace churchbot.Modules {
             await ReplyAsync ("The latest news and information on Acheron Rho can be found on the Church's official website at http://highchurch.space");
         }
 
+        [Command ("welcome")]
+        public async Task WelcomeAsync () {
+            await ReplyAsync ("Welcome to the Church! Please review the pinned messages on the RP:FV discord to get caught up on the work that's been done so far. Use cb!commands to find out what else I can do!");
+        }
+
+        [Command ("commands")]
+        public async Task CommandsAsync () {
+            await ReplyAsync (@"```Here are the commands available to everyone
+                                cb!ping : Make sure the bot is alive
+                                cb!virtues : List all 10 of the Virtues
+                                cb!virtue[1..10] : List a particular virtue
+                                cb!welcome : Welcome a newbie
+                                cb!commands : You're using it right now
+                                cb!website : Link to the website
+                                cb!twitter : Link to the official twitter```");
+        }
+
+        //template
+        // [Command ("")]
+        // public async Task NameAsync () {
+        //     await ReplyAsync ("Text");
+        // }
+
     }
 
 }
