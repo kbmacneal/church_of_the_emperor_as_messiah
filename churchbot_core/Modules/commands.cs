@@ -7,6 +7,11 @@ namespace churchbot.Modules {
         public async Task PingAsync () {
             await ReplyAsync ("Pong!");
         }
+
+        [Command ("pray")]
+        public async Task PrayAsync () {
+            await ReplyAsync (":keycap_ten: :pray:");
+        }
     }
 
     public class virtues : ModuleBase<SocketCommandContext> {
@@ -100,7 +105,8 @@ namespace churchbot.Modules {
                                 cb!welcome : Welcome a newbie
                                 cb!commands : You're using it right now
                                 cb!website : Link to the website
-                                cb!twitter : Link to the official twitter```");
+                                cb!twitter : Link to the official twitter
+                                cb!pray : :keycap_ten: :pray:```");
         }
 
         //template
