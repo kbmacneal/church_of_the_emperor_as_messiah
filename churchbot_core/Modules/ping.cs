@@ -16,7 +16,7 @@ namespace churchbot.Modules {
 
     public class virtues : ModuleBase<SocketCommandContext> {
         [Command ("virtues")]
-        public async Task Virtue1Async () {
+        public async Task VirtuesAsync () {
             await Virtue1Async ();
             await Virtue2Async ();
             await Virtue3Async ();
