@@ -77,15 +77,15 @@ namespace churchbot.Modules {
 
     public class social : ModuleBase<SocketCommandContext> {
         [Command ("twitter")]
-        public async Task TwitterAsync(){
-            await ReplyAsync("Follow the church on twitter at https://twitter.com/ExarchTatiana")
+        public async Task TwitterAsync () {
+            await ReplyAsync ("Follow the church on twitter at https://twitter.com/ExarchTatiana");
         }
 
         [Command ("website")]
-        public async Task WebsiteAsync(){
-            await ReplyAsync("The latest news and information on Acheron Rho can be found on the Church's official website at http://highchurch.space")
+        public async Task WebsiteAsync () {
+            await ReplyAsync ("The latest news and information on Acheron Rho can be found on the Church's official website at http://highchurch.space");
         }
-        
-     }
-    
+
+    }
+
 }
