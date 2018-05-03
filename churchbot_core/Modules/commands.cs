@@ -93,7 +93,7 @@ namespace churchbot.Modules {
 
         [Command ("welcome")]
         public async Task WelcomeAsync () {
-            await ReplyAsync ("Welcome to the Church! Please review the pinned messages on the RP:FV discord to get caught up on the work that's been done so far. Use cb!commands to find out what else I can do!");
+            await ReplyAsync ("Welcome to the Church! Please review the pinned messages on the RP:FV discord to get caught up on the work that's been done so far. The link for the startup guide is https://docs.google.com/document/d/1exepWYJTPdWKNuYKTUOesQbZ-ByRX5vf8RxjCGNEkgo/edit?usp=sharing . You can use that as a one-stop-shop for all the other content generated so far. Another good resource is the website, http://highchurch.space. Use cb!commands to find out what else I can do!");
         }
 
         [Command ("commands")]
@@ -110,7 +110,7 @@ cb!pray : :keycap_ten: :pray:
 cb!donate: pass the donation plate around```");
         }
 
-         [Command ("donate")]
+        [Command ("donate")]
         public async Task DonateAsync () {
             await ReplyAsync ("_Passes the donation plate around_ http://highchurch.space/support");
         }
