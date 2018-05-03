@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Discord.Commands;
 
 namespace churchbot.Modules {
@@ -98,16 +99,16 @@ namespace churchbot.Modules {
 
         [Command ("commands")]
         public async Task CommandsAsync () {
-            await ReplyAsync (@"```Here are the commands available to everyone
-cb!ping : Make sure the bot is alive
-cb!virtues : List all 10 of the Virtues
-cb!virtue[1..10] : List a particular virtue
-cb!welcome : Welcome a newbie
-cb!commands : You're using it right now
-cb!website : Link to the website
-cb!twitter : Link to the official twitter
-cb!pray : :keycap_ten: :pray:
-cb!donate: pass the donation plate around```");
+            await ReplyAsync (String.Concat ("```Here are the commands available to everyone" + System.Environment.NewLine + 
+                "cb!ping : Make sure the bot is alive" + System.Environment.NewLine + 
+                "cb!virtues : List all 10 of the Virtues" + System.Environment.NewLine + 
+                "cb!virtue[1..10] : List a particular virtue" + System.Environment.NewLine + 
+                "cb!welcome : Welcome a newbie" + System.Environment.NewLine + 
+                "cb!commands : You're using it right now" + System.Environment.NewLine + 
+                "cb!website : Link to the website" + System.Environment.NewLine + 
+                "cb!twitter : Link to the official twitter" + System.Environment.NewLine + 
+                "cb!pray : :keycap_ten: :pray:" + System.Environment.NewLine + 
+                "cb!donate: pass the donation plate around```"));
         }
 
         [Command ("donate")]
