@@ -437,7 +437,6 @@
     <Compile Include="Burial.aspx.designer.cs">
       <DependentUpon>Burial.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Classes\churchbot.cs" />
     <Compile Include="MasterPages\Site.Single.Master.cs">
       <DependentUpon>Site.Single.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

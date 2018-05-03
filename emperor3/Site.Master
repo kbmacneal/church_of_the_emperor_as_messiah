@@ -78,6 +78,9 @@
                             <a class="nav-link" runat="server" href="~/10Blessings" style="font-size: x-large;">The Ten Virtues</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Reading" style="font-size: x-large;">Readings</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" runat="server" href="~/Social" style="font-size: x-large;">Important Links</a>
                         </li>
                     </ul>
