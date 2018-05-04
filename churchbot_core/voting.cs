@@ -200,14 +200,12 @@ namespace churchbot.voting {
 		public async Task<List<string>> AddQuestion (int votenum) {
 			List<string> rtn = new List<string> ();
 			string path = string.Concat ("votes/", votenum, ".json");
-			if(!(System.IO.File.Exists(path))){
-				System.IO.File.Create (path);
-				rtn.Add (string.Concat ("Successfully created vote at ", path));
+			if (!(System.IO.File.Exists (path))) {
+			System.IO.File.Create (path);
+			rtn.Add (string.Concat ("Successfully created vote at ", path));
+			} else {
+			rtn.Add ("There is already a vote with this ID. Please choose another.");
 			}
-			else{
-				rtn.Add("There is already a vote with this ID. Please choose another.")
-			}
-			
 
 			return rtn;
 		}
