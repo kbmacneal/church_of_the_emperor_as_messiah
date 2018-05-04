@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace churchbot {
     internal class Program {
-        private static void Main (string[] args) => new Program (args[0]).RunBotAsync ().GetAwaiter ().GetResult ();
+        private static void Main (string[] args) => new Program ().RunBotAsync (args[0]).GetAwaiter ().GetResult ();
 
         private DiscordSocketClient _client;
         private CommandService _commands;
