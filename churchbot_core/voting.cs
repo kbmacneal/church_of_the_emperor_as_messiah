@@ -170,7 +170,7 @@ namespace churchbot.voting {
 			}
 		}
 
-		public async Task<List<string>> ReturnTally (int votenum, SocketUser user) {
+		private async Task<List<string>> ReturnTally (int votenum, SocketUser user) {
 			List<string> tallies = new List<string> ();
 
 			if (System.IO.File.Exists ("votes/" + votenum.ToString () + ".json")) {
