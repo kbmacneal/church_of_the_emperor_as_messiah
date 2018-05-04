@@ -186,12 +186,12 @@ namespace churchbot.voting {
 
 			tallies.Add (String.Concat ("Tally for option ", votenum, " is ", tally.votes.Where (s => s.Choice == opt).Count ()));
 				}
-				tallies.Add ("The following users voted:")
+				tallies.Add ("The following users voted:");
 				foreach (Vote vote in tally.votes) {
 					tallies.Add (vote.user.UserName);
 				}
 			} else {
-				tallies.Add ("There is no vote with that ID. Please provide a valid vote ID.")
+				tallies.Add ("There is no vote with that ID. Please provide a valid vote ID.");
 			}
 
 			return tallies;

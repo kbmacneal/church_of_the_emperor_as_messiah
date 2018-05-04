@@ -63,7 +63,7 @@ namespace churchbot {
                 var context = new SocketCommandContext (_client, message);
 
                 string logmessage = String.Concat (message.Author, " sent command ", message.Content);
-
+                int test = 0;
                 await Log (new LogMessage (LogSeverity.Info, "VERBOSE", logmessage));
 
                 string fullcommand = message.Content;
@@ -90,11 +90,10 @@ namespace churchbot {
                     if (Int32.TryParse (fullcommand.Split ("addquestion") [1], out test)) {
                         int id = test;
 
-                        List<string> returns = await vt.Addquestion (id);
+                        List<string> returns = await vt.AddQuestion (id);
 
                         await SendPMAsync (returns[0], message.Author);
-                    }
-                    else{
+                    } else {
                         await SendPMAsync ("Invalid request.", message.Author);
                     }
 
