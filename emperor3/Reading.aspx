@@ -8,7 +8,7 @@
                     <div class="jumbotron" style="font-size: larger;">
                         <p>In the fifth year of his reign, the first Emperor of the Velites, having unfit sleep, awoke with a shout, and, calling his assistants and noble court to him, did relate to them the following tale:</p>
 
-                        <p>"In my dream I saw a ship, buttressed in gold, floating among the stars. Suddenly the skies around ripped asunder, and from the darkness came the Enemy. Wreathed in darkest fire was his head, and his eyes shone with the light of a thousand novae. Cloaked in darkness was his body. His arms were of steel, and his feet of coldest iron. In his hands he carried the powers of Heaven, and around his neck were the the chains of the ten Vices. And he struck the ship, and it shattered, broken into ten pieces, which were thrown among the stars."</p>
+                        <p>"In my dream I saw a ship, buttressed in gold, floating among the stars. Suddenly the skies around ripped asunder, and from the darkness came the Enemy. Wreathed in darkest fire was his head, and his eyes shone with the light of a thousand novae. Cloaked in darkness was his body. His arms were of obsidian, and his feet of coldest iron. In his hands he carried the powers of Heaven, and around his neck were the the chains of the ten vices. Lifting his great mace, he struck the ship, and it shattered, broken into ten pieces, which were thrown among the stars."</p>
 
                         <p>At this the assistants and nobles trembled, but the Emperor continued:</p>
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Discord.Commands;
+using Newtonsoft.Json;
 
 namespace churchbot.Modules {
     public class ping : ModuleBase<SocketCommandContext> {
@@ -123,5 +124,13 @@ namespace churchbot.Modules {
         // }
 
     }
+
+    //public class voting : ModuleBase<SocketCommandContext>
+    //{
+    //    public async Task CastVoteAsync()
+    //    {
+    //        await ReplyAsync("You have successfully cast your vote.");
+    //    }
+    //}
 
 }
