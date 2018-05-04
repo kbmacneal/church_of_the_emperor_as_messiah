@@ -2,13 +2,12 @@
 using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Reflection;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
 
 namespace churchbot
 {
@@ -17,14 +16,14 @@ namespace churchbot
         public int QuestionID { get; set; }
         public string QuestionTitle { get; set; }
         public string QuestionText { get; set; }
-        public SortedDictionary<int,string> Options { get; set; }
+        public SortedDictionary<int, string> Options { get; set; }
     }
+
     public class Vote
     {
         public User user = new User();
         public int QuestionID { get; set; }
         public int Choice { get; set; }
-
     }
 
     public class User
@@ -41,6 +40,7 @@ namespace churchbot
     public class VoteMessage : ModuleBase<SocketCommandContext>
     {
         public string Message { get; set; }
+
         public async Task SendVoteMessage()
         {
             await ReplyAsync(this.Message);
@@ -112,29 +112,29 @@ namespace churchbot
                 if (fullcommand.ToString().Contains("votefor"))
                 {
                     //cb!votefor1:1
-                        User user = new User();
-                        Vote vote = new Vote();
-                        int test = 0;
+                    User user = new User();
+                    Vote vote = new Vote();
+                    int test = 0;
 
-                        user.UserName = message.Author.ToString().Split('#')[0];
+                    user.UserName = message.Author.ToString().Split('#')[0];
 
-                        if(Int32.TryParse(message.Author.ToString().Split('#')[1], out test))
-                        {
-                            user.ID = test;
-                        }
-                        else
-                        {
-                            user.ID = 0;
-                        }
+                    if (Int32.TryParse(message.Author.ToString().Split('#')[1], out test))
+                    {
+                        user.ID = test;
+                    }
+                    else
+                    {
+                        user.ID = 0;
+                    }
 
-                        if (Int32.TryParse(fullcommand.ToString().Split("votefor")[1].Split(":")[0], out test))
-                        {
-                            vote.QuestionID = test;
-                        }
-                        else
-                        {
-                            vote.QuestionID = 0;
-                        }
+                    if (Int32.TryParse(fullcommand.ToString().Split("votefor")[1].Split(":")[0], out test))
+                    {
+                        vote.QuestionID = test;
+                    }
+                    else
+                    {
+                        vote.QuestionID = 0;
+                    }
 
                     if (Int32.TryParse(fullcommand.ToString().Split("votefor")[1].Split(":")[1], out test))
                     {
@@ -147,10 +147,9 @@ namespace churchbot
 
                     vote.user = user;
 
-                        await CastVote(vote);
-                    
+                    await CastVote(vote);
                 }
-                else if(fullcommand.ToString().Contains("votetally"))
+                else if (fullcommand.ToString().Contains("votetally"))
                 {
                     //cb!votetally1
                     int test = 0;
@@ -165,7 +164,6 @@ namespace churchbot
                         vm.Message = "Invalid request";
                         await vm.SendVoteMessage();
                     }
-
                 }
                 else
                 {
@@ -181,13 +179,13 @@ namespace churchbot
 
         private async Task CastVote(Vote vote)
         {
-            if(System.IO.File.Exists("~/votes/" + vote.QuestionID.ToString() + ".json"))
+            if (System.IO.File.Exists("~/votes/" + vote.QuestionID.ToString() + ".json"))
             {
                 string filecontents = System.IO.File.ReadAllText("~/votes/" + vote.QuestionID.ToString() + ".json");
 
                 Votes votes = JsonConvert.DeserializeObject<Votes>(filecontents);
 
-                if(votes.votes.Where(s=>s.user.UserName == vote.user.UserName).Count() > 0)
+                if (votes.votes.Where(s => s.user.UserName == vote.user.UserName).Count() > 0)
                 {
                     VoteMessage voteMessage = new VoteMessage();
 
@@ -212,8 +210,6 @@ namespace churchbot
 
                     return;
                 }
-
-                
             }
             else
             {
@@ -232,7 +228,7 @@ namespace churchbot
 
                 List<int> Options = tally.votes.Select(s => s.Choice).Distinct().ToList();
 
-                foreach(int opt in Options)
+                foreach (int opt in Options)
                 {
                     VoteMessage msgr = new VoteMessage();
                     msgr.Message = String.Concat("Tally for option ", votenum, " is ", tally.votes.Where(s => s.Choice == opt).Count());
