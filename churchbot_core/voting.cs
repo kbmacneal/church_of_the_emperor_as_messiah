@@ -52,6 +52,11 @@ namespace churchbot.voting {
 			get;
 			set;
 		}
+
+		public string NickName {
+			get;
+			set;
+		}
 	}
 
 	public class Votes {
@@ -82,6 +87,7 @@ namespace churchbot.voting {
 				int test = 0;
 
 				user.UserName = message.Author.ToString ().Split ('#') [0];
+				user.NickName = (message.Author as SocketGuildUser).Nickname;
 
 				if (Int32.TryParse (message.Author.ToString ().Split ('#') [1], out test)) {
 					user.ID = test;
@@ -118,6 +124,8 @@ namespace churchbot.voting {
 				} else {
 					rtn_messages.Add ("Invalid request");
 				}
+			} else {
+				rtn_messages.Add ("Invalid request");
 			}
 
 			return rtn_messages;

@@ -67,10 +67,20 @@ namespace churchbot {
                 await Log (new LogMessage (LogSeverity.Info, "VERBOSE", logmessage));
 
                 string fullcommand = message.Content;
+                SocketGuildUser user = (message.Author as SocketGuildUser);
+                bool isChurchUser = false;
+                IRole role = (message.Author as IGuildUser).Guild.Roles.FirstOrDefault (s => s.Name == "church_member");
+                if (user.Roles.Contains (role)) {
+                    isChurchUser = true;
+                }
 
                 if (fullcommand.ToString ().Contains ("votefor") || fullcommand.ToString ().Contains ("votetally")) {
-                    churchbot.voting.voting vt = new churchbot.voting.voting ();
+                    if (!isChurchUser) {
+                        await SendPMAsync ("You must be a church member to vote.", message.Author);
+                        return;
+                    }
 
+                    churchbot.voting.voting vt = new churchbot.voting.voting ();
                     List<string> returns = await vt.ProcessVote (message);
                     foreach (string rtn in returns) {
                         await SendPMAsync (rtn, message.Author);
