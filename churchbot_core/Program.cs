@@ -74,7 +74,7 @@ namespace churchbot {
                     isChurchUser = true;
                 }
 
-                if (fullcommand.ToString ().Contains ("votefor") || fullcommand.ToString ().Contains ("votetally")) {
+                if (fullcommand.ToString ().Contains ("votefor") || fullcommand.ToString ().Contains ("votetally") || fullcommand.ToString ().Contains ("listquestions")) {
                     if (!isChurchUser) {
                         await SendPMAsync ("You must be a church member to vote.", message.Author);
                         return;

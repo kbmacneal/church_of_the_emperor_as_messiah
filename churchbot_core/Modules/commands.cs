@@ -112,7 +112,8 @@ namespace churchbot.Modules {
                 "cb!donate: pass the donation plate around" + System.Environment.NewLine + 
                 "cb!votefor#:# vote for an issue. The first number is the vote id, the second is your choice" + System.Environment.NewLine + 
                 "cb!votetally# tally the votes for an added issue, where # is the vote you want to tally" + System.Environment.NewLine + 
-                "cb!addquestion# adds a question for voting, where # is the new id.```"));
+                "cb!addquestion# adds a question for voting, where # is the new id." + System.Environment.NewLine + 
+                "cb!listquestions lists the available votes```"));
         }
 
         [Command ("donate")]

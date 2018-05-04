@@ -79,7 +79,7 @@ namespace churchbot.voting {
 			string fullcommand = message.Content;
 
 			List<string> rtn_messages = new List<string> ();
-
+			//TODO: move over to a switch format.
 			if (fullcommand.ToString ().Contains ("votefor")) {
 				//cb!votefor1:1
 				User user = new User ();
@@ -124,6 +124,16 @@ namespace churchbot.voting {
 				} else {
 					rtn_messages.Add ("Invalid request");
 				}
+			} else if (fullcommand.ToString ().Contains ("listquestions")) {
+				//cb!votetally1
+				int test = 0;
+
+				List<string> rtns = await ListVotes ();
+
+				foreach (string msg in rtns) {
+					rtn_messages.Add (msg);
+				}
+
 			} else {
 				rtn_messages.Add ("Invalid request");
 			}
@@ -210,10 +220,10 @@ namespace churchbot.voting {
 			return rtn;
 		}
 
-		public async<List<string>> ListVotes () {
-			sting path = "votes/"
+		public async Task<List<string>> ListVotes () {
+			string path = "votes/";
 
-			return System.IO.Directory.GetFiles (path).Select(s=>s.split("votes")[1]).ToList ();
+			return System.IO.Directory.GetFiles (path).Select (s => s.Split ("votes") [1].Replace (".json", "")).ToList ();
 		}
 
 	}
