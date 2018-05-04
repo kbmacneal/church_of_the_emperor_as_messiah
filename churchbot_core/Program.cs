@@ -37,15 +37,14 @@ namespace churchbot
         public List<Vote> votes { get; set; }
     }
 
-    public class VoteMessage : ModuleBase<SocketCommandContext>
+    public class VoteMessage 
     {
         public string Message { get; set; }
 
-        public async Task SendVoteMessage()
-        {
-            await ReplyAsync(this.Message);
-        }
+        
     }
+
+    
 
     internal class Program
     {
@@ -57,6 +56,9 @@ namespace churchbot
 
         public async Task RunBotAsync()
         {
+            //this directory has to exist
+            if (!(System.IO.Directory.Exists("votes"))) System.IO.Directory.CreateDirectory("votes");
+
             _client = new DiscordSocketClient();
             _commands = new CommandService();
             _services = new ServiceCollection().AddSingleton(_client).AddSingleton(_commands).BuildServiceProvider();
@@ -161,8 +163,9 @@ namespace churchbot
                     else
                     {
                         VoteMessage vm = new VoteMessage();
+                        Modules.voting svm = new Modules.voting();
                         vm.Message = "Invalid request";
-                        await vm.SendVoteMessage();
+                        await svm.Send(vm.Message);
                     }
                 }
                 else
@@ -179,60 +182,90 @@ namespace churchbot
 
         private async Task CastVote(Vote vote)
         {
-            if (System.IO.File.Exists("~/votes/" + vote.QuestionID.ToString() + ".json"))
+            if (System.IO.File.Exists("votes/" + vote.QuestionID.ToString() + ".json"))
             {
-                string filecontents = System.IO.File.ReadAllText("~/votes/" + vote.QuestionID.ToString() + ".json");
+                string filecontents = System.IO.File.ReadAllText("votes/" + vote.QuestionID.ToString() + ".json");
 
                 Votes votes = JsonConvert.DeserializeObject<Votes>(filecontents);
 
-                if (votes.votes.Where(s => s.user.UserName == vote.user.UserName).Count() > 0)
+                if(votes is null)
                 {
+                    votes = new Votes();
+                    votes.votes = new List<Vote>();
+                    votes.votes.Add(vote);
+
+                    string serialized = JsonConvert.SerializeObject(votes);
+
+                    System.IO.File.WriteAllText("votes/" + vote.QuestionID.ToString() + ".json", serialized);
+
                     VoteMessage voteMessage = new VoteMessage();
 
-                    voteMessage.Message = String.Concat(vote.user.UserName, " has already cast their vote, and cannot do so again..");
-                    await voteMessage.SendVoteMessage();
+                    VoteMessage vm = new VoteMessage();
+                    Modules.voting svm = new Modules.voting();
+                    vm.Message = String.Concat(vote.user.UserName, " has successfully cast their vote.");
+                    await svm.Send(vm.Message);
 
                     return;
                 }
                 else
                 {
-                    votes.votes.Add(vote);
+                    if (votes.votes.Where(s => s.user.UserName == vote.user.UserName).Count() > 0)
+                    {
+                        VoteMessage vm = new VoteMessage();
+                        Modules.voting svm = new Modules.voting();
+                        vm.Message = String.Concat(vote.user.UserName, " has already cast their vote, and cannot do so again..");
+                        await svm.Send(vm.Message);
 
-                    string serialized = JsonConvert.SerializeObject(votes);
+                        return;
+                    }
+                    else
+                    {
+                        votes.votes.Add(vote);
 
-                    System.IO.File.WriteAllText("~/votes/" + vote.QuestionID.ToString() + ".json", serialized);
+                        string serialized = JsonConvert.SerializeObject(votes);
 
-                    VoteMessage voteMessage = new VoteMessage();
-                    //voteMessage.Message = String.Concat("In the matter of ", question.QuestionTitle, " ", vote.user.UserName, " ", "voted for option ", vote.Choice, " ", question.Options.Where(s => s.Key == vote.Choice).Select(s => s.Value))
+                        System.IO.File.WriteAllText("votes/" + vote.QuestionID.ToString() + ".json", serialized);
 
-                    voteMessage.Message = String.Concat(vote.user.UserName, " has successfully cast their vote.");
-                    await voteMessage.SendVoteMessage();
+                        VoteMessage vm = new VoteMessage();
+                        Modules.voting svm = new Modules.voting();
+                        vm.Message = String.Concat(vote.user.UserName, " has successfully cast their vote.");
+                        await svm.Send(vm.Message);
 
-                    return;
+                        return;
+                    }
                 }
+                
             }
             else
             {
-                VoteMessage voteMessage = new VoteMessage();
-                voteMessage.Message = String.Concat("Vote is invalid. Please consult an Admin.");
-                await voteMessage.SendVoteMessage();
+
+                VoteMessage vm = new VoteMessage();
+                Modules.voting svm = new Modules.voting();
+                vm.Message = String.Concat("Vote is invalid. Please consult an Admin.");
+                await svm.Send(vm.Message);
+
                 return;
             }
         }
 
-        private async Task ReturnTally(int votenum)
+        public async Task ReturnTally(int votenum)
         {
-            if (System.IO.File.Exists("~/votes/" + votenum.ToString() + ".json"))
+            if (System.IO.File.Exists("votes/" + votenum.ToString() + ".json"))
             {
-                Votes tally = JsonConvert.DeserializeObject<Votes>("~/votes/" + votenum.ToString() + ".json");
+                string path = string.Concat("votes/" + votenum.ToString() + ".json");
+
+                string value = System.IO.File.ReadAllText(path);
+
+                Votes tally = JsonConvert.DeserializeObject<Votes>(value);
 
                 List<int> Options = tally.votes.Select(s => s.Choice).Distinct().ToList();
 
                 foreach (int opt in Options)
                 {
-                    VoteMessage msgr = new VoteMessage();
-                    msgr.Message = String.Concat("Tally for option ", votenum, " is ", tally.votes.Where(s => s.Choice == opt).Count());
-                    await msgr.SendVoteMessage();
+                    VoteMessage vm = new VoteMessage();
+                    Modules.voting svm = new Modules.voting();
+                    vm.Message = String.Concat("Tally for option ", votenum, " is ", tally.votes.Where(s => s.Choice == opt).Count());
+                    await svm.Send(vm.Message);
                 }
                 return;
             }

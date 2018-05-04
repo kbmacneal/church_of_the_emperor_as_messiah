@@ -125,12 +125,12 @@ namespace churchbot.Modules {
 
     }
 
-    //public class voting : ModuleBase<SocketCommandContext>
-    //{
-    //    public async Task CastVoteAsync()
-    //    {
-    //        await ReplyAsync("You have successfully cast your vote.");
-    //    }
-    //}
+    public class voting : ModuleBase<SocketCommandContext>
+    {
+        public async Task Send(string message)
+        {
+            await ReplyAsync(message);
+        }
+    }
 
 }
