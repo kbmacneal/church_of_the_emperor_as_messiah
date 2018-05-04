@@ -150,7 +150,7 @@ namespace churchbot.voting {
 
 				} else {
 					if (votes.votes.Where (s => s.user.UserName == vote.user.UserName).Count () > 0) {
-						return (String.Concat (vote.user.UserName, " has already cast their vote, and cannot do so again.."));
+						return (String.Concat (vote.user.UserName, " has already cast their vote, and cannot do so again."));
 
 					} else {
 						votes.votes.Add (vote);
