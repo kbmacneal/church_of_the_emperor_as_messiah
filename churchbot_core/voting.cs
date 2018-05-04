@@ -1,0 +1,188 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
+using Discord;
+using Discord.Commands;
+using Discord.Rpc;
+using Discord.WebSocket;
+using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
+
+namespace churchbot.voting {
+	public class Question {
+		public int QuestionID {
+			get;
+			set;
+		}
+		public string QuestionTitle {
+			get;
+			set;
+		}
+		public string QuestionText {
+			get;
+			set;
+		}
+		public SortedDictionary<int, string> Options {
+			get;
+			set;
+		}
+	}
+
+	public class Vote {
+		public User user = new User ();
+		public int QuestionID {
+			get;
+			set;
+		}
+		public int Choice {
+			get;
+			set;
+		}
+	}
+
+	public class User {
+		public string UserName {
+			get;
+			set;
+		}
+		public int ID {
+			get;
+			set;
+		}
+	}
+
+	public class Votes {
+		public List<Vote> votes {
+			get;
+			set;
+		}
+	}
+
+	public class VoteMessage {
+		public string Message {
+			get;
+			set;
+		}
+
+	}
+
+	public class voting {
+		public async Task<List<string>> ProcessVote (SocketUserMessage message) {
+			string fullcommand = message.Content;
+
+			List<string> rtn_messages = new List<string> ();
+
+			if (fullcommand.ToString ().Contains ("votefor")) {
+				//cb!votefor1:1
+				User user = new User ();
+				Vote vote = new Vote ();
+				int test = 0;
+
+				user.UserName = message.Author.ToString ().Split ('#') [0];
+
+				if (Int32.TryParse (message.Author.ToString ().Split ('#') [1], out test)) {
+					user.ID = test;
+				} else {
+					user.ID = 0;
+				}
+
+				if (Int32.TryParse (fullcommand.ToString ().Split ("votefor") [1].Split (":") [0], out test)) {
+					vote.QuestionID = test;
+				} else {
+					vote.QuestionID = 0;
+				}
+
+				if (Int32.TryParse (fullcommand.ToString ().Split ("votefor") [1].Split (":") [1], out test)) {
+					vote.Choice = test;
+				} else {
+					vote.Choice = 0;
+				}
+
+				vote.user = user;
+
+				rtn_messages.Add (await CastVote (vote, message.Author));
+
+			} else if (fullcommand.ToString ().Contains ("votetally")) {
+				//cb!votetally1
+				int test = 0;
+
+				if (Int32.TryParse (fullcommand.ToString ().Split ("votetally") [1], out test)) {
+					List<string> rtns = ReturnTally (test, message.Author).Result;
+
+					foreach (string msg in rtns) {
+						rtn_messages.Add (msg);
+					}
+				} else {
+					rtn_messages.Add ("Invalid request");
+				}
+			}
+
+			return rtn_messages;
+		}
+
+		private async Task<string> CastVote (Vote vote, SocketUser user) {
+			if (System.IO.File.Exists ("votes/" + vote.QuestionID.ToString () + ".json")) {
+				string filecontents = System.IO.File.ReadAllText ("votes/" + vote.QuestionID.ToString () + ".json");
+
+				Votes votes = JsonConvert.DeserializeObject<Votes> (filecontents);
+
+				if (votes is null) {
+					votes = new Votes ();
+					votes.votes = new List<Vote> ();
+					votes.votes.Add (vote);
+
+					string serialized = JsonConvert.SerializeObject (votes);
+
+					System.IO.File.WriteAllText ("votes/" + vote.QuestionID.ToString () + ".json", serialized);
+
+					return (String.Concat (vote.user.UserName, " has successfully cast their vote."));
+
+				} else {
+					if (votes.votes.Where (s => s.user.UserName == vote.user.UserName).Count () > 0) {
+						return (String.Concat (vote.user.UserName, " has already cast their vote, and cannot do so again.."));
+
+					} else {
+						votes.votes.Add (vote);
+
+						string serialized = JsonConvert.SerializeObject (votes);
+
+						System.IO.File.WriteAllText ("votes/" + vote.QuestionID.ToString () + ".json", serialized);
+
+						return (String.Concat (vote.user.UserName, " has successfully cast their vote."));
+
+					}
+				}
+
+			} else {
+
+				return (String.Concat ("Vote is invalid. Please consult an Admin."));
+			}
+		}
+
+		public async Task<List<string>> ReturnTally (int votenum, SocketUser user) {
+			List<string> tallies = new List<string> ();
+
+			if (System.IO.File.Exists ("votes/" + votenum.ToString () + ".json")) {
+			string path = string.Concat ("votes/" + votenum.ToString () + ".json");
+
+			string value = System.IO.File.ReadAllText (path);
+
+			Votes tally = JsonConvert.DeserializeObject<Votes> (value);
+
+			List<int> Options = tally.votes.Select (s => s.Choice).Distinct ().ToList ();
+
+			foreach (int opt in Options) {
+
+			tallies.Add (String.Concat ("Tally for option ", votenum, " is ", tally.votes.Where (s => s.Choice == opt).Count ()));
+				}
+			}
+
+			return tallies;
+		}
+
+	}
+
+}
