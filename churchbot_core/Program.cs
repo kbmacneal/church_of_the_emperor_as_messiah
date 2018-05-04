@@ -11,13 +11,13 @@ using Newtonsoft.Json;
 
 namespace churchbot {
     internal class Program {
-        private static void Main (string[] args) => new Program ().RunBotAsync ().GetAwaiter ().GetResult ();
+        private static void Main (string[] args) => new Program (args[0]).RunBotAsync ().GetAwaiter ().GetResult ();
 
         private DiscordSocketClient _client;
         private CommandService _commands;
         private IServiceProvider _services;
 
-        public async Task RunBotAsync () {
+        public async Task RunBotAsync (string botToken) {
             //this directory has to exist
             if (!(System.IO.Directory.Exists ("votes"))) System.IO.Directory.CreateDirectory ("votes");
 
@@ -27,9 +27,6 @@ namespace churchbot {
 
             //event subscriptions
             _client.Log += Log;
-
-            //before publish, fill this out
-            string botToken = "";
 
             await RegisterCommandAsync ();
 
