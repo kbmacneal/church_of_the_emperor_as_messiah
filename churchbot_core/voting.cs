@@ -166,7 +166,7 @@ namespace churchbot.voting {
 
 			} else {
 
-				return (String.Concat ("Vote is invalid. Please consult an Admin."));
+				return (String.Concat ("There is no vote with the provided ID. Please enter a valid vote id."));
 			}
 		}
 
@@ -186,9 +186,24 @@ namespace churchbot.voting {
 
 			tallies.Add (String.Concat ("Tally for option ", votenum, " is ", tally.votes.Where (s => s.Choice == opt).Count ()));
 				}
+				tallies.Add ("The following users voted:")
+				foreach (Vote vote in tally.votes) {
+					tallies.Add (vote.user.UserName);
+				}
+			} else {
+				tallies.Add ("There is no vote with that ID. Please provide a valid vote ID.")
 			}
 
 			return tallies;
+		}
+
+		public async Task<List<string>> AddQuestion (int votenum) {
+			List<string> rtn = new List<string> ();
+			string path = string.Concat ("votes/", votenum, ".json");
+			System.IO.File.Create (path);
+			rtn.Add (string.Concat ("Successfully created vote at ", path));
+
+			return rtn;
 		}
 
 	}

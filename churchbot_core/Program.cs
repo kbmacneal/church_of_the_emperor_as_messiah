@@ -85,6 +85,19 @@ namespace churchbot {
                     foreach (string rtn in returns) {
                         await SendPMAsync (rtn, message.Author);
                     }
+                } else if (fullcommand.ToString ().Contains ("addquestion")) {
+                    churchbot.voting.voting vt = new churchbot.voting.voting ();
+                    if (Int32.TryParse (fullcommand.Split ("addquestion") [1], out test)) {
+                        int id = test;
+
+                        List<string> returns = await vt.Addquestion (id);
+
+                        await SendPMAsync (returns[0], message.Author);
+                    }
+                    else{
+                        await SendPMAsync ("Invalid request.", message.Author);
+                    }
+
                 } else {
                     var result = await _commands.ExecuteAsync (context, argPosition, _services);
 
