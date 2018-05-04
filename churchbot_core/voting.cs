@@ -210,6 +210,12 @@ namespace churchbot.voting {
 			return rtn;
 		}
 
+		public async<List<string>> ListVotes () {
+			sting path = "votes/"
+
+			return System.IO.Directory.GetFiles (path).Select(s=>s.split("votes")[1]).ToList ();
+		}
+
 	}
 
 }
