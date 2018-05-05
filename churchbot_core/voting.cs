@@ -202,7 +202,18 @@ namespace churchbot.voting
                 {
                     if (votes.votes.Where(s => s.user.UserName == vote.user.UserName).Count() > 0)
                     {
-                        return (String.Concat(vote.user.UserName, " has already cast their vote, and cannot do so again."));
+                        foreach (Vote item in votes.votes)
+                        {
+                            if (item.user.UserName == vote.user.UserName && item.user.ID == vote.user.ID)
+                            {
+                                item.Choice = vote.Choice;
+                            }
+                        }
+                        string serialized = JsonConvert.SerializeObject(votes);
+
+                        System.IO.File.WriteAllText("votes/" + vote.QuestionID.ToString() + ".json", serialized);
+
+                        return (String.Concat(vote.user.UserName, " has successfully changed their vote."));
                     }
                     else
                     {
