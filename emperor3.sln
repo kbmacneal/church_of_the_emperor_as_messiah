@@ -5,10 +5,6 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "emperor3", "emperor3\emperor3.csproj", "{1C849C40-DFC7-4377-95D8-8E31F1B0A552}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "churchbot", "churchbot\churchbot.csproj", "{E2E750A5-A8B3-4E04-A95A-F6A69359560A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "churchbot_core", "churchbot_core\churchbot_core.csproj", "{697D1F70-81CA-4BCC-BEC7-58900FB9453F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{1C849C40-DFC7-4377-95D8-8E31F1B0A552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C849C40-DFC7-4377-95D8-8E31F1B0A552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C849C40-DFC7-4377-95D8-8E31F1B0A552}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2E750A5-A8B3-4E04-A95A-F6A69359560A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2E750A5-A8B3-4E04-A95A-F6A69359560A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2E750A5-A8B3-4E04-A95A-F6A69359560A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2E750A5-A8B3-4E04-A95A-F6A69359560A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{697D1F70-81CA-4BCC-BEC7-58900FB9453F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{697D1F70-81CA-4BCC-BEC7-58900FB9453F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{697D1F70-81CA-4BCC-BEC7-58900FB9453F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{697D1F70-81CA-4BCC-BEC7-58900FB9453F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
