@@ -1,1 +1,0 @@
-This bot is written using the Discord.Net library on top of .Net Core 2.0. It is intended to be deployed to AWS on top of an Ubuntu t2.micro instance
