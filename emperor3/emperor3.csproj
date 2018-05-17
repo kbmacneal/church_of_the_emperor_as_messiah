@@ -316,7 +316,7 @@
     <Content Include="high_order.png" />
     <Content Include="Propaganda.png" />
     <Content Include="Assets\20questions.pdf" />
-    <None Include="Properties\PublishProfiles\churchoftheemperor - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\highchurchoftheemperor - Web Deploy.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
