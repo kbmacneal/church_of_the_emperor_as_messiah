@@ -2,10 +2,13 @@
 <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
+    <AssemblyName>church_of_the_emperor_as_messiah</AssemblyName>
+    <StartupObject>church_of_the_emporer_as_messiah.Program</StartupObject>
 </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="markdown" Version="2.2.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
     <PackageReference Include="System.Linq" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>

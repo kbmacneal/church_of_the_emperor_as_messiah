@@ -1,0 +1,24 @@
+﻿@page
+@model SermonOne
+@{
+    ViewData["Title"] = "A Sermon on Yakiyah";
+}
+
+@section styles{
+    <link rel="Stylesheet" href="@Href("~/lib/creative/css/creative.css")" />
+    <link rel="Stylesheet" href="@Href("~/lib/bootstrap/dist/css/bootstrap.css")" />
+    <link rel="Stylesheet" href="@Href("~/css/site.css")" />
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col col-centered">
+            @Model.sermonheader
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-centered">
+            @Html.Raw(Model.sermontext)
+        </div>
+    </div>
+</div>

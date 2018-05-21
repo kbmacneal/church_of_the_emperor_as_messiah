@@ -14,6 +14,16 @@ namespace church_of_the_emporer_as_messiah
     {
         public static void Main(string[] args)
         {
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseWebRoot("wwwroot")
+                .UseIISIntegration()
+                .UseStartup<Startup>()
+                .Build();
+
+            host.Run();
+
             BuildWebHost(args).Run();
         }
 

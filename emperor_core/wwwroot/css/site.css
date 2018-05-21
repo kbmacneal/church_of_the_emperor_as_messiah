@@ -173,3 +173,10 @@ blockquote {
     -ms-flex-line-pack: center !important;
     align-content: center !important;
 }
+
+div.center {
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
