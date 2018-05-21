@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Church of the Emperor-as-Messiah</title>
 
-    <link href="@Url.Content("~/lib/creative/css/creative.css")" rel="stylesheet" type="text/css" />
-    @RenderSection("Styles", false)
+    <link href="@Url.Content(" ~/lib/creative/css/creative.css ")" rel="stylesheet" type="text/css" /> @RenderSection("Styles", false)
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -14,70 +14,80 @@
         <!-- <link rel="stylesheet" href="~/lib/creative/css/creative.css" /> -->
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.css" asp-fallback-href="https://bootswatch.com/4/cosmo/bootstrap.min.css"
+            asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 50px;" data-spy="affix" data-offset-top="197">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="display: none">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                <a asp-page="/Index" 
-                 class="navbar-brand"><img src="Twitter_Header.png" runat="server" /></a>
+            <div class="row">
+                    <div class="col-4">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="display: none">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="img-fluid navbar-brand">
+<img src="~/Assets/Twitter_Header.png" style="width:80%;" runat="server" />
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" runat="server" href="~/" style="font-size: x-large;">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" runat="server" href="~/Decrees" style="font-size: x-large;">Decrees</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" runat="server" href="~/About" style="font-size: x-large;">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" runat="server" href="~/Join" style="font-size: x-large;">Join the Church</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" runat="server" href="~/10Blessings" style="font-size: x-large;">The Ten Virtues</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" runat="server" href="~/Reading" style="font-size: x-large;">Readings</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" runat="server" href="~/Social" style="font-size: x-large;">Important Links</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
             </div>
-            <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/" style="font-size: x-large;">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/Decrees" style="font-size: x-large;">Decrees</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/About" style="font-size: x-large;">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/Join" style="font-size: x-large;">Join the Church</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/10Blessings" style="font-size: x-large;">The Ten Virtues</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/Reading" style="font-size: x-large;">Readings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" runat="server" href="~/Social" style="font-size: x-large;">Important Links</a>
-                        </li>
-                    </ul>
-                </div>
+            
+
+
         </div>
     </nav>
     <table>
         <tr>
-            <td valign="top">
-                <iframe src="https://open.spotify.com/embed/user/kaysorb/playlist/4UsjQy7xNq6jxy7LAsBrGn"
-              width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </td>
             <td>
                 <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - Holy Works Industries</p>
-        </footer>
-    </div>
+                    @RenderBody()
+                    <hr />
+                    <footer>
+                            <p>
+                                    <a href="/Support.aspx">Support the Developers</a>
+                                </p>
+                                <a href="https://github.com/kbmacneal/church_of_the_emperor_as_messiah" target="_blank">This Site and all its content is offered under the MIT license, and is Open Source.</a>
+                    </footer>
+                </div>
             </td>
         </tr>
     </table>
-    
+
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -85,22 +95,17 @@
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
-                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-                asp-fallback-test="window.jQuery"
-                crossorigin="anonymous"
-                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
-                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-                crossorigin="anonymous"
-                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js" asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery" crossorigin="anonymous" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+            </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js" asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal" crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+            </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)
-    
+
 </body>
+
 </html>
