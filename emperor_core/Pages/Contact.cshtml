@@ -6,6 +6,12 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@Model.Message</h3>
 
+@section styles{
+    <link rel="Stylesheet" href="@Href("~/lib/creative/css/creative.css")" />
+    <link rel="Stylesheet" href="@Href("~/lib/bootstrap/dist/css/bootstrap.css")" />
+    <link rel="Stylesheet" href="@Href("~/css/site.css")" />
+}
+
 <address>
     One Microsoft Way<br />
     Redmond, WA 98052-6399<br />

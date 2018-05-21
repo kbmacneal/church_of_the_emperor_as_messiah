@@ -6,6 +6,12 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@Model.Message</h3>
 
+@section styles{
+    <link rel="Stylesheet" href="@Href("~/lib/creative/css/creative.css")" />
+    <link rel="Stylesheet" href="@Href("~/lib/bootstrap/dist/css/bootstrap.css")" />
+    <link rel="Stylesheet" href="@Href("~/css/site.css")" />
+}
+
 <div class="container text-center" style="font-size:larger;">
         <div class="align-content-center"><h1>The High Council and the Ten Branches</h1></div>
         
