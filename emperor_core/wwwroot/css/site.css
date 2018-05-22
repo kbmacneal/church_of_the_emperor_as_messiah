@@ -180,3 +180,45 @@ div.center {
     margin-left: auto;
     margin-right: auto;
 }
+
+footer {
+    clear: both;
+    font-size: .8em;
+    height: 100px;
+    margin-left: 5px;
+}
+
+div.content {
+    margin: 20px 20px 20px 5px;
+}
+
+/* LOGO */
+.logo {
+    margin: 20px 20px 20px 5px;
+    font-family: Verdana;
+    font-size: 24px;
+    font-weight: bold;
+    color: #839fa7;
+    width: 100%;
+}
+
+/* Specific DIVs */
+#search {
+    float: left;
+    width: 95%;
+    overflow-x: scroll;
+}
+
+#productEdit {
+    float: left;
+    clear: both;
+    width: 95%;
+    overflow-x: scroll;
+}
+
+#transactionHistory {
+    float: left;
+    clear: both;
+    width: 95%;
+    overflow-x: scroll;
+}
