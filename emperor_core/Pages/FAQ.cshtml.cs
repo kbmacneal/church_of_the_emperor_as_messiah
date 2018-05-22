@@ -13,7 +13,6 @@ namespace church_of_the_emporer_as_messiah.Pages
     public class FAQ : PageModel
     {
         public string FAQtext{get;set;}
-        private IHostingEnvironment _env;
 
         public void OnGet()
         {
