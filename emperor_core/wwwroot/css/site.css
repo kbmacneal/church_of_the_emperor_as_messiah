@@ -222,3 +222,7 @@ div.content {
     width: 95%;
     overflow-x: scroll;
 }
+
+.font-larger{
+    font-size: larger;
+}
