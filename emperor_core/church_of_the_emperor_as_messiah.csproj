@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <RuntimeIdentifiers>win10-x64</RuntimeIdentifiers>
+    <RuntimeIdentifiers>ubuntu-x64</RuntimeIdentifiers>
     <AssemblyName>church_of_the_emperor_as_messiah</AssemblyName>
     <StartupObject>church_of_the_emporer_as_messiah.Program</StartupObject>
 </PropertyGroup>
