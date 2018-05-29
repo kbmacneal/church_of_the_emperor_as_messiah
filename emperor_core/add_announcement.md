@@ -33,6 +33,8 @@ Then add your document to the wwwroot/Documents folder
 
 To create a pull request, you must have changes committed to the your new branch.
 
+`git add --all; git commit -a -m "commit message"; git push`
+
 Go to the repository page on <https://gihub.com/kbmacneal/church_of_the_emperor_as_messiah> . And click on "Pull Request" button in the repo header.
 
 Pick the branch you wish to have merged using the "Head branch" dropdown. You should leave the rest of the fields as is.
