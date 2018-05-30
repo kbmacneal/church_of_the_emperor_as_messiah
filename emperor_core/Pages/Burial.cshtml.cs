@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace church_of_the_emporer_as_messiah.Pages
 {
-    public class Burial : PageModel
+    public class BurialModel : PageModel
     {
         public string sermonheader { get; set; }
         public string burialtext { get; set; }
