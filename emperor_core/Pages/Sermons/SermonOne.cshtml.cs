@@ -14,7 +14,6 @@ namespace church_of_the_emporer_as_messiah.Pages
     {
         public string sermonheader { get; set; }
         public string sermontext { get; set; }
-        private IHostingEnvironment _env;
 
         public void OnGet()
         {
