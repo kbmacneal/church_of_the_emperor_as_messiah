@@ -14,7 +14,7 @@
 
 - Install your IDE of choice, either VS 2017 Community or Visual Studio Code (my preference)
 
-`choco install visualstudio2015community -y`
+`choco install visualstudio2017community -y`
 
 `choco install visualstudiocode -y`
 
