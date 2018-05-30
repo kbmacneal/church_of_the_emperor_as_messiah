@@ -36,13 +36,13 @@ This moon in many way resembles what the Ancient Records tell us of the moon Tit
 
 A seismically unstable frozen wasteland, with large sheets of ice shifting under tidal interactions causing the ejecta spewing out of ice-volcanoes to easily reach escape velocities due to the nearly non-existent atmosphere. Frequent ice-storms plague the surface. Tisoan is essentially an extreme reflection of Andophael itself, and only the most devout pilgrims and the toughest of Aquilan Legionnaires make the pilgrimage on this moon.
 
-Sig System
+# Sig System
 
 The Sig System is one of the core systems of the Human Imperium in Acheron Roe, it is located in hex [HEX-COORD]. Compared to its neighbours and peers Sig is unusual in that it contains significantly fewer substellar objects than might otherwise be expected for a system of its type and age. Despite this it is perhaps the most culturally significant system of the Empire after Imperial Prime itself as it hosts Andophael; the Holy Planet and home-world of the High Church of the Messiah-Emperox, the imperial state religion. Millions of pilgrims from across the Empire make the journey to Andophael each year to walk Path of Virtue and visit the Grand Temple; bringing with them tithes, donations and commerce that form a significant part of the High Church's economy.
 
 
 
-# Star System
+## Star System
 
 The Sig System is a 'failed binary' system named after it's primary star, Sig-A, a type A blue-white main-sequence dwarf apoxmately 1.77 solar masses in size. Like other type-As Sig is very bright, emitting up to ten times the output of humanity's native star and with a much larger part of it being UV radiation. Additionally the star blows a strong stellar wind and rotates relatively quickly; producing a very potent stellar magnetic field. Its companion and also the innermost object of the system is Sig-B Shiva, a large M-Clas brown dwarf of 0.061 solar masses that orbits Sig-A with a barycentre well within the primary, hence failing to classify the system as a true binary. Shiva has a very low luminosity and almost all of its emissions are in the infra-red part of the spectrum. The parts visible to the human eye appear a dark red-purple in colour. It takes 195 days for Shiva to complete one orbital period and it has no rotation of its own having been tidally locked to Sig. 
 
