@@ -12,20 +12,11 @@ Second, create a new local branch, call it whatever you want
 
 Third, copy and paste this code directly underneath the div that contains the header in Index.cshtml (under Pages)
 ```
-<div class="row">
-
-<div class="jumbotron">
-
-<h4 class="display-4">The Header Goes Here</h4>
-
-<p class="lead">
-
-<a class="btn btn-secondary btn-lg" href="/Documents/name_of_your_document.extension" role="button">Read &raquo;</a>
-
-</p>
-
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">TITLE</h4>
+<a class="btn btn-secondary btn-lg" href="/Documents/LINK_TO_DOCUMENT" role="button">Read &raquo;</a>
 </div>
-
 </div>
 ```
 
