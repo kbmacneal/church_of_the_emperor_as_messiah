@@ -2,17 +2,17 @@
 
 ## Attributes
 
-Atmosphere:Breatheable mix
+Atmosphere : Breatheable mix
 
-Temperature:Frozen
+Temperature : Frozen
 
-Biosphere:No native biosphere
+Biosphere : No native biosphere
 
-Population:Several million inhabitants
+Population : Several million inhabitants
 
-Tech Level:TL4
+Tech Level : TL4
 
-Description:Home to the High Church
+Description : Home to the High Church
 
 ## Gas Giant Mine
 
@@ -44,7 +44,7 @@ The Sig System is one of the core systems of the Human Imperium in Acheron Roe, 
 
 ## Star System
 
-The Sig System is a 'failed binary' system named after it's primary star, Sig-A, a type A blue-white main-sequence dwarf apoxmately 1.77 solar masses in size. Like other type-As Sig is very bright, emitting up to ten times the output of humanity's native star and with a much larger part of it being UV radiation. Additionally the star blows a strong stellar wind and rotates relatively quickly; producing a very potent stellar magnetic field. Its companion and also the innermost object of the system is Sig-B Shiva, a large M-Clas brown dwarf of 0.061 solar masses that orbits Sig-A with a barycentre well within the primary, hence failing to classify the system as a true binary. Shiva has a very low luminosity and almost all of its emissions are in the infra-red part of the spectrum. The parts visible to the human eye appear a dark red-purple in colour. It takes 195 days for Shiva to complete one orbital period and it has no rotation of its own having been tidally locked to Sig. 
+The Sig System is a 'failed binary' system named after it's primary star, Sig-A, a type A blue-white main-sequence dwarf apoxmately 1.77 solar masses in size. Like other type-As Sig is very bright, emitting up to ten times the output of humanity's native star and with a much larger part of it being UV radiation. Additionally the star blows a strong stellar wind and rotates relatively quickly, producing a very potent stellar magnetic field. Its companion and also the innermost object of the system is Sig-B Shiva, a large M-Class brown dwarf of 0.061 solar masses that orbits Sig-A with a barycentre well within the primary, hence failing to classify the system as a true binary. Shiva has a very low luminosity and almost all of its emissions are in the infra-red part of the spectrum. The parts visible to the human eye appear a dark red-purple in colour. It takes 195 days for Shiva to complete one orbital period and it has no rotation of its own having been tidally locked to Sig. 
 
 Sig-B Shiva also posseses an impressive ring system known as the Emperox's Halo for the unusual visual effect produced when the brown dwarf passes across Sig. On Andophael a day when such an eclipse will be observable from the surface is considered a holy day and almost all pilgrim travel packages and self-planned pilgrimages will coincide with one of these days. According to the High Church's astronomy lectors the Halo was formed from planetary debris in the earlier stages of the system's development. It would have been a very violent time as Shiva's enormous (relative) mass was extremely disruptive to the inner system, spelling doom for the other astronomical bodies by disrupting their orbits. Most of these would have fallen towards either Sig or Shiva and been torn apart by tidal forces with their remains across the system. Some could have ended with direct impacts while others may have even been thrown out of the system entirely.
 
