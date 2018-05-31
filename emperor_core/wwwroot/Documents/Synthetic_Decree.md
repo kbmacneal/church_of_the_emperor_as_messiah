@@ -1,6 +1,6 @@
 ## Whereas
 
-The Most Holy Council of Exarchs, having determined that the synthetic menace will, if unabated, constitute a known and present threat to the stability of the Empire, having plotted and subverted the Empire through nefarious means,
+The Most Holy Council of Exarchs, having determined that the synthetic menace will, if unabated, constitute a known and present threat to the stability of the Empire, subverting the Empire through nefarious means,
 
 ## Whereas
 
@@ -8,7 +8,7 @@ The stability of the Empire depends on its Ruler remaining free of undue influen
 
 ## Wheras
 
-The House Cygnus, having created aforementioned synthetic life, and having secured the Imperial Throne, did use their creations to subvert the Empire,
+The House Cygnus, having created aforementioned synthetic life, and having secured the Imperial Throne, did use their creations to plot against the Empire,
 
 ## Let It Be Known Across Acheron Rho
 
