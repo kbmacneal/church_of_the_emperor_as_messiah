@@ -13,60 +13,68 @@
     <link rel="shortcut icon" href="/Assets/Icons/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/Assets/Icons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-
-    @RenderSection("Styles", false)
+    <meta name="theme-color" content="#ffffff"> @RenderSection("Styles", false)
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="img-fluid navbar-brand">
-                    <img src="~/Assets/Twitter_Header.png" style="width:100%;" />
-                </div>
-  <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="display:none;">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <div class="center">
+        <div class="container-fluid">
+            <div class="row-fluid" style="width:90%; margin-left: auto; margin-right: 5%;">
+                <div class="col col-centered">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="img-fluid navbar-brand">
+                            <img src="~/Assets/Twitter_Header.png" style="width:100%;" />
+                        </div>
+                        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="display:none;">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-  <div class="collapse show navbar-collapse float-right" id="navbarColor03" style="font-size: 16pt;   ">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-                        <a class="nav-link" href="~/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Decrees">Decrees</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Join">Join the Church</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/10Blessings">The Ten Virtues</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Reading">Readings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/Social">Important Links</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="~/FAQ">HC FAQ</a>
-                    </li>
-    </ul>
-  </div>
-</nav>
+                        <div class="collapse show navbar-collapse float-right" id="navbarColor03" style="font-size: 14pt;   ">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/Decrees">Decrees</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/About">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/Join">Join the Church</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/10Blessings">The Ten Virtues</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/Reading">Readings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/Social">Important Links</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="~/FAQ">HC FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <div class="center">
-        <div class="container body-content">
-            <div class="row">
+        <div class="container-fluid body-content">
+            <div class="row-fluid" style="width:90%; margin-left: auto; margin-right: 5%;">
                 <div class="col col-centered">
                     @RenderBody()
                 </div>
             </div>
             <div style="height:35px;"></div>
-            <div class="row" style="font-size:larger;">
+            <div class="row-fluid" style="width:90%; margin-left: auto; margin-right: 5%; font-size: larger">
                 <div class="col">
                     <footer>
                         <div class="container-fluid">
@@ -81,14 +89,14 @@
                                     <a href="~/FAQ">HC FAQ</a>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                                    
+
                                 </div>
                             </div>
                         </div>
                         <p>
-                            
+
                         </p>
-                        
+
                     </footer>
                 </div>
             </div>
