@@ -10,7 +10,7 @@ Callixtus, holding a bottle of what appears to be very expensive brandy, opens a
 
 The men sit in silence, the occasional burp punctuating the deep quiet of the room as Callixtus finishes his brandy. No doubt the bottle also cost a small fortune, the Trilliant Ring logo flickering holographically in a variety of colours.
 
-Pelax breaks the awkward silence. "My dear Callixtus, what brings you so far from Imperial Prime? It  has been quite some time since Andophael was graced with your, particular, brand of worship," he says, gesturing to the now nearly empty bottle of high-grade liquor.
+Pelax breaks the awkward silence. "My dear Callixtus, what brings you so far from Imperial Prime? Itl has been quite some time since Andophael was graced with your, particular, brand of worship," he says, gesturing to the now nearly empty bottle of high-grade liquor.
 
 "The people of Hong Lu were kind enough to host me at a banquet. The Council sent me to investigate their 'charity work' but there was nothing to be found. Directors of A.C.R.E were also in attendance. They expressed concern about the faith of their people. I decided it was in the best interest of the High Church to put those concerns to rest."  The normally jubilant man sighed. "It is troubling times we live in, Pelax. I fear your skills will be in great demand." 
 
