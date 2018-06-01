@@ -1,0 +1,29 @@
+﻿@page
+@model SectModel
+@{
+    ViewData["Title"] = "Official Sects";
+}
+@section styles{
+    <link rel="Stylesheet" href="@Href("~/lib/creative/css/creative.css")" />
+    <link rel="Stylesheet" href="@Href("~/lib/bootstrap/dist/css/bootstrap.css")" />
+    <link rel="Stylesheet" href="@Href("~/css/site.css")" />
+}
+
+<div class="container-fluid center">
+    <div class="row-fluid">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Koschei the Deathless</h4>
+                    <a class="btn btn-secondary btn-lg" href="/Documents/koschei_1.pdf" role="button">Read &raquo;</a>
+                    <div class="container">
+                        @Html.Raw(Model.koschei_text)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+        </div>
+    </div>
+</div>
