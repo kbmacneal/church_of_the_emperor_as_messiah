@@ -1,5 +1,5 @@
 ﻿@page
-@model SectModel
+@model SectsModel
 @{
     ViewData["Title"] = "Official Sects";
 }
@@ -9,21 +9,43 @@
     <link rel="Stylesheet" href="@Href("~/css/site.css")" />
 }
 
-<div class="container-fluid center">
+<div class="container-fluid center font-larger">
     <div class="row-fluid">
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+        <div class="col">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Koschei the Deathless</h4>
-                    <a class="btn btn-secondary btn-lg" href="/Documents/koschei_1.pdf" role="button">Read &raquo;</a>
-                    <div class="container">
-                        @Html.Raw(Model.koschei_text)
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            @Html.Raw(Model.koschei_text)
+                        </div>                       
                     </div>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="col">
+                                @Html.Raw(Model.nox_text)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="col">
+                                @Html.Raw(Model.sol_text)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
