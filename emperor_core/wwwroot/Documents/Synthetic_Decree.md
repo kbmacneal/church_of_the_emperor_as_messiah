@@ -12,7 +12,7 @@ The House Cygnus, having created aforementioned synthetic life, and having secur
 
 ## Let It Be Known Across Acheron Rho
 
-The High Church of the Messiah-as-Emperor declares anathema against the former House Cyngus and all their synthetic creations, and declares that any aggressive action against them warranted and in keeping with the Ten Virtues.
+The High Church of the Messiah-as-Emperor declares anathema against the former House Cyngus and all their synthetic creations. Any aggressive action against them is warranted and in keeping with the Ten Virtues.
 
 ### Signed,
 
