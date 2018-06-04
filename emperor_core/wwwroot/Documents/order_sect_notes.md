@@ -4,7 +4,7 @@ In which the Gang writes more about the orders that we named but didn’t really
 
 ## Questions to answer
 
-- How does the order view the Emperor?
+- How does the order view the Emperox?
 
 - How does the order view the Church’s role?
 
@@ -30,7 +30,17 @@ In which the Gang writes more about the orders that we named but didn’t really
 
 ### Reformists - Take a practical view on Doctrine and Faith
 
-### Karmists - Believe in a cycle of rebirth which ends in your soul merging with the Emperor's
+### Karmists - Believe in a cycle of rebirth which ends in your soul merging with the Emperox's
+
+- Very similar to the Hindu/Buddhist interpretation of [Dharma](https://en.wikipedia.org/wiki/Dharma)/[Karma](https://en.wikipedia.org/wiki/Karma) (where they got the name)
+- **How do the Karmists view the Emperox**: The Emperox is a Divine Soul, much like a Buddha. They possess cosmic wisdom that they pass on to humanity through their words and deeds. The new chosen Emperor is automatically assumed to the next incarnation of a Divine Soul. Each Emperox, after they die, is examine and determined to be the incarnation of the Arhat of (Virtue) and is given a Holy Name.
+- **What is the Karmists view of the role of the Church**: The main goal of the church in this case is to preserve the lineage of Imperial manifestation, to learn the divine truth the Emperox wishes to convey, package it up and deliver it to the masses so that they too may be closer to enlightenment.
+- **How do the Purists view**:
+    - **Nobility** If they are wealthy/powerful enough, they must be the incarnations of lesser Great Souls. Nobility are the cream rising to the top, those closest to achieving Karmic balance.
+    - **Serfdom** They must have done something wrong in a previous life in order to be so lowly born, their primary aim should be to better adhere to the virtues so that they may one day be born a noble.
+- **Arhats of the Karmists**: There are probably quite a few. Outside of the standard Arhats of the various Virtues, the Karmists probably have recorded a great many instances where the Divine Souls have manifested themselves throughout Imperial history. They have a genealogical record that meshes with the history of the Empire, "so and so born on this date of house XXXX was the Arhat of Financial wisdom because they did YYYY".
+- **Special ceremonies/rituals**:
+- **Administrative duties**:
 
 ### Observers - Watchers and guides who try to interfere as little as possible
 
@@ -38,7 +48,7 @@ In which the Gang writes more about the orders that we named but didn’t really
 
 - The central idea is a sort of [Nietzschean Übermensch](https://en.wikipedia.org/wiki/%C3%9Cbermensch).
 
-- **How the purists view the Emperor**:  The Emperox is the supreme ideal. Their example is the example we should all follow, flaws/vices/shortcomings included. They are not terribly concerned with whether the Emperox is divine in the traditional sense, but rather with the idea that the Emperox is divine while they are still alive.
+- **How the purists view the Emperox**:  The Emperox is the supreme ideal. Their example is the example we should all follow, flaws/vices/shortcomings included. They are not terribly concerned with whether the Emperox is divine in the traditional sense, but rather with the idea that the Emperox is divine while they are still alive.
 
 - **What do the purists consider to be the role of the Church**: Maintaining the purity of humanity, not genetically but spiritually, “fanning the flames of the human spirit” kinda deal.
 
@@ -48,7 +58,7 @@ In which the Gang writes more about the orders that we named but didn’t really
 
     - **Serfs**: They have the capacity to become divine through careful application of the virtues, but they have to work harder since they're, you know, poor.
 
-- **Arhats of the purists**: Probably few, some may revere the Blood Eagle. Others may revere serpens precog arhats as having access to divine knowledge. MES to a purist is a gift from the Divine Emperor, giving special powers to deserving nobles.
+- **Arhats of the purists**: Probably few, some may revere the Blood Eagle. Others may revere serpens precog arhats as having access to divine knowledge. MES to a purist is a gift from the Divine Emperox, giving special powers to deserving nobles. As long as they use their powers wisely and for the betterment of the Empire, no problem.
 
 - **Special events/rituals**: Definitely the Crucible. After some pretty intense training, the inquisition dumps you on Satira Pala with a small bone knife, gives you a day’s head start, and hunts you for two days in the freezing cold. The idea is A) that you have to survive on your own, with no support, encouraging a spirit of self-reliance which is useful on alien worlds with no backup and B) That you can empathize with the people you track, you know the fear and the terrible feeling of being hunted, so that the Inquisitor, when they are tracking someone, can show restraint.
 
