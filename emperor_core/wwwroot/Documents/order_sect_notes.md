@@ -39,8 +39,8 @@ In which the Gang writes more about the orders that we named but didn’t really
     - **Nobility** If they are wealthy/powerful enough, they must be the incarnations of lesser Great Souls. Nobility are the cream rising to the top, those closest to achieving Karmic balance.
     - **Serfdom** They must have done something wrong in a previous life in order to be so lowly born, their primary aim should be to better adhere to the virtues so that they may one day be born a noble.
 - **Arhats of the Karmists**: There are probably quite a few. Outside of the standard Arhats of the various Virtues, the Karmists probably have recorded a great many instances where the Divine Souls have manifested themselves throughout Imperial history. They have a genealogical record that meshes with the history of the Empire, "so and so born on this date of house XXXX was the Arhat of Financial wisdom because they did YYYY".
-- **Special ceremonies/rituals**:
-- **Administrative duties**:
+- **Special ceremonies/rituals**: There is a special ceremony held at the first transit of Shiva across Sig called the Fesitval of the Emperox. There's another festival held at the last transit of the Imperial calendar called the Festival of Lights. This is a throwback to the old earth holiday celebrated on the Indian subcontinent, and is a time of renewal before the Emperox, a rejuvinatory time where people celebrate the past year and look forward to the next.
+- **Administrative duties**: The karmists don't really hold that much direct administrative control, but their main function is to preserve the official church geneologies so they can spot potential manifestations of the Divine Soul throughout history.
 
 ### Observers - Watchers and guides who try to interfere as little as possible
 
