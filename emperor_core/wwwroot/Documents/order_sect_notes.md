@@ -4,31 +4,75 @@ In which the Gang writes more about the orders that we named but didn’t really
 
 ## Questions to answer
 
-- How does the order view the Emperox?
-
-- How does the order view the Church’s role?
-
-- What is the order’s view on the nobility? Serfdom?
-
-- Are there any special Arhats that we should canonize?
-
-- Are there any special rituals, events, or celebrations that define your order?
-
-- How is the order incorporated into Church Administration?
+- **How does the order view the Emperox?**
+- **How does the order view the Church’s role?**
+- **What is the order’s view on the nobility? Serfdom?**
+- **Are there any special Arhats that we should canonize?**
+- **Are there any special rituals, events, or celebrations that define your order?**
+- **How is the order incorporated into Church Administration?**
 
 ### High Order - Bureaucracy and central administration of the High Church
 
+- **How does the order view the Emperox?**
+- **How does the order view the Church’s role?**
+- **What is the order’s view on the nobility? Serfdom?**
+- **Are there any special Arhats that we should canonize?**
+- **Are there any special rituals, events, or celebrations that define your order?**
+- **How is the order incorporated into Church Administration?**
+
 ### Guardians - Protectors of humanity and the faith
+
+- **How does the order view the Emperox?**
+- **How does the order view the Church’s role?**
+- **What is the order’s view on the nobility? Serfdom?**
+- **Are there any special Arhats that we should canonize?**
+- **Are there any special rituals, events, or celebrations that define your order?**
+- **How is the order incorporated into Church Administration?**
 
 ### Crusaders - Military branch and fleet
 
+- **How does the order view the Emperox?**
+- **How does the order view the Church’s role?**
+- **What is the order’s view on the nobility? Serfdom?**
+- **Are there any special Arhats that we should canonize?**
+- **Are there any special rituals, events, or celebrations that define your order?**
+- **How is the order incorporated into Church Administration?**
+
 ### Orthodoxy - Followers of the Scripture as written
+
+- **How does the order view the Emperox?**
+- **How does the order view the Church’s role?**
+- **What is the order’s view on the nobility? Serfdom?**
+- **Are there any special Arhats that we should canonize?**
+- **Are there any special rituals, events, or celebrations that define your order?**
+- **How is the order incorporated into Church Administration?**
 
 ### Masoodites - Believe that the first High Exarch is the true Prophet
 
+- **How does the order view the Emperox?**
+- **How does the order view the Church’s role?**
+- **What is the order’s view on the nobility? Serfdom?**
+- **Are there any special Arhats that we should canonize?**
+- **Are there any special rituals, events, or celebrations that define your order?**
+- **How is the order incorporated into Church Administration?**
+
 ### Conservatives - Followers of old dogma with ever new interpretations
 
+- **How does the order view the Emperox?**
+- **How does the order view the Church’s role?**
+- **What is the order’s view on the nobility? Serfdom?**
+- **Are there any special Arhats that we should canonize?**
+- **Are there any special rituals, events, or celebrations that define your order?**
+- **How is the order incorporated into Church Administration?**
+
 ### Reformists - Take a practical view on Doctrine and Faith
+
+- **How does the order view the Emperox?**
+- **How does the order view the Church’s role?**
+- **What is the order’s view on the nobility? Serfdom?**
+- **Are there any special Arhats that we should canonize?**
+- **Are there any special rituals, events, or celebrations that define your order?**
+- **How is the order incorporated into Church Administration?**
 
 ### Karmists - Believe in a cycle of rebirth which ends in your soul merging with the Emperox's
 
@@ -43,6 +87,13 @@ In which the Gang writes more about the orders that we named but didn’t really
 - **Administrative duties**: The karmists don't really hold that much direct administrative control, but their main function is to preserve the official church geneologies so they can spot potential manifestations of the Divine Soul throughout history.
 
 ### Observers - Watchers and guides who try to interfere as little as possible
+
+- **How does the order view the Emperox?**
+- **How does the order view the Church’s role?**
+- **What is the order’s view on the nobility? Serfdom?**
+- **Are there any special Arhats that we should canonize?**
+- **Are there any special rituals, events, or celebrations that define your order?**
+- **How is the order incorporated into Church Administration?**
 
 ### Purists - Concerned with the purity of humanity in the face of aliens, synths and other threats
 
