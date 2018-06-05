@@ -77,7 +77,7 @@ In which the Gang writes more about the orders that we named but didn’t really
 ### Karmists - Believe in a cycle of rebirth which ends in your soul merging with the Emperox's
 
 - Very similar to the Hindu/Buddhist interpretation of [Dharma](https://en.wikipedia.org/wiki/Dharma)/[Karma](https://en.wikipedia.org/wiki/Karma) (where they got the name)
-- **How do the Karmists view the Emperox**: The Emperox is a Divine Soul, much like a Buddha. They possess cosmic wisdom that they pass on to humanity through their words and deeds. The new chosen Emperor is automatically assumed to the next incarnation of a Divine Soul. Each Emperox, after they die, is examine and determined to be the incarnation of the Arhat of (Virtue) and is given a Holy Name.
+- **How do the Karmists view the Emperox**: The Emperox is a Divine Soul, much like a Buddha. They possess cosmic wisdom that they pass on to humanity through their words and deeds. The new chosen Emperor is automatically assumed to the next incarnation of a Divine Soul. This would imply that the Karmists have a great deal to do after the Emperox is chosen, and it would imply that, to the Karmists, the selection of the Emperox by the Council of Houses is a kind of holy act. Each Emperox, after they die, is examined and determined to be the incarnation of the Arhat of (Virtue) and is given a Holy Name by the karmist, and their geneology is examined to perhaps find the next Incarnation.
 - **What is the Karmists view of the role of the Church**: The main goal of the church in this case is to preserve the lineage of Imperial manifestation, to learn the divine truth the Emperox wishes to convey, package it up and deliver it to the masses so that they too may be closer to enlightenment.
 - **How do the Purists view**:
     - **Nobility** If they are wealthy/powerful enough, they must be the incarnations of lesser Great Souls. Nobility are the cream rising to the top, those closest to achieving Karmic balance.
@@ -98,21 +98,13 @@ In which the Gang writes more about the orders that we named but didn’t really
 ### Purists - Concerned with the purity of humanity in the face of aliens, synths and other threats
 
 - The central idea is a sort of [Nietzschean Übermensch](https://en.wikipedia.org/wiki/%C3%9Cbermensch).
-
 - **How the purists view the Emperox**:  The Emperox is the supreme ideal. Their example is the example we should all follow, flaws/vices/shortcomings included. They are not terribly concerned with whether the Emperox is divine in the traditional sense, but rather with the idea that the Emperox is divine while they are still alive.
-
 - **What do the purists consider to be the role of the Church**: Maintaining the purity of humanity, not genetically but spiritually, “fanning the flames of the human spirit” kinda deal.
-
 - **How do the purists view**
-
     - **Nobility**: The guardians of humanity, or the worst expression of humanities vices, take your pick. Being a bad example is still useful as a lesson in what not to do.
-
     - **Serfs**: They have the capacity to become divine through careful application of the virtues, but they have to work harder since they're, you know, poor.
-
-- **Arhats of the purists**: Probably few, some may revere the Blood Eagle. Others may revere serpens precog arhats as having access to divine knowledge. MES to a purist is a gift from the Divine Emperox, giving special powers to deserving nobles. As long as they use their powers wisely and for the betterment of the Empire, no problem.
-
+- **Arhats of the purists**: Probably few, some may revere the Blood Eagle. Others may revere serpens precog arhats as having access to divine knowledge. MES is either a gift from the Divine Emperox, giving special powers to deserving nobles, or its some kind of alien experiment on the human genome, and no one's really sure which one is correct. As long as they use their powers wisely and for the betterment of the Empire, no problem.
 - **Special events/rituals**: Definitely the Crucible. After some pretty intense training, the inquisition dumps you on Satira Pala with a small bone knife, gives you a day’s head start, and hunts you for two days in the freezing cold. The idea is A) that you have to survive on your own, with no support, encouraging a spirit of self-reliance which is useful on alien worlds with no backup and B) That you can empathize with the people you track, you know the fear and the terrible feeling of being hunted, so that the Inquisitor, when they are tracking someone, can show restraint.
-
 - **Church administrative duties**: Incorporated into the Crux-esque law enforcement. Lots of paperwork, tracking people of interest, finding them, bringing them back to Andophael for judgement. Tracking down rogue Excommunicates. Investigating synth incursions into Church structure.
 
 # Part 2: Orders
