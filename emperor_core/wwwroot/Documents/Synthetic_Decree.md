@@ -6,7 +6,7 @@ The Most Holy Council of Exarchs, having determined that the synthetic menace wi
 
 The stability of the Empire depends on its Ruler remaining free of undue influence and operating in the best interests of the Empire and all its subjects,
 
-## Wheras
+## Whereas
 
 The House Cygnus, having created aforementioned synthetic life, and having secured the Imperial Throne, did use their creations to plot against the Empire,
 
