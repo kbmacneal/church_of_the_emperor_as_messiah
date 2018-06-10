@@ -1,6 +1,6 @@
 ## Is the Emperox God?
 
-This question gets asked a lot, and the answer depends on who you ask and in what context. Since the High Church is a multifacted organization, incorporating the beliefs of many different earth religions and cultures, different branches will have different answers.
+This question gets asked a lot, and the answer depends on who you ask and in what context. Since the High Church is a multi-faceted organization, incorporating the beliefs of many different earth religions and cultures, different branches will have different answers.
 
 For example, the Karmists believe that the Emperox is a piece of the divine soul, incarnated into human flesh. The Purists believe that the Emperox is the prime ideal, the perfect human, and in that way becomes "divine". Some others may yet hold to the idea that the Emperox is not technically a god, but is sent on a holy mission to rule humanity.
 
