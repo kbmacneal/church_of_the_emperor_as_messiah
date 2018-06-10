@@ -1,5 +1,8 @@
 ﻿@page
 @model DecreesModel
+@{
+    ViewData["Title"] = "Decrees";
+}
 @section styles{
     <link rel="Stylesheet" href="@Href("~/lib/creative/css/creative.css")" />
     <link rel="Stylesheet" href="@Href("~/lib/bootstrap/dist/css/bootstrap.css")" />
@@ -15,8 +18,11 @@
         <div class="row-fluid">
             <div class="col" style="font-size:larger;">
                 
-                <h2>From the Throne of St. Mercury</h2>
-                <h3 style="font-weight: bold;">Decree - Gene Modification and the Sanctity of the Soul</h3>
+                
+                <h2 class="text-center">From the Throne of St. Mercury</h2>
+                </br>
+                <h3 class="text-center" style="font-weight: bold;">Decree - Gene Modification and the Sanctity of the Soul</h3>
+                </br>
                 <p>Hereby the High Church decrees that gene modification for the betterment of the Empire is within our teachings and adheres to the ten Virtues, as long as the Guidelines set by the Council are adhered to. Guidelines:</p>
                 <p>1 - The vessel must be human at its core.</p>
                 <p>2 - The vessel’s mind must be clear so they can defy the thoughts of heresy.</p>
@@ -26,8 +32,11 @@
         <div class="row-fluid">
             <div class="col" style="font-size:larger;">
                 <div class="col-3 img img-fluid center"><img src="Assets/high_order.png" width="300px" style="align-content: center;" class="img-fluid" /></div>
-                <h2>The Council of Exarchs Divine Proclamation on the Mocking of Human Divinity via Synthetic Organisms</h2>
-                <h3>A Proclamation by the Council of Exarchs</h3>
+                </br>
+                <h2 class="text-center"><strong>Council of Exarchs Divine Proclamation on the Mocking of Human Divinity via Synthetic Organisms</strong></h2>
+                </br>
+                <h3 class="text-center"><i>A Proclamation by the Council of Exarchs</i></h3>
+                </br>
                 @Html.Raw(Model.synth_decree_text)
             </div>
         </div>
