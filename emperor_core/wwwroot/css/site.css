@@ -227,3 +227,11 @@ fifty_percent_bigger {
 .col-spacer {
     height: 25px;
 }
+
+.hidden {
+    visibility: none;
+}
+
+.visible {
+    visibility: visible;
+}

@@ -1,64 +1,52 @@
-@page
-@model GDPRModel
-@{
-    ViewData["Title"] = "GDPR";
-}
-
+@page 
+@model GDPRModel 
+@{ ViewData["Title"] = "GDPR"; } 
 @section styles{
     <link rel="Stylesheet" href="@Href("~/lib/bootstrap/dist/css/bootstrap.css")" />
     <link rel="Stylesheet" href="@Href("~/css/site.css")" />
 }
 
 <div class="container font-larger">
-    <div class="row-fluid">
-       <p>Under the General Data Protection Regulation (GDPR), all residents of the European Union have the right to control their data. This site seeks to comply with all applicable regulations.</p>
-       <p>For more information on your rights under the GDPR, see </p> <a href="https://www.eugdpr.org/gdpr-faqs.html" target="_blank">https://www.eugdpr.org/gdpr-faqs.html</a>
-       <p>This site does not store any personal information in cookies.</p>
-       <p>This site stores the following information for diagnostic purposes.</p>
-       <ul>
-           <li>
-               Public-facing IP address
-           </li>
-       </ul>
-       <p>If you wish to contact the site administrators to remove your personal information, use the form below.</p>
-    </div>
-    <div class="row-fluid">
-        <div class="col-12">
-            <form>
-  <fieldset>
-    <legend>Legend</legend>
-    <div class="form-group row">
-      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. Your email is used to send you a confirmation/completion notice.</small>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">IP Address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your IP with anyone else. It is used to purge the site of your data</small>
-    </div>
-    <fieldset class="form-group">
-      <legend>Checkboxes</legend>
-      <div class="form-check">
-        <label class="form-check-label">
-          <input class="form-check-input" type="checkbox" value="" checked="">
-          I am over the age of 13. I understand that my information stored on all webservers used to serve this website will be permanently deleted, and that future visits to the site will constitute agreement to my data being collected again.
-        </label>
-      </div>
-    </fieldset>
-  </fieldset>
-</form>
-@using (Html.BeginForm("FormTwo", "Form", FormMethod.Post))
-{
-    @Html.TextBoxFor(model => model.TextBoxStringData)
-    @Html.CheckBoxFor(model => model.CheckboxData)
-    @Html.TextBoxFor(model => model.TextBoxIntData)
+  <div class="row-fluid">
+    <p>Under the General Data Protection Regulation (GDPR), all residents of the European Union have the right to control their
+      data. This site seeks to comply with all applicable regulations.</p>
+    <p>For more information on your rights under the GDPR, see </p>
+    <a href="https://www.eugdpr.org/gdpr-faqs.html" target="_blank">https://www.eugdpr.org/gdpr-faqs.html</a>
+    <p>This site does not store any personal information in cookies.</p>
+    <p>This site stores the following information for diagnostic purposes.</p>
+    <ul>
+      <li>
+        Public-facing IP address
+      </li>
+    </ul>
+    <p>If you wish to contact the site administrators to remove your personal information, use the form below. Information provided will be deleted from this site after your request is processed. Emails provided will be used solely to provide a confirmation of completion, then deleted from this site.</p>
+  </div>
+  <div class="row-fluid">
+    <div class="col-12">
 
-    <input type="submit" value="Submit strongly type synchronous form" />
-}
-        </div>
+      @using (Html.BeginForm()) {
+      <p>
+        <label for="TextBoxStringData">Email Address:</label>
+      </p>
+      <p>@Html.EditorFor(model => model.TextBoxStringData)</p>
+      <p>
+        <label for="TextBoxIPData">IP Address</label>
+      </p>
+      <p>@Html.EditorFor(model => model.TextBoxIPData)</p>
+      <p>
+        @Html.CheckBoxFor(model => model.CheckboxData) <label for="CheckboxData"> I am over the age of 13. I understand that my information stored on all webservers used to serve this website will
+          be permanently deleted, and that future visits to the site will constitute agreement to my data being collected
+          again.</label>
+          
+          </p>
+          <p>
+          @Html.ValidationMessageFor(model => model.CheckboxData, "", new { @class = "alert alert-warning"})
+          </p>
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+      <div>@Html.Raw(Model.AlertHTML)  </div>    
+      }
     </div>
+  </div>
 </div>
