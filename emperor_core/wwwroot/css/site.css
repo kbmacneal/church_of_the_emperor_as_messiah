@@ -223,3 +223,7 @@ fifty_percent_bigger {
     border-bottom: solid 2px lightgray;    
     padding-bottom: 10px;
 }
+
+.col-spacer {
+    height: 25px;
+}
