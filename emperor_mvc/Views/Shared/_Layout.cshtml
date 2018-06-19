@@ -36,20 +36,20 @@
                 <ul class="nav navbar-nav navbar-right">
 
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Info" asp-action="Decrees">Decrees</a></li>
-                    <li><a asp-area="" asp-controller="Info" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Info" asp-action="Join">Join</a></li>
-                    <li><a asp-area="" asp-controller="Info" asp-action="10Blessings">The Ten Virtues</a></li>
+                    <li><a asp-area="" asp-controller="Decrees" asp-action="Decrees">Decrees</a></li>
+                    <li><a asp-area="" asp-controller="About" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Join" asp-action="Join">Join</a></li>
+                    <li><a asp-area="" asp-controller="Blessings" asp-action="Blessings">The Ten Virtues</a></li>
                     <li><a asp-area="" asp-controller="Reading" asp-action="Reading">Readings</a></li>
-                    <li><a asp-area="" asp-controller="Content" asp-action="Social">Important Links</a></li>
-                    <li><a asp-area="" asp-controller="Info" asp-action="FAQ">HC FAQ</a></li>
-                    <li><a asp-area="" asp-controller="Content" asp-action="Templates">Templates</a></li>
+                    <li><a asp-area="" asp-controller="Social" asp-action="Social">Important Links</a></li>
+                    <li><a asp-area="" asp-controller="FAQ" asp-action="FAQ">HC FAQ</a></li>
+                    <li><a asp-area="" asp-controller="Templates" asp-action="Templates">Templates</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container body-content" style="padding-top:5%;">
-        <div class="row">
+    <div class="container container-fluid body-content" style="padding-top:5%;">
+        <div class="row row-fluid">
             <div class="col">
                 @RenderBody()
             </div>
