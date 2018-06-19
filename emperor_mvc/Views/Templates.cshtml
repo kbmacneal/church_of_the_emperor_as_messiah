@@ -1,0 +1,33 @@
+﻿@page
+
+@{
+    ViewData["Title"] = "Templates";
+}
+@section styles{
+    <link rel="Stylesheet" href="@Href("~/lib/creative/css/creative.css")" />
+    <link rel="Stylesheet" href="@Href("~/lib/bootstrap/dist/css/bootstrap.css")" />
+    <link rel="Stylesheet" href="@Href("~/css/site.css")" />
+}
+
+<div class="container-fluid center font-larger">
+    <div class="row-fluid">
+        <div class="col">
+            <table>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Character Wiki Template</th>
+                            <td><a class="btn btn-secondary btn-lg" target="_blank" href="https://far-verona.wikia.com/wiki/Character_Template_Page" role="button">Visit &raquo;</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+        </div>
+    </div>
+</div>

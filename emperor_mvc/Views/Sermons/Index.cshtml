@@ -1,0 +1,35 @@
+﻿@page
+@model JoinModel
+@{
+    ViewData["Title"] = "Reading";
+}
+
+@section styles{
+    <link rel="Stylesheet" href="@Href("~/lib/creative/css/creative.css")" />
+    <link rel="Stylesheet" href="@Href("~/lib/bootstrap/dist/css/bootstrap.css")" />
+    <link rel="Stylesheet" href="@Href("~/css/site.css")" />
+}
+<h3 style="font-weight: bold">The Sermons of Callixtus Pius</h3>
+
+<table class="table table-hover" style="font-size: larger">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                The Ten Virtues
+            </td>
+            <td><a class="btn btn-secondary" href="SermonOne">Read</a></td>
+        </tr>
+        <tr>
+            <td>
+                The Interconnected Virtue of Justice
+            </td>
+            <td><a class="btn btn-secondary" href="SermonTwo">Read</a></td>
+        </tr>
+    </tbody>
+</table>
