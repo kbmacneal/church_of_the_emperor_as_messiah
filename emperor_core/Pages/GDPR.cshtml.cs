@@ -19,7 +19,6 @@ namespace church_of_the_emporer_as_messiah.Pages
     {
         public string EmailData{get;set;}
         public string IPData {get;set;}
-        [ModelMetadataType(typeof(ComponentModelMetaData))]
         public Boolean CheckboxData {get;set;}
 
         public class submission
