@@ -53,3 +53,10 @@ a:hover {
 {
     background-color:darkgrey;
 }
+
+.card
+{
+    background-color: whitesmoke;
+    border: 2px lightgrey solid;
+    margin-bottom:10px;
+}
