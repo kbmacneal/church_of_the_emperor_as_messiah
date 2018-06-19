@@ -41,3 +41,15 @@
 a:hover {
     color: black !important;
 }
+
+.btn-primary
+{
+    background-color:lightgrey; 
+    color: black;
+    border-color: black;
+}
+
+.btn-primary:hover
+{
+    background-color:darkgrey;
+}
