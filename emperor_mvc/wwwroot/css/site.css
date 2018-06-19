@@ -59,4 +59,11 @@ a:hover {
     background-color: whitesmoke;
     border: 2px lightgrey solid;
     margin-bottom:10px;
+    border-radius: 5px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    position: relative;
+    height: 1%;
+    overflow: hidden;
+    padding: 10px;
 }
