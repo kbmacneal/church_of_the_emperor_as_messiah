@@ -17,7 +17,7 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,10 +26,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand"><img class="img img-fluid" src="~/Assets/Twitter_Header.png" style="width:100%; padding: 20px;"></a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">test</a>
             </div>
-            <div class="navbar-collapse collapse float-right">
-                <ul class="nav navbar-nav float-right">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Info" asp-action="Decrees">Decrees</a></li>
                     <li><a asp-area="" asp-controller="Info" asp-action="About">About</a></li>
@@ -43,8 +43,12 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
-        @RenderBody()
+    <div class="container-fluid body-content">
+                    <div class="row-fluid">
+                        <div class="col col-centered">
+                            @RenderBody()
+                        </div>
+                    </div>
         <hr />
         <footer>
             <p>&copy; 2018 - emperor_mvc</p>
