@@ -1,115 +1,71 @@
 ﻿<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-    <title>@ViewData["Title"] - Church of the Emperor-as-Messiah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - emperor_mvc</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/Assets/Icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/Icons/favicon-16x16.png">
-    <link rel="manifest" href="/Assets/Icons/site.webmanifest">
-    <link rel="shortcut icon" href="/Assets/Icons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/Assets/Icons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff"> @RenderSection("Styles", false) 
-    @section Scripts {
-    <script type="text/javascript" src="~/lib/jquery/dist/jquery-3.3.1.js"></script>
-
-    }
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
 </head>
-
 <body>
-
-    <div class="center">
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="col col-centered">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="img-fluid navbar-brand">
-                           <a href="~/Index" ><img src="~/Assets/Twitter_Header.png" style="width:100%;" /></a> 
-                        </div>
-                        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
-                            aria-expanded="false" aria-label="Toggle navigation" style="display:none;">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse show navbar-collapse float-right" id="navbarColor03" style="font-size: 12pt;">
-                            <div class="container">
-                                <div class="row-fluid navbar-nav mr-auto">
-                                    <div class="col-3 col-nav">
-                                        <a class="nav-link text-center" href="~/">Home</a>
-                                    </div>
-                                    <div class="col-3 col-nav">
-                                        <a class="nav-link text-center" href="~/Decrees">Decrees</a>
-                                    </div>
-                                    <div class="col-3 col-nav">
-                                        <a class="nav-link text-center" href="~/About">About</a>
-                                    </div>
-                                    <div class="col-3 col-nav">
-                                        <a class="nav-link text-center" href="~/Join">Join the Church</a>
-                                    </div>
-                                </div>
-                                <div class="row-fluid navbar-nav mr-auto" style="padding-top: 10px;">
-                                    <div class="col-3 col-nav">
-                                        <a class="nav-link text-center" href="~/10Blessings">The Ten Virtues</a>
-                                    </div>
-                                    <div class="col-3 col-nav">
-                                        <a class="nav-link text-center" href="~/Reading">Readings</a>
-                                    </div>
-                                    <div class="col-3 col-nav">
-                                        <a class="nav-link text-center" href="~/Social">Important Links</a>
-                                    </div>
-                                    <div class="col-3 col-nav">
-                                        <a class="nav-link text-center" href="~/FAQ">HC FAQ</a>
-                                    </div>
-                                </div>
-                                <div class="row-fluid navbar-nav mr-auto" style="padding-top: 10px;">
-                                    <div class="col-3">
-                                        <a class="nav-link text-center" href="~/Templates">Templates</a>
-                                    </div>
-                                </div>
-                    </nav>
-                    </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">emperor_mvc</a>
             </div>
-
-
-
-            <div class="center">
-                <div class="container-fluid body-content">
-                    <div class="row-fluid">
-                        <div class="col col-centered">
-                            @RenderBody()
-                        </div>
-                    </div>
-                    <div style="height:35px;"></div>
-                    <div class="row-fluid">
-                        <div class="col">
-                            <footer>
-                                <div class="container font-larger">
-                                    <div class="row-fluid">
-                                        <a href="/Support">Support the Developers</a>
-                                    </div>
-                                    <div class="row-fluid">
-                                        <a href="https://github.com/kbmacneal/church_of_the_emperor_as_messiah" target="_blank">This site is licensed under the MIT licence</a>
-                                    </div>
-                                     <div class="row-fluid">
-                                        <a href="/GDPR">GDPR Notice and Contact Form</a>
-                                    </div> 
-                                </div>
-
-                            </footer>
-                        </div>
-                    </div>
-                </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2018 - emperor_mvc</p>
+        </footer>
+    </div>
 
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
 
-            @RenderSection("Scripts", required: false)
-
+    @RenderSection("Scripts", required: false)
 </body>
-
 </html>
