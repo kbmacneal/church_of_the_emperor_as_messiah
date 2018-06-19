@@ -37,3 +37,7 @@
 .navbar {
     color: grey;
 }
+
+a:hover {
+    color: black !important;
+}
