@@ -1,6 +1,6 @@
-# Related by Priest Abd al-Karim Qasim, of the Masoodite Order
+## Related by Priest Abd al-Karim Qasim, of the Masoodite Order
 
-## Scribed by Pelax
+### Scribed by Pelax
 
 In the fifth year of his reign, the first Emperor of the Velites, having unfit sleep, awoke with a shout, and, calling his assistants and noble court to him, did relate to them the following tale:
 

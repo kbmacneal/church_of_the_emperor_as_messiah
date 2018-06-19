@@ -1,4 +1,4 @@
-# From the Book of Ages, Chapter 14, Verses 1 - 7
+### From the Book of Ages, Chapter 14, Verses 1 - 7
 
 1. In the first year of Emperor King Belshazʹzar of Acheron Ro, High Exarch Daniel saw a dream and visions of his head as he lay on his bed. Then he wrote down the dream; he recorded a complete account of the matters. The Emperor declared:
 

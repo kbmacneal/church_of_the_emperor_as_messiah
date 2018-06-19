@@ -1,6 +1,6 @@
 ﻿using HeyRed.MarkdownSharp;
 
-namespace emoperor_core.Classes
+namespace emperor_mvc.Classes
 {
     public class cls_markdown
     {
