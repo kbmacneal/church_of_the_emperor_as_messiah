@@ -41,6 +41,10 @@ namespace church_of_the_emporer_as_messiah.Pages
             sub.IP = IPData;
             sub.accepted = CheckboxData;
 
+            string serialized = JsonConvert.SerializeObject(sub);
+
+            System.IO.File.WriteAllLines(System.IO.Path.Combine("wwwroot/GDPR", sub.email), serialized);
+
 
         }
         
