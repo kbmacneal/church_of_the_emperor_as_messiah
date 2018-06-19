@@ -10,51 +10,40 @@ using Microsoft.AspNetCore.Hosting;
 using Newtonsoft.Json;
 using System.IO;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 
 namespace church_of_the_emporer_as_messiah.Pages
 {
     public class GDPRModel : PageModel
     {
-        public string TextBoxStringData { get; set; }
+        public string EmailData{get;set;}
+        public string IPData {get;set;}
+        [ModelMetadataType(typeof(ComponentModelMetaData))]
+        public Boolean CheckboxData {get;set;}
 
-        public string TextBoxIPData { get; set; }
-
-        public bool CheckboxData { get; set; }
-
-        public string AlertHTML {get; set;}
-
-        public class contact
+        public class submission
         {
             public string email {get;set;}
             public string IP {get;set;}
-            public Boolean acceptance {get;set;}
+            public Boolean accepted {get;set;}
         }
 
         public void OnGet()
         {
-            AlertHTML = "";
+            
         }
-
-        [HttpPost]
-        public ActionResult Create(contact contact)
+        
+        public void OnPost()
         {
-            if(CheckboxData)
-            {
-                contact.email = TextBoxStringData;
-                contact.IP = TextBoxIPData;
-                contact.acceptance = CheckboxData;
-                AlertHTML = "";
+            submission sub = new submission();
 
-                string serialized = JsonConvert.SerializeObject(contact);
+            sub.email = EmailData;
+            sub.IP = IPData;
+            sub.accepted = CheckboxData;
 
-                System.IO.File.WriteAllText(System.IO.Path.Combine("wwwroot/GDPR", contact.email),serialized);
 
-                AlertHTML = "<div class=\"alert alert-success\">You have successfully submitted your request. Please allow five business days for the completion of your request</div>";
-            }
-            else{
-                AlertHTML = "<div id=\"dv_alert\" class=\"alert alert-warning\"><h4 class=\"alert-heading\">Warning!</h4><p class=\"mb-0\">You must acknowledge your age and acceptance before continuing</p></div>";                
-            }
-            return Redirect("");
         }
+        
     }
 }
