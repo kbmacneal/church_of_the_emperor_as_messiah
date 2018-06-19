@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using church_of_the_emporer_as_messiah.Sermons;
 using System.Web;
 using Microsoft.AspNetCore.Hosting;
-using Newtonsoft.Json;
 using System.IO;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.DependencyInjection;
@@ -43,7 +42,7 @@ namespace church_of_the_emporer_as_messiah.Pages
 
             string serialized = JsonConvert.SerializeObject(sub);
 
-            System.IO.File.WriteAllLines(System.IO.Path.Combine("wwwroot/GDPR", sub.email), serialized);
+            System.IO.File.WriteAllText(System.IO.Path.Combine("wwwroot/GDPR", sub.email), serialized);
 
 
         }
