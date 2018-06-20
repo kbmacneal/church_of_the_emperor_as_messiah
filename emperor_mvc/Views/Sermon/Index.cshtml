@@ -1,0 +1,33 @@
+﻿@model SermonIndexModel
+@{
+    ViewData["Title"] = "Reading";
+}
+
+<h3 style="font-weight: bold">The Sermons of Callixtus Pius</h3>
+
+<table class="table table-hover" style="font-size: larger">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                The Ten Virtues
+            </td>
+            <td>
+                <a class="btn btn-primary" asp-area="" asp-controller="Sermon" asp-action="SermonOne">Read &raquo;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                The Interconnected Virtue of Justice
+            </td>
+            <td>
+                <a class="btn btn-primary" asp-area="" asp-controller="Sermon" asp-action="SermonTwo">Read &raquo;</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

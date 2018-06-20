@@ -56,7 +56,7 @@ a:hover {
 
 .card
 {
-    background-color: whitesmoke;
+    background-color: none;
     border: 2px lightgrey solid;
     margin-bottom:10px;
     border-radius: 5px;

@@ -1,4 +1,3 @@
-# The Interconnected Virtue of Justice
 ## By High Priest Callixtus Pius
 
 Children of the Empire, 

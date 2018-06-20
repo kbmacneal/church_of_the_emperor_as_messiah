@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "A Sermon on Yakiyah";
+}
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col col-centered h1">
+            @Model.sermonheader
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="col col-centered" style="font-size: 14pt;">
+            @Html.Raw(Model.sermontext)
+        </div>
+    </div>
+</div>

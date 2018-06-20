@@ -1,0 +1,29 @@
+﻿@model SermonYakiyahModel
+@{
+    ViewData["Title"] = "A Sermon on Yakiyah";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="img-thumbnail img-fluid" src="~/Assets/yakiyah.jpg" />
+                        <div class="lead">Yakiya, a planet in the Tsatsos system, currently controlled by A.C.R.E.</div>
+                    </div>
+                </div>
+            </div>
+            <h2>
+                @Model.sermonheader
+            </h2> 
+            <div  style="font-size: 14pt;">@Html.Raw(Model.sermontext)</div>
+        </div>
+        <div class="col-md-6">
+            <h2>
+                @Model.sermonheaderright
+            </h2>
+            <div style="font-size: 14pt; padding-left: 15px; border-left: 2px solid black;">@Html.Raw(Model.sermontextright)</div>
+        </div>
+    </div>
+</div>
