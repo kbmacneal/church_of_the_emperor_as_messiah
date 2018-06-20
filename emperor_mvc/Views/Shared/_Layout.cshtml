@@ -11,16 +11,26 @@
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css" asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
-        />
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css" asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+            asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/Assets/Icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/Assets/Icons/favicon-16x16.png">
+        <link rel="manifest" href="/Assets/Icons/site.webmanifest">
+        <link rel="shortcut icon" href="/Assets/Icons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/Assets/Icons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
     </environment>
 </head>
 
 <body>
     <nav class="navbar navbar-inverse navbar-static-top" style="background-color: white; border-bottom:none;">
         <div class="container">
-            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand navbar-left"><img src="~/Assets/Twitter_Header.png" style="width:85%;"/></a>
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand navbar-left">
+                <img src="~/Assets/Twitter_Header.png" style="width:85%;" />
+            </a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -35,15 +45,33 @@
 
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Decrees" asp-action="Decrees">Decrees</a></li>
-                    <li><a asp-area="" asp-controller="Content" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Content" asp-action="Join">Join</a></li>
-                    <li><a asp-area="" asp-controller="Content" asp-action="Blessings">The Ten Virtues</a></li>
-                    <li><a asp-area="" asp-controller="Reading" asp-action="Reading">Readings</a></li>
-                    <li><a asp-area="" asp-controller="Social" asp-action="Social">Important Links</a></li>
-                    <li><a asp-area="" asp-controller="FAQ" asp-action="FAQ">HC FAQ</a></li>
-                    <li><a asp-area="" asp-controller="Content" asp-action="Templates">Templates</a></li>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Decrees" asp-action="Decrees">Decrees</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Content" asp-action="About">About</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Content" asp-action="Join">Join</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Content" asp-action="Blessings">The Ten Virtues</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Reading" asp-action="Reading">Readings</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Social" asp-action="Social">Important Links</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="FAQ" asp-action="FAQ">HC FAQ</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Content" asp-action="Templates">Templates</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -79,9 +107,11 @@
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js" asp-fallback-src="~/lib/jquery/dist/jquery.min.js" asp-fallback-test="window.jQuery" crossorigin="anonymous" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js" asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+            asp-fallback-test="window.jQuery" crossorigin="anonymous" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk">
         </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js" asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js" asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal" crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js" asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal" crossorigin="anonymous" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>

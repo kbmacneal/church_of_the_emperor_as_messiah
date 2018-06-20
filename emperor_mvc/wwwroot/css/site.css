@@ -46,7 +46,7 @@ a:hover {
 {
     background-color:white; 
     color: black;
-    border-color: black;
+    border-color: darkgrey;
 }
 
 .btn-primary:hover
@@ -85,9 +85,4 @@ center {
 .col-centered {
     float: none;
     margin: 0 auto;
-}
-
-w-100
-{
-    width:100%;
 }
