@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NetEscapades.AspNetCore;
+using Microsoft.AspNetCore.Http;
+
 namespace emperor_mvc
 {
     public class Startup
@@ -21,11 +23,9 @@ namespace emperor_mvc
         // This method gets called by the runtime. Use this method to add services to the container.
         public static void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton(typeof(IHttpContextAccessor), typeof(HttpContextAccessor));
             services.AddMvc();
-            services.AddProgressiveWebApp(new WebEssentials.AspNetCore.Pwa.PwaOptions
-            {
-                OfflineRoute = "/Home/Index/"
-            });
+            services.AddProgressiveWebApp();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
