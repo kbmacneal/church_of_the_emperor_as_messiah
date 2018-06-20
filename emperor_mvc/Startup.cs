@@ -22,6 +22,10 @@ namespace emperor_mvc
         public static void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddProgressiveWebApp(new WebEssentials.AspNetCore.Pwa.PwaOptions
+            {
+                OfflineRoute = "/Home/Index/"
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

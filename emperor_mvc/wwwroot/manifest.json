@@ -1,0 +1,17 @@
+{
+    "name": "High Church of the Emperor",
+    "short_name": "HighChurch",
+    "description": "Ten Blessings",
+    "icons": [
+      {
+        "src": "/Assets/Icons/android-chrome-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/Assets/Icons/android-chrome-512x512.png",
+        "sizes": "512x512"
+      }
+    ],
+    "display": "standalone",
+    "start_url": "/Home"
+  }
