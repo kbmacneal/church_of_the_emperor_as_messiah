@@ -12,7 +12,7 @@ namespace emperor_mvc.Controllers {
     public class DecreesController : Controller {
 
         [HttpGet]
-        public ActionResult Decrees (DecreesModel model, string returnUrl) {
+        public ActionResult Decrees (DecreesModel model) {
             var filename = "wwwroot/Documents/Decrees/Synthetic_Decree.md";
             model.synth_decree_text = cls_markdown.ConvertMDtoTXT (filename);
             filename = "wwwroot/Documents/Decrees/genetic_modification.md";

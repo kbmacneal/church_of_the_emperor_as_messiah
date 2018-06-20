@@ -11,7 +11,7 @@ namespace emperor_mvc.Controllers {
     public class SocialController : Controller {
 
         [HttpGet]
-        public ActionResult Social (SocialModel model, string returnUrl) {
+        public ActionResult Social (SocialModel model) {
             var filename = "wwwroot/Documents/andophael.md";
             model.andophael_text = cls_markdown.ConvertMDtoTXT (filename);
 

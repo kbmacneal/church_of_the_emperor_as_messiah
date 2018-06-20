@@ -11,7 +11,7 @@ namespace emperor_mvc.Controllers {
     public class BurialController : Controller {
 
         [HttpGet]
-        public ActionResult Index (BurialModel model, string returnUrl) {
+        public ActionResult Index (BurialModel model) {
             var filename = "wwwroot/Documents/burial.md";
             model.burialtext = cls_markdown.ConvertMDtoTXT (filename);
 

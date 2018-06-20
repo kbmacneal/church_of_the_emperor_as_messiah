@@ -11,7 +11,7 @@ namespace emperor_mvc.Controllers {
     public class FAQController : Controller {
 
         [HttpGet]
-        public ActionResult FAQ (FAQModel model, string returnUrl) {
+        public ActionResult FAQ (FAQModel model) {
             var filename = "wwwroot/Documents/FAQ.md";
             model.FAQtext = cls_markdown.ConvertMDtoTXT (filename);
 

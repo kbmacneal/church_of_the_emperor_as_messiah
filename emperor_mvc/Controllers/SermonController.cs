@@ -15,7 +15,7 @@ namespace emperor_mvc.Controllers {
         }
 
         [HttpGet]
-        public ActionResult SermonYakiyah (SermonYakiyahModel model, string returnUrl) {
+        public ActionResult SermonYakiyah (SermonYakiyahModel model) {
             model.sermonheader="Preamble";
             model.sermonheaderright="Sermon";
 
@@ -29,7 +29,7 @@ namespace emperor_mvc.Controllers {
         }
 
         [HttpGet]
-        public ActionResult SermonOne (SermonOneModel model, string returnUrl) {
+        public ActionResult SermonOne (SermonOneModel model) {
             model.sermonheader="The Ten Virtues";
 
             var filename = "wwwroot/Sermons/sermonone.md";
@@ -39,7 +39,7 @@ namespace emperor_mvc.Controllers {
         }
 
         [HttpGet]
-        public ActionResult SermonTwo (SermonTwoModel model, string returnUrl) {
+        public ActionResult SermonTwo (SermonTwoModel model) {
             model.sermonheader="The Interconnected Virtue of Justice";
 
             var filename = "wwwroot/Sermons/SermonTwo.md";
