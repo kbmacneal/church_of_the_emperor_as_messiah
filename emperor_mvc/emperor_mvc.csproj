@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="CodeCracker.CSharp" Version="1.1.0" />
-    <PackageReference Include="markdown" Version="2.2.1" />
+    <PackageReference Include="CommonMark.Net" Version="0.15.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
     <PackageReference Include="WebEssentials.AspNetCore.PWA" Version="1.0.33" />
     <PackageReference Include="WebEssentials.AspNetCore.ServiceWorker" Version="1.0.11" />

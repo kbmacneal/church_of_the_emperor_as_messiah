@@ -1,4 +1,5 @@
-﻿using HeyRed.MarkdownSharp;
+﻿using CommonMark;
+using System.IO;
 
 namespace emperor_mvc.Classes
 {
@@ -6,10 +7,9 @@ namespace emperor_mvc.Classes
     {
         public static string ConvertMDtoTXT(string filename)
         {
-            string text = System.IO.File.ReadAllText(filename);
-            Markdown mark = new Markdown();
+            string text = File.ReadAllText(filename);
 
-            return mark.Transform(text);
+            return CommonMark.CommonMarkConverter.Convert(text);
         }
     }
 }
