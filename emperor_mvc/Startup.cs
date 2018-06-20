@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using NetEscapades.AspNetCore;
 namespace emperor_mvc
 {
     public class Startup
@@ -39,6 +39,8 @@ namespace emperor_mvc
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.UseSecurityHeaders();
 
             app.UseStaticFiles();
 
