@@ -44,7 +44,7 @@ a:hover {
 
 .btn-primary
 {
-    background-color:lightgrey; 
+    background-color:none; 
     color: black;
     border-color: black;
 }
@@ -52,6 +52,16 @@ a:hover {
 .btn-primary:hover
 {
     background-color:darkgrey;
+}
+
+.btn-primary:active
+{
+    background-color: white;
+}
+
+.btn-primary:focus
+{
+    background-color: white;
 }
 
 .card
