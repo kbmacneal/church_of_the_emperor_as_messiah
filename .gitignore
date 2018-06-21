@@ -320,3 +320,4 @@ $RECYCLE.BIN/
 /churchbot/_configuration.json
 /azure_churchbot/secret.txt
 emperor_mvc/data.json
+emperor_mvc/secrets.json

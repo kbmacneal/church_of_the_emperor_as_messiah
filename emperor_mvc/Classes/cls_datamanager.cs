@@ -33,7 +33,7 @@ namespace emperor_mvc.Classes
                 return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
             }
         }
-        public static IEnumerable<user> return_user(string username)
+        public static IEnumerable<user> return_user(string email)
         {
             // Open database (create new if file doesn't exist)
             var store = new DataStore("data.json");
@@ -44,7 +44,7 @@ namespace emperor_mvc.Classes
             store.Dispose();
 
             // Use LINQ to query items
-            return collection.AsQueryable().Where(e => e.username == username);
+            return collection.AsQueryable().Where(e => e.email == email);
 
 
         }
@@ -78,7 +78,7 @@ namespace emperor_mvc.Classes
 
 
         }
-        public static void insert_user(string username, string email, string plaintext_pw)
+        public static void insert_user(string email, string plaintext_pw)
         {
             // Open database (create new if file doesn't exist)
             var store = new DataStore("data.json");
@@ -93,8 +93,6 @@ namespace emperor_mvc.Classes
             usr.salt_text = RandomString(4);
 
             usr.password = getHash(string.Concat(plaintext_pw, usr.salt_text));
-
-            usr.username = username;
             usr.email = email;
 
             collection.InsertOne(usr);
