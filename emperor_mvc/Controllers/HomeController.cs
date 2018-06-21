@@ -14,5 +14,10 @@ namespace emperor_mvc.Controllers
         {
             return View();
         }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
     }
 }
