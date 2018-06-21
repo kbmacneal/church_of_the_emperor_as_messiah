@@ -1,4 +1,4 @@
-@model LoginModel
+@model SignupModel
 @{ ViewData["Title"] = "GDPR"; } 
 
 <div class="container font-larger">
@@ -11,6 +11,12 @@
       </p>
       <p>
       <input type="text" asp-for="UserName" />
+      </p>
+      <p>
+        <label for="EmailData">Email Address:</label>
+      </p>
+      <p>
+      <input type="text" asp-for="EmailAddress" />
       </p>
       <p>
         <label for="IPData">Password:</label>
