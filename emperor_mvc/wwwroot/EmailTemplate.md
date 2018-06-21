@@ -1,4 +1,5 @@
 # New Account Registration
+
 ![Church Logo](https://highchurch.space/)
 
 Ten Blessings! We have received a new user request from this address. Below is the code necessary to complete your login
