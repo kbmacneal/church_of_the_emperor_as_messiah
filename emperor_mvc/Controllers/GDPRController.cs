@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 using emperor_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using emperor_mvc.Classes;
+
 
 namespace emperor_mvc.Controllers {
 
-    public class response{
-        public string EmailData{get;set;}
-        public string IPData{get;set;}
-        public Boolean CheckboxData{get;set;}
-
-    }
+    
     public class GDPRController : Controller {
         public IActionResult Index () {
             return View ();
@@ -29,17 +26,7 @@ namespace emperor_mvc.Controllers {
                 response.IPData = IPData;
                 response.CheckboxData = CheckboxData;
 
-                string serialized = JsonConvert.SerializeObject(response);
-
-                string name = EmailData.Split('@')[0];
-
-
-                if(!System.IO.Directory.Exists("wwwroot/GDPR"))
-                {
-                    System.IO.Directory.CreateDirectory("wwwroot/GDPR");
-                }
-
-                System.IO.File.WriteAllText(System.IO.Path.Combine("wwwroot/GDPR",name + ".json"),serialized);
+                GDPR.RegisterResponse(response);
 
                 return RedirectToAction (nameof (Index));
             }
