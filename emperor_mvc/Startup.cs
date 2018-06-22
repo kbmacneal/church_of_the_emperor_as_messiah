@@ -26,7 +26,14 @@ namespace emperor_mvc
         {
             services.AddSingleton(typeof(IHttpContextAccessor), typeof(HttpContextAccessor));
             services.AddMvc();
-            services.AddProgressiveWebApp( new PwaOptions { Strategy = ServiceWorkerStrategy.CacheFirst, RegisterServiceWorker = true, RegisterWebmanifest = true }, "manifest.json");
+
+            services.AddProgressiveWebApp();
+
+            // WebEssentials.AspNetCore.ServiceWorker.AddProgressiveWebApp();
+            
+            // WebEssentials.AspNetCore.Pwa.AddProgressiveWebApp(services,"manifest.json",new PwaOptions { Strategy = ServiceWorkerStrategy.CacheFirst, RegisterServiceWorker = true, RegisterWebmanifest = true });
+
+            // services.AddProgressiveWebApp( new PwaOptions { Strategy = ServiceWorkerStrategy.CacheFirst, RegisterServiceWorker = true, RegisterWebmanifest = true }, "manifest.json");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
