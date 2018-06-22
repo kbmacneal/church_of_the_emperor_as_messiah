@@ -64,7 +64,7 @@ a:hover {
     background-color: white;
 }
 
-.card
+/* .card
 {
     background-color: none;
     border: 2px lightgrey solid;
@@ -76,7 +76,7 @@ a:hover {
     height: 1%;
     overflow: hidden;
     padding: 10px;
-}
+} */
 center {
     float: none;
     margin: 0 auto;

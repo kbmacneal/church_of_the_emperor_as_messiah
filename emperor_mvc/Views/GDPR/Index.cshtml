@@ -1,7 +1,7 @@
 @model GDPRModel 
 @{ ViewData["Title"] = "GDPR"; } 
 
-<div class="container font-larger">
+<div class="container-fluid font-larger">
   <div class="row-fluid">
     <p>Under the General Data Protection Regulation (GDPR), all residents of the European Union have the right to control their
       data. This site seeks to comply with all applicable regulations.</p>
@@ -40,7 +40,7 @@
           <!-- @Html.ValidationMessageFor(m => m.CheckboxData, "Please Agree to the above terms", new { @class = "alert alert-warning" }) -->
           </p>
       <p>
-        <input type="submit" value="Submit" />
+        <input class="btn btn-outline-secondary" type="submit" value="Submit" />
       </p>  
       
       </form>

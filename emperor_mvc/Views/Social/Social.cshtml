@@ -1,7 +1,5 @@
-﻿@model SocialModel
-@{
-    ViewData["Title"] = "Important Links and Details";
-}
+﻿@model SocialModel 
+@{ ViewData["Title"] = "Important Links and Details"; }
 
 <div class="container-fluid center">
     <div class="row row-fluid">
@@ -10,19 +8,16 @@
                 <br> January 3, 3200</h3>
             <br>
             <h3>Follow the Church on Social Media</h3>
-            <a href="http://far-verona.wikia.com/wiki/The_High_Church_of_Messiah-as-Emperor" target="_blank" class="btn btn-primary"
-                runat="server">Read the Church Wiki &raquo;</a>
+            <a href="http://far-verona.wikia.com/wiki/The_High_Church_of_Messiah-as-Emperor" target="_blank" class="btn btn-primary" runat="server">Read the Church Wiki &raquo;</a>
             <div style="height: 16px;"></div>
-            <a href="https://sectorswithoutnumber.com/sector/m11ZXBOt6xiJGo21EKio/planet/BBS4toeUIqJUg6Ydp3fK" target="_blank" class="btn btn-primary"
-                runat="server">Sector Map &raquo;</a>
+            <a href="https://sectorswithoutnumber.com/sector/m11ZXBOt6xiJGo21EKio/planet/BBS4toeUIqJUg6Ydp3fK" target="_blank" class="btn btn-primary" runat="server">Sector Map &raquo;</a>
             <div style="height: 16px;"></div>
             <a href="http://jgraks-a-p-recap.blubrry.net/feed/podcast/" class="btn btn-primary" target="_blank">PRISM Network's Podcast &raquo;</a>
             <div style="height: 16px;"></div>
             <a href="https://twitch.tv/itmejp" class="btn btn-primary" target="_blank">JP's Stream &raquo;</a>
             <div style="height: 16px;"></div>
             <p>
-                <a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false"
-                    target="_blank">Follow ExarchTatiana</a>
+                <a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" target="_blank">Follow ExarchTatiana</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </p>
 
@@ -38,37 +33,39 @@
                     <h3>Sector Map:</h3>
                 </div>
                 <div class="row row-fluid">
-                    <img src="~/Assets/Sectormap.jpg" class="img-fluid img-thumbnail"></img>
+                    <div class="col-12">
+                        <img src="~/Assets/Sectormap.jpg" class="img-fluid h-auto"></img>
+                    </div>
+
                 </div>
             </div>
         </div>
         <div class="col-md-8" style="font-size: larger;">
             <div class="container">
                 <div class="row row-fluid">
-                    <div class="col-md-6">
+                    <div class="col-12">
                         <figure class="figure">
-                            <img src="https://i.pinimg.com/originals/dc/40/f4/dc40f4bf7677a459603bba8bb47afc07.jpg" class="img img-responsive"
-                                alt="A generic square placeholder image with rounded corners in a figure.">
+                            <img src="https://i.pinimg.com/originals/dc/40/f4/dc40f4bf7677a459603bba8bb47afc07.jpg" class="img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
                             <figcaption class="figure-caption">Andophael At Night</figcaption>
                         </figure>
                     </div>
-                    </div>
-                    <div class="row row-fluid">
-                    <div class="col-md-6">
+                </div>
+                <div class="row row-fluid">
+                    <div class="col-12">
                         <figure class="figure">
-                            <img src="~/Assets/sig_system.jpg" class="img img-responsive" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <img src="~/Assets/sig_system.jpg" class="img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
                             <figcaption class="figure-caption">The Sig System</figcaption>
                         </figure>
                     </div>
                 </div>
                 <div class="row row-fluid">
-                    <div class="col-md-8">
+                    <div class="col-12">
                         <figure class="figure">
-                        <img src="~/Assets/crystal_ice_city.jpg" class="img img-responsive" alt="A generic square placeholder image with rounded corners in a figure.">
-                        <figcaption class="figure-caption">A Church Retreat Near the Equator.</figcaption>
-                    </figure>
+                            <img src="~/Assets/crystal_ice_city.jpg" class="img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <figcaption class="figure-caption">A Church Retreat Near the Equator.</figcaption>
+                        </figure>
                     </div>
-                    
+
                 </div>
             </div>
             @Html.Raw(Model.andophael_text)

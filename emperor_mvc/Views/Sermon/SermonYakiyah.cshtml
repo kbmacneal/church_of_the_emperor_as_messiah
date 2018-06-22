@@ -1,29 +1,30 @@
-﻿@model SermonYakiyahModel
-@{
-    ViewData["Title"] = "A Sermon on Yakiyah";
-}
+﻿@model SermonYakiyahModel 
+@{ ViewData["Title"] = "A Sermon on Yakiyah"; }
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="img-thumbnail img-fluid" src="~/Assets/yakiyah.jpg" />
-                        <div class="lead">Yakiya, a planet in the Tsatsos system, currently controlled by A.C.R.E.</div>
-                    </div>
+    <div class="d-flex flex-row">
+        <div class="d-flex flex-column p-3">
+            <div class="d-flex">
+                <div class="flex-row">
+                    <img class="img-thumbnail img-fluid w-50" src="~/Assets/yakiyah.jpg" />
+                    <div class="lead">Yakiya, a planet in the Tsatsos system, currently controlled by A.C.R.E.</div>
+                    <h2>@Model.sermonheader</h2>
+                    <div style="font-size: 14pt;">@Html.Raw(Model.sermontext)</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="d-flex flex-column p-3">
+            <div class="d-flex">
+                <div class="flex-row">
+                    <h2>
+                        @Model.sermonheaderright
+                    </h2>
+                    @Html.Raw(Model.sermontextright)
                 </div>
             </div>
-            <h2>
-                @Model.sermonheader
-            </h2> 
-            <div  style="font-size: 14pt;">@Html.Raw(Model.sermontext)</div>
-        </div>
-        <div class="col-md-6">
-            <h2>
-                @Model.sermonheaderright
-            </h2>
-            <div style="font-size: 14pt; padding-left: 15px; border-left: 2px solid black;">@Html.Raw(Model.sermontextright)</div>
         </div>
     </div>
+
+
 </div>
