@@ -11,7 +11,7 @@ namespace emperor_mvc.Controllers {
     public class ReadingController : Controller {
 
         [HttpGet]
-        public ActionResult Reading (ReadingModel model) {
+        public ActionResult Index (ReadingModel model) {
             var filename = "wwwroot/Documents/Readings/ages.md";
             model.ages_text = cls_markdown.ConvertMDtoTXT (filename);
             filename = "wwwroot/Documents/Readings/qasim.md";
