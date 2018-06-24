@@ -17,5 +17,12 @@ namespace emperor_mvc.Controllers {
 
             return View (model);
         }
+
+        public IActionResult Specifics (BuralSpecificsModel model) {
+            var filename = "wwwroot/Documents/burial_specifics.md";
+            model.burialtext = cls_markdown.ConvertMDtoTXT (filename);
+
+            return View (model);
+        }
     }
 }

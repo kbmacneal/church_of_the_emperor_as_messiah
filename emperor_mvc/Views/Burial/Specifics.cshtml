@@ -1,0 +1,11 @@
+@model BuralSpecificsModel
+@{
+    ViewData["Title"] = "Burial Ritual Specifics";
+}
+    <div class="container">
+        <div class="mx-auto d-block">
+            <div class="col-12" style="font-size:larger;">
+                @Html.Raw(Model.burialtext)
+            </div>
+        </div>
+    </div>
