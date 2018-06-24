@@ -20,7 +20,7 @@ namespace emperor_mvc.Controllers
             return View();
         }
 
-        public IActionResult Login()
+        public IActionResult Cactus()
         {
             return View();
         }
