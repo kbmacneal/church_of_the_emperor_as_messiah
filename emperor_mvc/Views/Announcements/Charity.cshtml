@@ -1,13 +1,18 @@
-@{
-    ViewData["Title"] = "9th Virtue Charity";
-}
+@{ ViewData["Title"] = "9th Virtue Charity"; }
 
 <div class="container-fluid font-larger">
     <div class="d-flex">
+        
+
+        <div class="flex-column flex-grow-1" style="height:800px;">
             <a href="~/Documents/ninth_virtue_charity.pdf" class="mx-auto d-block" target="_black">Link to PDF Version</a>
+            <iframe class="mx-auto d-block" src="/Documents/ninth_virtue_charity.pdf" width="100%" height="100%">
+            This browser does not support PDFs. Please download the PDF to view it: <a href="/Documents/ninth_virtue_charity.pdf">Download PDF</a>
+            </iframe>
+        </div>
 
     </div>
-    <div class="d-flex w-100">
-            <img class="img-fluid mx-auto d-block" src="~/Assets/ninth_virtue_charity.png" />
-    </div>
+    <!-- <div class="d-flex w-100">
+        <img class="img-fluid mx-auto d-block" src="~/Assets/ninth_virtue_charity.png" />
+    </div> -->
 </div>
