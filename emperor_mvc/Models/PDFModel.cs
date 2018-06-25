@@ -20,7 +20,7 @@ namespace emperor_mvc.Models {
 
             this.html = "<object class=\"mx-auto d-block w-100\" data=" + this.link + " type=\"application/pdf\"><embed src=" + this.link + " type=application/pdf />    </object></br>";
 
-            this.link_html= "<a href=\"" + this.link + "\" target=\"_blank\">Link to PDF</a>";
+            this.link_html= "<a class=\"mx-auto d-block\" href=\"" + this.link + "\" target=\"_blank\">Link to PDF</a>";
         }
     }
 }

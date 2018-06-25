@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using emperor_mvc.Models;
 using emperor_mvc.Classes;
-using MailKit.Net.Smtp;
-using MimeKit;
-using MailKit.Security;
 using System.IO;
 
 namespace emperor_mvc.Controllers
