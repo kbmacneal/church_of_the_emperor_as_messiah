@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NetEscapades.AspNetCore;
 using Microsoft.AspNetCore.Http;
 using WebEssentials.AspNetCore.Pwa;
+using NetEscapades.AspNetCore.SecurityHeaders;
 
 namespace emperor_mvc
 {
@@ -28,12 +29,6 @@ namespace emperor_mvc
             services.AddMvc();
 
             services.AddProgressiveWebApp();
-
-            // WebEssentials.AspNetCore.ServiceWorker.AddProgressiveWebApp();
-            
-            // WebEssentials.AspNetCore.Pwa.AddProgressiveWebApp(services,"manifest.json",new PwaOptions { Strategy = ServiceWorkerStrategy.CacheFirst, RegisterServiceWorker = true, RegisterWebmanifest = true });
-
-            // services.AddProgressiveWebApp( new PwaOptions { Strategy = ServiceWorkerStrategy.CacheFirst, RegisterServiceWorker = true, RegisterWebmanifest = true }, "manifest.json");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +43,18 @@ namespace emperor_mvc
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseSecurityHeaders();
+            var policyCollection = new HeaderPolicyCollection()
+        .AddFrameOptionsDeny()
+        .AddXssProtectionBlock()
+        .AddContentTypeOptionsNoSniff()
+        .AddReferrerPolicyStrictOriginWhenCrossOrigin()
+        .RemoveServerHeader()
+        .AddContentSecurityPolicy(builder =>
+        {
+            builder.AddFrameAncestors().None();
+        });
+    
+    app.UseSecurityHeaders(policyCollection);
 
             app.UseStaticFiles();
 

@@ -15,7 +15,9 @@ namespace emperor_mvc.Models {
         }
         public string html{get;set;}
         public void set_html(){
-            this.html = "<iframe class=\"mx-auto d-block\" src=\"/Documents/ninth_virtue_charity.pdf\" width=\"100%\" height=\"100%\"> This browser does not support PDFs. Please download the PDF to view it: <a href=" + this.link + ">Download PDF</a></iframe>";
+            // this.html = "<iframe class=\"mx-auto d-block\" src=\"/Documents/ninth_virtue_charity.pdf\" width=\"100%\" height=\"100%\"> This browser does not support PDFs. Please download the PDF to view it: <a href=" + this.link + ">Download PDF</a></iframe>";
+
+            this.html = "<object class=\"mx-auto d-block w-100\" data=" + this.link + " type=\"application/pdf\"><embed src=" + this.link + " type=application/pdf />    </object>";
         }
     }
 }
