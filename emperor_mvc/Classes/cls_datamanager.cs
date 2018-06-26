@@ -5,33 +5,61 @@ using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using System.Text;
 
 namespace emperor_mvc.Classes
 {
     public class DataManager
     {
-        public static String RandomString(Int32 length)
+        public class password_hash
         {
-            Random rnd = new Random();
-            StringBuilder str = new StringBuilder(length);
-            for (int i = 0; i < length; i++)
+            public byte[] salt { get; set; }
+            public string password { get; set; }
+
+            public password_hash()
             {
-                char c = (char)rnd.Next(char.MinValue, char.MaxValue);
-                str.Append(c);
+                // generate a 128-bit salt using a secure PRNG
+                byte[] salt = new byte[128 / 8];
+                using (var rng = RandomNumberGenerator.Create())
+                {
+                    rng.GetBytes(salt);
+                }
+
+                this.salt = salt;
             }
-            return str.ToString();
+            public password_hash(byte[] salt)
+            {
+
+                this.salt = salt;
+            }
         }
-        private static string getHash(string text)
+        private static password_hash HashPassword(string plaintext)
         {
-            // SHA512 is disposable by inheritance.  
-            using (var sha256 = SHA256.Create())
-            {
-                // Send a sample text to hash.  
-                var hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(text));
-                // Get the hashed string.  
-                return BitConverter.ToString(hashedBytes).Replace("-", "").ToLower();
-            }
+            password_hash hash = new password_hash();
+
+            // derive a 256-bit subkey (use HMACSHA256 with 10,000 iterations)
+            string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                password: plaintext,
+                salt: hash.salt,
+                prf: KeyDerivationPrf.HMACSHA256,
+                iterationCount: 10000,
+                numBytesRequested: 256 / 8));
+            return hash;
+        }
+
+        private static password_hash HashPassword(string plaintext, byte[] salt)
+        {
+            password_hash hash = new password_hash(salt);
+
+            // derive a 256-bit subkey (use HMACSHA256 with 10,000 iterations)
+            string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+                password: plaintext,
+                salt: hash.salt,
+                prf: KeyDerivationPrf.HMACSHA256,
+                iterationCount: 10000,
+                numBytesRequested: 256 / 8));
+            return hash;
         }
 
         public static void insert_response(response response)
