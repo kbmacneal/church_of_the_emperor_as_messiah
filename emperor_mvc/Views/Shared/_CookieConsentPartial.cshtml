@@ -1,20 +1,18 @@
-﻿@using Microsoft.AspNetCore.Http.Features
-
-@{
-    var consentFeature = Context.Features.Get<ITrackingConsentFeature>();
-    var showBanner = !consentFeature?.CanTrack ?? false;
-    var cookieString = consentFeature?.CreateConsentCookie();
-}
-
-@if (showBanner) {
+﻿@using Microsoft.AspNetCore.Http.Features 
+@{ var consentFeature = Context.Features.Get
+<ITrackingConsentFeature>(); var showBanner = !consentFeature?.CanTrack ?? false; var cookieString = consentFeature?.CreateConsentCookie(); } 
+    @if (showBanner) {
     <div class="alert alert-dismissible alert-success" id="cookieConsent" role="alert">
-        <p class="navbar-text">
-            Please use the buttons to accept the site's GDPR policy
-        </p>
-        <div class="navbar-right">
-            <a asp-controller="GDPR" asp-action="Index" class="btn btn-secondary">Learn More</a>
-            <button type="button" class="btn btn-success" data-cookie-string="@cookieString">Accept</button>
+        <div class="d-flex flex-column align-items-center">
+            <p class="align-items-center">
+                Please use the buttons to accept the site's GDPR policy
+            </p>
+            <div class="navbar-right">
+                <a asp-controller="GDPR" asp-action="Index" class="btn btn-secondary">Learn More</a>
+                <button type="button" class="btn btn-success" data-cookie-string="@cookieString">Accept</button>
+            </div>
         </div>
+
     </div>
 
     <script>
@@ -31,10 +29,8 @@
                 document.querySelector("#cookieConsent").classList.add("hidden");
                 hide(document.getElementById('cookieConsent'));
             }, false);
-            
-            
-        })();
 
-        
+
+        })();
     </script>
     }
