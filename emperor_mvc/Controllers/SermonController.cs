@@ -19,10 +19,10 @@ namespace emperor_mvc.Controllers {
             model.sermonheader="Preamble";
             model.sermonheaderright="Sermon";
 
-            var filename = "wwwroot/Sermons/sermonyakiyah1.md";
+            var filename = "wwwroot/Documents/Sermons/sermonyakiyah1.md";
             model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
 
-            filename = "wwwroot/Sermons/sermonyakiyah2.md";
+            filename = "wwwroot/Documents/Sermons/sermonyakiyah2.md";
             model.sermontextright = cls_markdown.ConvertMDtoTXT (filename);
 
             return View (model);
@@ -32,7 +32,7 @@ namespace emperor_mvc.Controllers {
         public ActionResult SermonOne (SermonOneModel model) {
             model.sermonheader="The Ten Virtues";
 
-            var filename = "wwwroot/Sermons/sermonone.md";
+            var filename = "wwwroot/Documents/Sermons/sermonone.md";
             model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
 
             return View (model);
@@ -42,7 +42,7 @@ namespace emperor_mvc.Controllers {
         public ActionResult SermonTwo (SermonTwoModel model) {
             model.sermonheader="The Interconnected Virtue of Justice";
 
-            var filename = "wwwroot/Sermons/SermonTwo.md";
+            var filename = "wwwroot/Documents/Sermons/SermonTwo.md";
             model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
 
             return View (model);
