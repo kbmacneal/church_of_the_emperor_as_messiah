@@ -66,5 +66,12 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+
+        public IActionResult TeuthemCost(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/HC_covers_teuthem_cost.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
