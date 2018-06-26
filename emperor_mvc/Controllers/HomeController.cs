@@ -21,5 +21,10 @@ namespace emperor_mvc.Controllers
         {
             return View();
         }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
     }
 }

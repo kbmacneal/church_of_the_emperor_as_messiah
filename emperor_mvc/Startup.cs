@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NetEscapades.AspNetCore;
-using Microsoft.AspNetCore.Http;
 using WebEssentials.AspNetCore.Pwa;
 using NetEscapades.AspNetCore.SecurityHeaders;
 
@@ -25,9 +26,15 @@ namespace emperor_mvc
         // This method gets called by the runtime. Use this method to add services to the container.
         public static void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton(typeof(IHttpContextAccessor), typeof(HttpContextAccessor));
-            services.AddMvc();
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
 
+            services.AddSingleton(typeof(IHttpContextAccessor), typeof(HttpContextAccessor));
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddProgressiveWebApp();
         }
 
@@ -53,10 +60,11 @@ namespace emperor_mvc
         {
             builder.AddFrameAncestors().None();
         });
-    
-    app.UseSecurityHeaders(policyCollection);
+
+            app.UseSecurityHeaders(policyCollection);
 
             app.UseStaticFiles();
+            app.UseCookiePolicy();
 
             app.UseMvc(routes =>
             {
