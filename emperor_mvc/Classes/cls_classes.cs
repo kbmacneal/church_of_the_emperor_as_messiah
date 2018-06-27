@@ -9,4 +9,10 @@ namespace emperor_mvc.Classes
         public Boolean CheckboxData { get; set; }
 
     }
+
+    public class question
+    {
+        public string question_text{get;set;}
+        public string UserID{get;set;}
+    }
 }

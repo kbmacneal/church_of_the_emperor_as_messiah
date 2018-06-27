@@ -62,7 +62,7 @@ namespace emperor_mvc.Classes
             return hash;
         }
 
-        public static void insert_response(response response)
+        public static void insert_record(response response)
         {
             // Open database (create new if file doesn't exist)
             var store = new DataStore("data.json");
@@ -75,5 +75,17 @@ namespace emperor_mvc.Classes
             store.Dispose();
         }
 
+        public static void insert_record(question question)
+        {
+            // Open database (create new if file doesn't exist)
+            var store = new DataStore("data.json");
+
+            // Get employee collection
+            var collection = store.GetCollection<question>();
+
+            collection.InsertOne(question);
+
+            store.Dispose();
+        }
     }
 }
