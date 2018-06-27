@@ -1,8 +1,7 @@
 {
 	"name": "High Church of the Emperor",
 	"short_name": "High Church",
-	"orientation": "portrait",
-	"display": "fullscreen",
+	"display": "standalone",
 	"icons": [
 		{
 			"src": "android-chrome-192x192.png",
