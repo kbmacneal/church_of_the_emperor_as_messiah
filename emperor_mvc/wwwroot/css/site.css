@@ -1,52 +1,18 @@
 ﻿body {
-    padding-top: 50px;
     padding-bottom: 20px;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
-
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .navbar {
-    color: grey;
+    color: lightgrey;
 }
 
 a:hover {
     color: black !important;
-}
-
-.btn-primary
-{
-    background-color:white; 
-    color: black;
-    border-color: darkgrey;
 }
 
 .btn-primary:hover
@@ -62,27 +28,4 @@ a:hover {
 .btn-primary:focus
 {
     background-color: white;
-}
-
-/* .card
-{
-    background-color: none;
-    border: 2px lightgrey solid;
-    margin-bottom:10px;
-    border-radius: 5px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    position: relative;
-    height: 1%;
-    overflow: hidden;
-    padding: 10px;
-} */
-center {
-    float: none;
-    margin: 0 auto;
-}
-
-.col-centered {
-    float: none;
-    margin: 0 auto;
 }
