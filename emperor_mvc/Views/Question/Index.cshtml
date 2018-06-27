@@ -18,7 +18,9 @@
                     <p>
                         <label for="question_text">Question:</label>
                     </p>
-                    <textarea asp-for="question_text" style="height:200px; width:500px;"></textarea>
+                        <div class="form-group">
+                            <textarea asp-for="question_text" class="form-control" placeholder="Message" style="max-width:500px;"></textarea>
+                        </div>
                     <div class="flex-row mt-3">
                             <input class="btn btn-secondary" type="submit" value="Submit" />
                     </div>
