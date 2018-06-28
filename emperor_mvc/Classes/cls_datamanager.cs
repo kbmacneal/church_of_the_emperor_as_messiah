@@ -87,5 +87,18 @@ namespace emperor_mvc.Classes
 
             store.Dispose();
         }
+
+        public static void insert_record(feedback feedback)
+        {
+            // Open database (create new if file doesn't exist)
+            var store = new DataStore("data.json");
+
+            // Get employee collection
+            var collection = store.GetCollection<feedback>();
+
+            collection.InsertOne(feedback);
+
+            store.Dispose();
+        }
     }
 }

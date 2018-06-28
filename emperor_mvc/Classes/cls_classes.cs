@@ -15,4 +15,10 @@ namespace emperor_mvc.Classes
         public string question_text{get;set;}
         public string UserID{get;set;}
     }
+
+    public class feedback
+    {
+        public string FeedbackText{get;set;}
+        public string UserName{get;set;}
+    }
 }

@@ -1,0 +1,36 @@
+@model FeedbackModel 
+@{ ViewData["Title"] = "Site Feedback"; }
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <h1>Feedback</h1>
+    </div>
+    <div class="row-fluid">
+        <div class="col-12">
+            <div class="flex-column">
+                <form asp-action="Index" asp-controller="Feedback">
+                    <p>
+                        <label for="UserID">Email Address (optional):</label>
+                    </p>
+                    <p>
+                        <input type="text" asp-for="UserName" />
+                    </p>
+                    <p>
+                        <label for="question_text">Feedback:</label>
+                    </p>
+                        <div class="form-group">
+                            <textarea asp-for="FeedbackText" class="form-control" placeholder="Message" style="max-width:500px;"></textarea>
+                        </div>
+                    <div class="flex-row mt-3">
+                            <input class="btn btn-secondary" type="submit" value="Submit" />
+                    </div>
+
+
+                </form>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
