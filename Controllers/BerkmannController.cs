@@ -8,7 +8,7 @@ using emperor_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace emperor_mvc.Controllers {
-    public class BermkannController : Controller {
+    public class BerkmannController : Controller {
 
         
         public IActionResult Index (BerkmannModel model) {
