@@ -73,5 +73,12 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+
+        public IActionResult BerkmannAnnounce(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/NeonIII_V2_pamphlet.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
