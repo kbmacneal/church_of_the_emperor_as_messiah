@@ -80,5 +80,12 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+
+        public IActionResult TrillMDP(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/Trilliant_MDP.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
