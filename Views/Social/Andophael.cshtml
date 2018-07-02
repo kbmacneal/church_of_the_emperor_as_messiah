@@ -1,0 +1,33 @@
+@model SocialModel 
+@{ ViewData["Title"] = "The Holy Planet of Andophael"; }
+
+<div class="container-fluid">
+    <div class="row row-fluid">
+        <div class="col-12">
+            <figure class="figure">
+                <img src="https://i.pinimg.com/originals/dc/40/f4/dc40f4bf7677a459603bba8bb47afc07.jpg" class="img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption">Andophael At Night</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="row row-fluid">
+        <div class="col-12">
+            <figure class="figure">
+                <img src="~/Assets/sig_system.jpg" class="img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption">The Sig System</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="row row-fluid">
+        <div class="col-12">
+            <figure class="figure">
+                <img src="~/Assets/crystal_ice_city.jpg" class="img img-fluid" alt="A generic square placeholder image with rounded corners in a figure.">
+                <figcaption class="figure-caption">A Church Retreat Near the Equator.</figcaption>
+            </figure>
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid">
+    @Html.Raw(Model.andophael_text)
+</div>

@@ -12,6 +12,11 @@ namespace emperor_mvc.Controllers {
 
         [HttpGet]
         public ActionResult Index (SocialModel model) {
+
+            return View ();
+        }
+        [HttpGet]
+        public ActionResult Andophael (SocialModel model) {
             var filename = "wwwroot/Documents/andophael.md";
             model.andophael_text = cls_markdown.ConvertMDtoTXT (filename);
 
