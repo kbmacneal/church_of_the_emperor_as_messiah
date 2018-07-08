@@ -47,5 +47,15 @@ namespace emperor_mvc.Controllers {
 
             return View (model);
         }
+
+        [HttpGet]
+        public ActionResult SermonCabina (SermonTwoModel model) {
+            model.sermonheader="";
+
+            var filename = "wwwroot/Documents/Sermons/sermon_cabina.md";
+            model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
+
+            return View (model);
+        }
     }
 }
