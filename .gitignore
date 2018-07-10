@@ -321,3 +321,4 @@ $RECYCLE.BIN/
 /azure_churchbot/secret.txt
 emperor_mvc/data.json
 emperor_mvc/secrets.json
+wwwroot/Audio/test.mp3
