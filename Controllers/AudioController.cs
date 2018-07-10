@@ -12,7 +12,7 @@ namespace emperor_mvc.Controllers
 {
     public class AudioController : Controller
     {
-        public IActionResult Meeting(AudioModel model)
+        public IActionResult Index(AudioModel model)
         {
             model.path = "Assets/Audio/test.mp3";
             model.set_html();
