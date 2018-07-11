@@ -26,10 +26,5 @@ namespace emperor_mvc.Controllers
         {
             return View();
         }
-
-        public IActionResult test()
-        {
-            return View();
-        }
     }
 }
