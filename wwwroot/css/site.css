@@ -48,3 +48,9 @@ a:hover {
   font-size: 55px;
   color: darkgrey;
 }
+
+.carousel-caption
+{
+    color:black;
+    size: 2rem;
+}
