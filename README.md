@@ -13,6 +13,6 @@ We need developers! Even if you only know css/html you can contribute. File a pu
 - File a pull request.
 - That's it!
 
-emperor_mvc is the site currently being maintained. It uses netcoreapp2.1 (meaning you have to install dotnet-sdk-2.1.300), bootstrap 4. This enables GDPR support (kind of essential these days) and some other goodies down the road.
+It uses netcoreapp2.1 (meaning you have to install dotnet-sdk-2.1.300), bootstrap 4. This enables GDPR support (kind of essential these days) and some other goodies down the road.
 
 You can find the deprecated code over at <https://github.com/kbmacneal/emperor_archive>

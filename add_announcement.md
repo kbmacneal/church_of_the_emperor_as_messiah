@@ -13,10 +13,10 @@ Second, create a new local branch, call it whatever you want
 Third, copy and paste this code directly underneath the div that contains the header in Index.cshtml (under Pages)
 
 ```
-<div class="card border-secondary" style="margin-bottom:15px;">
+<div class="card border-secondary m-2">
 <div class="card-body">
-<h4 class="card-title">TITLE GOES HERE</h4>
-<a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="ACTION_NAME">Read &raquo;</a>
+<h4 class="card-title">Title</h4>
+<a class="btn btn-outline-secondary" asp-area="" asp-controller="Controller" asp-action="Action">Read &raquo;</a>
 </div>
 </div>
 ```
