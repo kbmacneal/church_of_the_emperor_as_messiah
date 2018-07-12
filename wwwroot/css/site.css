@@ -51,6 +51,9 @@ a:hover {
 
 .carousel-caption
 {
-    color:black;
+    background-color:rgba(0, 0, 0, 0.5);
     size: 2rem;
+    max-width: 25%;
+    display: block;
+    margin:auto;
 }
