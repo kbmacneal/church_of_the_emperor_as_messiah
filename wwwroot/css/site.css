@@ -64,3 +64,10 @@ a:hover {
     height: auto;
     object-fit: contain;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 1px;
+  width: 1px;
+  background-image: none;
+}
