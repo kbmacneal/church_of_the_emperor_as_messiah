@@ -18,5 +18,12 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+
+        public IActionResult Meeting(AudioModel model)
+        {
+            model.path = "Assets/Audio/Meeting.mp3";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
