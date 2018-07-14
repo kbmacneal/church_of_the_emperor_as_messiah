@@ -14,14 +14,14 @@ namespace emperor_mvc.Controllers
     {
         public IActionResult Index(AudioModel model)
         {
-            model.path = "Assets/Audio/test.mp3";
+            model.path = "https://highchurch.space/Assets/Audio/test.mp3";
             model.set_html();
             return View("Index", model);
         }
 
         public IActionResult Meeting(AudioModel model)
         {
-            model.path = "Assets/Audio/Meeting.mp3";
+            model.path = "https://highchurch.space/Assets/Audio/Meeting.mp3";
             model.set_html();
             return View("Index", model);
         }
