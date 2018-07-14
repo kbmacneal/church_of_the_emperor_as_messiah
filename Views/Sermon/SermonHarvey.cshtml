@@ -1,0 +1,17 @@
+﻿@model SermonTwoModel
+@{
+    ViewData["Title"] = "A Sermon for Harvey's Marriage";
+}
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-12">            
+            <img class="img-fluid mx-auto d-block" src="~/Assets/harvey_wedding.png"></img>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="col col-centered" style="font-size: 14pt;">
+            @Html.Raw(Model.sermontext)
+        </div>
+    </div>
+</div>

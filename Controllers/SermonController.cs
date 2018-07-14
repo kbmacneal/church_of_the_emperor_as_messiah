@@ -57,5 +57,16 @@ namespace emperor_mvc.Controllers {
 
             return View (model);
         }
+
+        [HttpGet]
+        public ActionResult SermonHarvey (SermonTwoModel model) {
+            model.sermonheader="";
+
+            var filename = "wwwroot/Documents/Sermons/sermon_harvey_wedding.md";
+            model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
+            model.sermonheader="From the wedding of Harvey, Director of ACRE";
+
+            return View (model);
+        }
     }
 }

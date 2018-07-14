@@ -1,5 +1,4 @@
-﻿@model SermonIndexModel
-@{
+﻿@{
     ViewData["Title"] = "Reading";
 }
 <div class="container-fluid">
@@ -52,6 +51,14 @@
             </td>
             <td>
                 <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Faithfullness">Read &raquo;</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                A Sermon At Harvey's Wedding
+            </td>
+            <td>
+                <a class="btn btn-outline-secondary" asp-area="" asp-controller="Sermon" asp-action="SermonHarvey">Read &raquo;</a>
             </td>
         </tr>
     </tbody>
