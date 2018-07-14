@@ -1,13 +1,13 @@
-﻿@{
-    ViewData["Title"] = "A Sermon on Yakiyah";
+@model SermonSingleColumnModel
+@{
+    ViewData["Title"] = "A Sermon for Harvey's Marriage";
 }
 
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="col col-centered h1">
-            @Model.sermonheader
-        </div>
+        <h1>@Html.Raw(Model.sermonheader)</h1>
     </div>
+    <div class="spacing-padder"></div>
     <div class="row-fluid">
         <div class="col col-centered" style="font-size: 14pt;">
             @Html.Raw(Model.sermontext)

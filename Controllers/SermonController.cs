@@ -15,58 +15,54 @@ namespace emperor_mvc.Controllers {
         }
 
         [HttpGet]
-        public ActionResult SermonYakiyah (SermonYakiyahModel model) {
+        public ActionResult SermonYakiyah (SermonSingleColumnModel model) {
             model.sermonheader="Preamble";
-            model.sermonheaderright="Sermon";
 
             var filename = "wwwroot/Documents/Sermons/sermonyakiyah1.md";
             model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
 
-            filename = "wwwroot/Documents/Sermons/sermonyakiyah2.md";
-            model.sermontextright = cls_markdown.ConvertMDtoTXT (filename);
-
-            return View (model);
+            return View("SermonSingleColumn", model);
         }
 
         [HttpGet]
-        public ActionResult SermonOne (SermonOneModel model) {
+        public ActionResult SermonOne (SermonSingleColumnModel model) {
             model.sermonheader="The Ten Virtues";
 
             var filename = "wwwroot/Documents/Sermons/sermonone.md";
             model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
 
-            return View (model);
+            return View("SermonSingleColumn", model);
         }
 
         [HttpGet]
-        public ActionResult SermonTwo (SermonTwoModel model) {
+        public ActionResult SermonTwo (SermonSingleColumnModel model) {
             model.sermonheader="The Interconnected Virtue of Justice";
 
             var filename = "wwwroot/Documents/Sermons/SermonTwo.md";
             model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
 
-            return View (model);
+            return View("SermonSingleColumn", model);
         }
 
         [HttpGet]
-        public ActionResult SermonCabina (SermonTwoModel model) {
+        public ActionResult SermonCabina (SermonSingleColumnModel model) {
             model.sermonheader="";
 
             var filename = "wwwroot/Documents/Sermons/sermon_cabina.md";
             model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
 
-            return View (model);
+            return View("SermonSingleColumn", model);
         }
 
         [HttpGet]
-        public ActionResult SermonHarvey (SermonTwoModel model) {
+        public ActionResult SermonHarvey (SermonSingleColumnModel model) {
             model.sermonheader="";
 
             var filename = "wwwroot/Documents/Sermons/sermon_harvey_wedding.md";
             model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
-            model.sermonheader="From the wedding of Harvey, Director of ACRE";
+            model.sermonheader="<div class=\"col-12\"><img class=\"img-fluid mx-auto d-block\" src=\"https://highchurch.space/Assets/harvey_wedding.png\"></img></div>\"";
 
-            return View (model);
+            return View("SermonSingleColumn", model);
         }
     }
 }

@@ -90,3 +90,7 @@ blockquote {
   blockquote p {
     display: inline;
   }
+
+  .spacing-padder {
+      height: 25px;
+  }
