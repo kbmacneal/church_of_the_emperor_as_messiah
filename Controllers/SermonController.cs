@@ -60,7 +60,7 @@ namespace emperor_mvc.Controllers {
 
             var filename = "wwwroot/Documents/Sermons/sermon_harvey_wedding.md";
             model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
-            model.sermonheader="<div class=\"col-12\"><img class=\"img-fluid mx-auto d-block\" src=\"https://highchurch.space/Assets/harvey_wedding.png\"></img></div>\"";
+            model.sermonheader="<div class=\"col-12\"><img class=\"img-fluid mx-auto d-block\" src=\"https://highchurch.space/Assets/harvey_wedding.png\"></img></div>";
 
             return View("SermonSingleColumn", model);
         }
