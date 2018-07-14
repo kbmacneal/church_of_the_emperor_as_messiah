@@ -1,0 +1,23 @@
+_Pelax shuffles in, reeking booze and sweat. He looks terrible, as if he's been out all night. His clothes are tattered and dirty, with the distinct creases of someone sleeping in them_
+
+_Pelax jumps onto a table and bellows_
+
+SINNERS! Sinners, all of you, down to the last molecule. Sinning against God your creator in more ways than even YOU can keep count of. Jetting across the sector in your castles of pleasure, jumping from one party to the next, wining and dining in finery that could buy the freedom of the slaves you call freemen!
+
+But your sins are endless as the stars, and opulence, greed and vanity are only the lesser cousins of your true iniquity. I have seen, and more importantly, the Almighty has seen, your true crimes against the Virtues! Avarice, murder, jealousy, intemperance and petty, foolhardy deceit stand higher yet, and as I look out I cannot see a single person who has not yet accomplished the meanest of these ignoble feats.
+
+So we continue where we began: SINNERS! The lot of you. Sinners against the very nature of humanity itself! Against God, the Emperox and Virtue itself! You leave only death and destruction in your wake, using the broken and bloody carcasses of your victims as a stepping stone to yet greater crimes. I see no light in any of you, the people who hold the greatest possible potential for good and light yet willingly and repeatedly cast it aside to pursue their own pleasure.
+
+Who among you would save your fellow man? I know many of you would not, too caught up in your own petty squabbles and House games to care about the poor soul in front of you. Even more would save him only to use him in some scheme or another, plotting his demise even as you took his hand to help him to his feet. Others yet would simply enslave him, to drugs, to work, to debt, to anguish, and abuse his labor to enrich themselves before casting the dried husk of a human aside once fully drained of potential labor.
+
+The scriptures may say that it is in our nature to be good and seek the light of Virtue, but I have seen into your hearts, and you may no longer deceive me. As the old Sages say,
+
+```
+All wicked men's pains and contrivance they use to escape hell, while they continue to reject the Emperox, and so remain wicked men, don't secure 'em from hell one moment. Almost every natural man that hears of hell, flatters himself that he shall escape it; he depends upon himself for his own security; he flatters himself in what he has done, in what he is now doing, or what he intends to do; everyone lays out matters in his own mind how he shall avoid damnation, and flatters himself that he contrives well for himself, and that his schemes won't fail. They hear indeed that there are but few saved, and that the bigger part of men that have died heretofore are gone to hell; but each one imagines that he lays out matters better for his own escape than others have done: he don't intend to come to that place of torment; he says within himself, that he intends to take care that shall be effectual, and to order matters so for himself as not to fail.
+
+But the foolish children of men do miserably delude themselves in their own schemes, and in their confidence in their own strength and wisdom; they trust to nothing but a shadow. The bigger part of those that heretofore have lived under the same means of grace, and are now dead, are undoubtedly gone to hell: and it was not because they were not as wise as those that are now alive; it was not because they did not lay out matters as well for themselves to secure their own escape.
+```
+
+You all, to the man, seek your own pleasure above the light of Virtue. You seek the destruction of your neighbor instead of helping them, to steal their wealth and enrich yourself. You tear down what the Emperox has built, stealing, plotting and murdering your way to greater riches and glory. But no longer! Know now that Almighty God and the all-seeing eye of Virtue will hold you to account, if your neighbors don't beat judgementous hell-fire to the punch! SINNERS! SINNERS! SINNERS!
+
+_With the last SINNERS, Pelax's strength gives out, and he falls off the table._
