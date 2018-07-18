@@ -55,6 +55,7 @@ namespace emperor_mvc
             }
 
             var policyCollection = new HeaderPolicyCollection()
+            .AddXssProtectionEnabled()
         .AddFrameOptionsDeny()
         .AddXssProtectionBlock()
         .AddContentTypeOptionsNoSniff()
