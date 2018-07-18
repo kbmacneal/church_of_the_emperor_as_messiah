@@ -34,11 +34,11 @@ namespace emperor_mvc
             services.AddSingleton(typeof(IHttpContextAccessor), typeof(HttpContextAccessor));
             WebEssentials.AspNetCore.Pwa.PwaOptions opt = new WebEssentials.AspNetCore.Pwa.PwaOptions();
 
-            opt.OfflineRoute="/";
+            opt.OfflineRoute = "/";
             opt.RegisterServiceWorker = true;
             opt.RegisterWebmanifest = true;
 
-            services.AddProgressiveWebApp(opt,"manifest.json");
+            services.AddProgressiveWebApp(opt, "manifest.json");
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
