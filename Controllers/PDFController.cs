@@ -101,12 +101,19 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
-
         public IActionResult JoinPamphlet(PDFModel model)
         {
             model.link = "https://highchurch.space/Documents/join_pamphlet.pdf";
             model.set_html();
             return View("Index", model);
         }
+        public IActionResult Dispensation(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/special_dispensation.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
+
+
     }
 }
