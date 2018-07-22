@@ -114,6 +114,11 @@ namespace emperor_mvc.Controllers
             return View("Index", model);
         }
 
-
+        public IActionResult PelaxElevation(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/pelax_appointment.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
