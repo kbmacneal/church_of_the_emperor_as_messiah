@@ -1,8 +1,11 @@
-@{ ViewData["Title"] = "High Church Art Gallery"; } 
+@{ ViewData["Title"] = "High Church Art Gallery"; }
 
-@Html.Partial(string Menu)
+
 
 <div class="container-fluid" style="font-size: 16pt;">
+    
+        @Html.Partial("_GalleryMenu")
+    
     <div class="row row-fluid mb-4">
         <div class="col-md-4">
             <div class="card">
