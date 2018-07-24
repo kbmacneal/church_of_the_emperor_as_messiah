@@ -25,5 +25,11 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+        public IActionResult MeetingTwo(AudioModel model)
+        {
+            model.path = "https://highchurch.space/Assets/Audio/Meeting2.mp3";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
