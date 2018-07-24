@@ -16,5 +16,10 @@ namespace emperor_mvc.Controllers
         {
             return View();
         }
+
+        public IActionResult Memes()
+        {
+            return View();
+        }
     }
 }
