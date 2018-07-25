@@ -5,38 +5,5 @@
     <div class="row row-fluid mb-4">
         <p class="d-block mx-auto">Memes Generously Donated By Our Friends at the Trilliant Ring</p>
     </div>
-    <div class="row row-fluid mb-4">
-        <div class="col-md-4">
-            <div class="card">
-                <img class="img-scaled" src="~/Assets/Memes/image.jpg">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="img-scaled" src="~/Assets/Memes/Meet_Again.png">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="img-scaled" src="~/Assets/Memes/Keep_these_hands_off_Buy_the_new_Victory_Bonds_USA.png">
-            </div>
-        </div>
-    </div>
-    <div class="row row-fluid mb-4">
-        <div class="col-md-4">
-            <div class="card">
-                <img class="img-scaled" src="~/Assets/Memes/calls_attempt.png">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="img-scaled" src="~/Assets/Memes/Navy.png">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card">
-                <img class="img-scaled" src="~/Assets/Memes/Pius_Watching.png">
-            </div>
-        </div>
-    </div>
+    @Html.Raw(Model.row_html)
 </div>
