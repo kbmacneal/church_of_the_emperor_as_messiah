@@ -47,7 +47,7 @@ namespace emperor_mvc.Controllers
 
                 raw_html.Add("</div>");
 
-                filenames.RemoveRange(0,3);
+                filenames.RemoveRange(0,count);
             }
 
             model.row_html = String.Join(System.Environment.NewLine,raw_html);
