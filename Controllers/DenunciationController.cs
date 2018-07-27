@@ -17,11 +17,11 @@ namespace emperor_mvc.Controllers {
             return View ();
         }
 
-        public IActionResult Justice(PDFModel model)
+        public IActionResult Justice(DenunciationModel model)
         {
             model.link = "https://highchurch.space/Documents/Denunciation/Justice.pdf";
             model.set_html();
-            return View("Index", model);
+            return View("Denunciation", model);
         }
     }
 }

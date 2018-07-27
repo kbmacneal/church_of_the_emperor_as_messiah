@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace emperor_mvc.Models {
-    public class Denunciationmodel {
+    public class DenunciationModel {
         public string link {
             get;
             set;
