@@ -29,8 +29,6 @@ namespace emperor_mvc.Controllers
 
             List<string> raw_html = new List<string>();
 
-            int i = 0;
-
             while(filenames.Count > 0)
             {                
                 raw_html.Add("<div class=\"row row-fluid mb-4\">");
