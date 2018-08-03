@@ -1,33 +1,36 @@
 ﻿@{ ViewData["Title"] = "Denunciations"; }
+
 <div class="container-fluid">
     <div class="d-flex flex-column">
-        <h3 style="font-weight: bold">Denunciations of Recent Events</h3>
+        <h3 class="d-block mx-auto" style="font-weight: bold">Denunciations of Recent Events</h3>
 
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Link</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        The Abrogation of Justice, by Exarch Purist Pelax
-                    </td>
-                    <td>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Denunciation" asp-action="Justice">Read &raquo;</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Hope, by Hierophant Andelo Kopač
-                    </td>
-                    <td>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Denunciation" asp-action="Hope">Read &raquo;</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="d-block mx-auto">
+            <table class="table table-hover table-inverse table-responsive d-block mx-auto">
+                <thead class="thead-inverse">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">
+                            The Abrogation of Justice, by Exarch Purist Pelax
+                        </td>
+                        <td>
+                            <a class="btn btn-outline-secondary" asp-area="" asp-controller="Denunciation" asp-action="Justice">Read &raquo;</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            Hope, by Hierophant Andelo Kopač
+                        </td>
+                        <td>
+                            <a class="btn btn-outline-secondary" asp-area="" asp-controller="Denunciation" asp-action="Hope">Read &raquo;</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
