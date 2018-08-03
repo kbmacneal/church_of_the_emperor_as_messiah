@@ -30,5 +30,11 @@ namespace emperor_mvc.Controllers {
             model.set_html();
             return View("Denunciation", model);
         }
+        public IActionResult Propriety(DenunciationModel model)
+        {
+            model.link = "https://highchurch.space/Documents/Denunciation/Propriety.pdf";
+            model.set_html();
+            return View("Denunciation", model);
+        }
     }
 }
