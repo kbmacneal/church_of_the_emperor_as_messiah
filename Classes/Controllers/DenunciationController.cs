@@ -23,5 +23,12 @@ namespace emperor_mvc.Controllers {
             model.set_html();
             return View("Denunciation", model);
         }
+        
+        public IActionResult Hope(DenunciationModel model)
+        {
+            model.link = "https://highchurch.space/Documents/Denunciation/Hope.pdf";
+            model.set_html();
+            return View("Denunciation", model);
+        }
     }
 }
