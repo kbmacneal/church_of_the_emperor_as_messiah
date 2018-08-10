@@ -120,5 +120,12 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+
+        public IActionResult Treachery(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/tiny_extortionists.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
