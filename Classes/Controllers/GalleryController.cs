@@ -23,9 +23,9 @@ namespace emperor_mvc.Controllers
 
             string prepend = "https://highchurch.space/Assets/Memes/";
 
-            List<string> filenames = new List<string>();
+            SortedDictionary<string,string> filenames = new SortedDictionary<string,string>();
 
-            files.ForEach(e=>filenames.Add(String.Concat(prepend,System.IO.Path.GetFileName(e))));
+            files.ForEach(e=>filenames.Add(System.IO.Path.GetFileName(e),String.Concat(prepend,System.IO.Path.GetFileName(e))));
 
             List<string> raw_html = new List<string>();
 
@@ -35,17 +35,19 @@ namespace emperor_mvc.Controllers
 
                 int count = filenames.Count() >= 3 ? 3 : filenames.Count();
 
-                string[] elements = filenames.Take(count).ToArray();
+                KeyValuePair<string,string>[] elements = filenames.Take(count).ToArray();
 
-                foreach(string element in elements)
+                foreach(KeyValuePair<string,string> element in elements)
                 {
                     string add = "<div class=\"col-md-4\"><div class=\"card\"><img class=\"img-scaled\" src=\"<element>\"></div></div>";
-                    raw_html.Add(add.Replace("<element>",element));
+                    raw_html.Add(add.Replace("<element>",element.Value));
+                    filenames.Remove(element.Key);
                 }
 
                 raw_html.Add("</div>");
 
-                filenames.RemoveRange(0,count);
+                // filenames.RemoveRange(0,count);
+                
             }
 
             model.row_html = String.Join(System.Environment.NewLine,raw_html);
