@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Reading";
+}
+
+<div class="container-fluid">
+     @Html.Partial("_GalleryMenu")
+    <div class="d-flex flex-column">
+        <h3 style="font-weight: bold">Ambigrams</h3>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                Seven / Sibling
+            </td>
+            <td>
+                <a class="btn btn-outline-secondary" asp-area="" asp-controller="Ambigram" asp-action="AmbigramSevenSibling">Read &raquo;</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+</div>
