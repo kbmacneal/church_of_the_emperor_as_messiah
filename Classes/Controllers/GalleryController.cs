@@ -27,6 +27,12 @@ namespace emperor_mvc.Controllers
 
             files.ForEach(e=>filenames.Add(System.IO.Path.GetFileName(e),String.Concat(prepend,System.IO.Path.GetFileName(e))));
 
+            files = System.IO.Directory.GetFiles("wwwroot/Assets/Pinups").ToList();
+            prepend = "https://highchurch.space/Assets/Pinups/";
+
+            files.ForEach(e=>filenames.Add(System.IO.Path.GetFileName(e),String.Concat(prepend,System.IO.Path.GetFileName(e))));
+
+
             List<string> raw_html = new List<string>();
 
             while(filenames.Count > 0)
