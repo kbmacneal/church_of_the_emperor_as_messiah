@@ -36,5 +36,11 @@ namespace emperor_mvc.Controllers {
             model.set_html();
             return View("Denunciation", model);
         }
+        public IActionResult Wisdom(DenunciationModel model)
+        {
+            model.link = "https://highchurch.space/Documents/Denunciation/Wisdom.pdf";
+            model.set_html();
+            return View("Denunciation", model);
+        }
     }
 }
