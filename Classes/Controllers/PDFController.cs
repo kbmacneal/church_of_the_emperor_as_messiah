@@ -134,5 +134,12 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+
+        public IActionResult DemnophWithdrawn(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/demnoph_withdrawn.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
