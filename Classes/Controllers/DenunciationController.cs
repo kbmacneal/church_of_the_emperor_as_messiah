@@ -21,26 +21,26 @@ namespace emperor_mvc.Controllers {
         {
             model.link = "https://highchurch.space/Documents/Denunciation/Justice.pdf";
             model.set_html();
-            return View("Denunciation", model);
+            return View("UnderConstruction", model);
         }
         
         public IActionResult Hope(DenunciationModel model)
         {
             model.link = "https://highchurch.space/Documents/Denunciation/Hope.pdf";
             model.set_html();
-            return View("Denunciation", model);
+            return View("UnderConstruction", model);
         }
         public IActionResult Propriety(DenunciationModel model)
         {
             model.link = "https://highchurch.space/Documents/Denunciation/Propriety.pdf";
             model.set_html();
-            return View("Denunciation", model);
+            return View("UnderConstruction", model);
         }
         public IActionResult Wisdom(DenunciationModel model)
         {
             model.link = "https://highchurch.space/Documents/Denunciation/Wisdom.pdf";
             model.set_html();
-            return View("Denunciation", model);
+            return View("UnderConstruction", model);
         }
     }
 }
