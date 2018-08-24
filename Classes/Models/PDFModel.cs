@@ -20,7 +20,7 @@ namespace emperor_mvc.Models {
 
             // this.html = "<object class=\"mx-auto d-block w-100\" data=" + this.link + " type=\"application/pdf\"><embed src=" + this.link + " type=application/pdf />    </object></br>";
 
-            this.html = "<iframe src=\"http://docs.google.com/gview?url=" + this.link + "&embedded=true\" class=\"mx-auto d-block w-100\" frameborder=\"0\"></iframe>";
+            this.html = "<iframe src=\"https://docs.google.com/gview?url=" + this.link + "&embedded=true\" class=\"mx-auto d-block w-100\" frameborder=\"0\"></iframe>";
 
             this.link_html= "<a class=\"mx-auto d-block\" href=\"" + this.link + "\" target=\"_blank\">Link to PDF</a>";
         }
