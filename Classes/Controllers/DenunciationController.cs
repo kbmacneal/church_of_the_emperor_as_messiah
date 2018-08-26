@@ -52,7 +52,7 @@ namespace emperor_mvc.Controllers {
 
         public IActionResult Fortitude(DenunciationModel model)
         {
-            model.link = "https://highchurch.space/Documents/Denunciation/Faith.pdf";
+            model.link = "https://highchurch.space/Documents/Denunciation/Fortitude.pdf";
             model.set_html();
             return View("UnderConstruction", model);
         }
