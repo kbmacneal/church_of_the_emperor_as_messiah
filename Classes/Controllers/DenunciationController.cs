@@ -50,7 +50,7 @@ namespace emperor_mvc.Controllers {
             return View("Denunciation", model);
         }
 
-        public IActionResult Propriety(DenunciationModel model)
+        public IActionResult Fortitude(DenunciationModel model)
         {
             model.link = "https://highchurch.space/Documents/Denunciation/Faith.pdf";
             model.set_html();
