@@ -56,5 +56,12 @@ namespace emperor_mvc.Controllers {
             model.set_html();
             return View("Denunciation", model);
         }
+
+        public IActionResult Temperance(DenunciationModel model)
+        {
+            model.link = "https://highchurch.space/Documents/Denunciation/Temperance.pdf";
+            model.set_html();
+            return View("Denunciation", model);
+        }
     }
 }
