@@ -40,7 +40,7 @@ namespace emperor_mvc.Controllers {
         {
             model.link = "https://highchurch.space/Documents/Denunciation/Wisdom.pdf";
             model.set_html();
-            return View("UnderConstruction", model);
+            return View("Denunciation", model);
         }
 
         public IActionResult Faith(DenunciationModel model)
