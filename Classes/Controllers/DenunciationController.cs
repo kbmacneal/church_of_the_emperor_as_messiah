@@ -63,5 +63,12 @@ namespace emperor_mvc.Controllers {
             model.set_html();
             return View("Denunciation", model);
         }
+
+        public IActionResult Diligence(DenunciationModel model)
+        {
+            model.link = "https://highchurch.space/Documents/Denunciation/Diligence.pdf";
+            model.set_html();
+            return View("Denunciation", model);
+        }
     }
 }
