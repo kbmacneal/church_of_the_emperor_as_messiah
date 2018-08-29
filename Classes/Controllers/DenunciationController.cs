@@ -70,5 +70,19 @@ namespace emperor_mvc.Controllers {
             model.set_html();
             return View("Denunciation", model);
         }
+
+        public IActionResult Charity(DenunciationModel model)
+        {
+            model.link = "https://highchurch.space/Documents/Denunciation/Charity.pdf";
+            model.set_html();
+            return View("Denunciation", model);
+        }
+
+        public IActionResult Integrity(DenunciationModel model)
+        {
+            model.link = "https://highchurch.space/Documents/Denunciation/Integrity.pdf";
+            model.set_html();
+            return View("Denunciation", model);
+        }
     }
 }
