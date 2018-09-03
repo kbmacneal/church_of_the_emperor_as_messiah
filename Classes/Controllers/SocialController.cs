@@ -15,6 +15,7 @@ namespace emperor_mvc.Controllers {
 
             return View ();
         }
+
         [HttpGet]
         public ActionResult Andophael (SocialModel model) {
             var filename = "wwwroot/Documents/andophael.md";

@@ -13,6 +13,6 @@ namespace emperor_mvc.Models {
             get;
             set;
         }
-        public string sermontext{get;set;}
+        public string sermontext { get; set; }
     }
 }

@@ -7,19 +7,15 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace emperor_mvc.Models
-{
-    public class AudioModel
-    {
+namespace emperor_mvc.Models {
+    public class AudioModel {
         public string path { get; set; }
 
         public string html { get; set; }
 
         public string link_html { get; set; }
 
-        public void set_html()
-        {
-            
+        public void set_html () {
 
             this.html = "<audio class=\"mx-auto d-block\" controls=\"controls\" autoPlay=\"autoPlay\"><source src=\"" + this.path + "\" type=\"audio/mp3\" /></audio>";
 
