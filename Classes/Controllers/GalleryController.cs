@@ -30,20 +30,20 @@ namespace emperor_mvc.Controllers {
 
             List<string> raw_html = new List<string> ();
 
-            while (filenames.Count > 0) {
-                raw_html.Add ("<div class=\"row row-fluid mb-4\">");
+            // while (filenames.Count > 0) {
+                // raw_html.Add ("<div class=\"row row-fluid mb-4\">");
 
-                int count = filenames.Count () >= 3 ? 3 : filenames.Count ();
+                // int count = filenames.Count () >= 3 ? 3 : filenames.Count ();
 
-                KeyValuePair<string, string>[] elements = filenames.Take (count).ToArray ();
+                KeyValuePair<string, string>[] elements = filenames.ToArray ();
 
                 foreach (KeyValuePair<string, string> element in elements) {
-                    string add = "<div class=\"col-md-4\"><div class=\"card\"><img class=\"img-scaled\" src=\"<element>\"></div></div>";
+                    string add = "<img class=\"photos w-25\" src=\"<element>\"></div></div>";
                     raw_html.Add (add.Replace ("<element>", element.Value));
                     filenames.Remove (element.Key);
-                }
+                // }
 
-                raw_html.Add ("</div>");
+                // raw_html.Add ("</div>");
 
                 // filenames.RemoveRange(0,count);
 
