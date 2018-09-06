@@ -30,28 +30,18 @@ namespace emperor_mvc.Controllers {
 
             List<string> raw_html = new List<string> ();
 
-            // while (filenames.Count > 0) {
-                // raw_html.Add ("<div class=\"row row-fluid mb-4\">");
+            KeyValuePair<string, string>[] elements = filenames.ToArray ();
 
-                // int count = filenames.Count () >= 3 ? 3 : filenames.Count ();
+            foreach (KeyValuePair<string, string> element in elements) {
+                string add = "<img class=\"photos w-25\" src=\"<element>\" />";
+                raw_html.Add (add.Replace ("<element>", element.Value));
+                filenames.Remove (element.Key);
 
-                KeyValuePair<string, string>[] elements = filenames.ToArray ();
-
-                foreach (KeyValuePair<string, string> element in elements) {
-                    string add = "<img class=\"photos w-25\" src=\"<element>\"></div></div>";
-                    raw_html.Add (add.Replace ("<element>", element.Value));
-                    filenames.Remove (element.Key);
-                // }
-
-                // raw_html.Add ("</div>");
-
-                // filenames.RemoveRange(0,count);
-
-            }
-
-            model.row_html = String.Join (System.Environment.NewLine, raw_html);
-
-            return View ("Memes", model);
         }
+
+        model.row_html = String.Join (System.Environment.NewLine, raw_html);
+
+        return View ("Memes", model);
     }
+}
 }
