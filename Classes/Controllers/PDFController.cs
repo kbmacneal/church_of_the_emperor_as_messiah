@@ -119,5 +119,11 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult CountessCredits (PDFModel model) {
+            model.link = "https://highchurch.space/Documents/countess_and_credits.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
