@@ -3,12 +3,12 @@
 
 <div class="container-fluid">
     <div class="flex-row mb-4">
-         <div class="card d-block mx-auto">
-             <div class="card-body">
-                    <h4 class="card-title text-center">Daily Virtue</h4>
-                    <p class="card-text">@Html.Raw(Model.VirtueText)</p>                 
-             </div>
-         </div>
+        <div class="card d-block mx-auto">
+            <div class="card-body">
+                <h4 class="card-title text-center">Daily Virtue</h4>
+                <p class="card-text">@Html.Raw(Model.VirtueText)</p>
+            </div>
+        </div>
     </div>
     <div class="flex-row mb-4">
         <div class="container-fluid" style="height:50vh%;">
@@ -23,7 +23,8 @@
 
                         <div class="carousel-item active">
                             <a asp-area="" asp-controller="Sermon" asp-action="Index">
-                                <img style="height:50vh;" class="img-fluid img-scaled align-middle d-block mx-auto" src="Assets/CactusPius.png" alt="First slide">
+                                <img style="height:50vh;" class="img-fluid img-scaled align-middle d-block mx-auto" src="Assets/CactusPius.png"
+                                    alt="First slide">
                             </a>
 
                             <div class="carousel-caption d-md-block">
@@ -33,7 +34,8 @@
 
                         <div class="carousel-item">
                             <a asp-area="" asp-controller="PDF" asp-action="EridaniExpertise">
-                                <img style="height:50vh;" class="img-fluid img-scaled d-block mx-auto" src="Assets/stainedglass1.jpg" alt="Third slide">
+                                <img style="height:50vh;" class="img-fluid img-scaled d-block mx-auto" src="Assets/stainedglass1.jpg"
+                                    alt="Third slide">
                             </a>
 
                             <div class="carousel-caption d-md-block">
@@ -43,7 +45,8 @@
                         </div>
                         <div class="carousel-item">
                             <a asp-area="" asp-controller="Berkmann" asp-action="Index">
-                                <img style="height:50vh;" class="img-fluid img-scaled d-block mx-auto" src="Assets/berkmann_final.png" alt="Third slide">
+                                <img style="height:50vh;" class="img-fluid img-scaled d-block mx-auto" src="Assets/berkmann_final.png"
+                                    alt="Third slide">
                             </a>
 
                             <div class="carousel-caption d-md-block">
@@ -69,16 +72,19 @@
         <div class="flex-column w-auto">
             <div class="d-flex flex-column">
                 <p>Have a question? Ask it here!</p>
-                <a class="btn btn-outline-secondary" style="width:60px;" asp-area="" asp-controller="Question" asp-action="Index">Go &raquo;</a>
+                <a class="btn btn-outline-secondary" style="width:60px;" asp-area="" asp-controller="Question"
+                    asp-action="Index">Go &raquo;</a>
             </div>
-            
+
             <p class="mt-3">
-                <a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow ExarchTatiana</a>
+                <a href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                    data-show-count="false">Follow ExarchTatiana</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </p>
 
             <div style="max-height: 100vh; overflow-y:scroll;">
-                <a class="twitter-timeline" href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw">Tweets by ExarchTatiana</a>
+                <a class="twitter-timeline" href="https://twitter.com/ExarchTatiana?ref_src=twsrc%5Etfw">Tweets by
+                    ExarchTatiana</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
@@ -88,211 +94,244 @@
                 <h3>News and Events</h3>
             </div>
             <div class="flex-row pre-scrollable w-100" style="max-height: 100vh;">
-            <div class="card border-secondary m-2">
-                            <div class="card-body">
-                                <h4 class="card-title">The Church Responds to the article entitled "Woe To the Rich"</h4>
-                                <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="WoeRich">Read &raquo;</a>
-                            </div>
-                        </div>
-            <div class="card border-secondary m-2">
-                            <div class="card-body">
-                                <h4 class="card-title">The Countess and the Credits</h4>
-                                <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="CountessCredits">Read &raquo;</a>
-                            </div>
-                        </div>
-                    <div class="card border-secondary m-2">
-                            <div class="card-body">
-                                <h4 class="card-title">Church Denounces Recent Sector Developments</h4>
-                                <a class="btn btn-outline-secondary" asp-area="" asp-controller="Denunciation" asp-action="Index">Read &raquo;</a>
-                            </div>
-                        </div>
+                <div class="card border-secondary m-2">
+                    <div class="card-body">
+                        <h4 class="card-title">The Church Responds to the article entitled "Woe To the Rich"</h4>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="WoeRich">Read
+                            &raquo;</a>
+                    </div>
+                </div>
+                <div class="card border-secondary m-2">
+                    <div class="card-body">
+                        <h4 class="card-title">The Countess and the Credits</h4>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="CountessCredits">Read
+                            &raquo;</a>
+                    </div>
+                </div>
+                <div class="card border-secondary m-2">
+                    <div class="card-body">
+                        <h4 class="card-title">Church Denounces Recent Sector Developments</h4>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Denunciation" asp-action="Index">Read
+                            &raquo;</a>
+                    </div>
+                </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Demnoph High Priest Returns to Andophael</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="DemnophWithdrawn">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="DemnophWithdrawn">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Church Acquires New Tool to Protect Sector</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="TWeb">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="TWeb">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Church Invests in New Generation</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Treachery">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Treachery">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Pelax Elevated to Exarch Purist</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="PelaxElevation">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="PelaxElevation">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Second Part of the Meeting Between the Houses Major and Minor, 7/20</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Audio" asp-action="MeetingTwo">Listen &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Audio" asp-action="MeetingTwo">Listen
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Where's Callixtus Pius?</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="WheresCallixtus" asp-action="Index">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="WheresCallixtus" asp-action="Index">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Special Dispensation Granted to Yakiyah Commission for Legal Support</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Dispensation">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Dispensation">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Meeting between the Houses Major and Minor, 7/14</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Audio" asp-action="Meeting">Listen &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Audio" asp-action="Meeting">Listen
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">The Sermon at Harvey's Wedding</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Sermon" asp-action="SermonHarvey">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Sermon" asp-action="SermonHarvey">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">A Sermon on Cabina</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Sermon" asp-action="SermonCabina">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Sermon" asp-action="SermonCabina">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Everyday Faithfulness, by Andelo Kopac</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Faithfullness">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Faithfullness">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">High Church Turns To House Eridanus to Solve Corruption Scandal</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="EridaniExpertise">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="EridaniExpertise">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">High Church Announces Mutual Defense Pact</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="TrillMDP">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="TrillMDP">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">New Cathedral Opens on Berkmann III</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Berkmann" asp-action="Index">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Berkmann" asp-action="Index">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Charity Makes Contribution to Teuthem Relief Effort</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="TeuthemCost">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="TeuthemCost">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Church Opens Sector-wide Charity</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Charity">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Charity">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Church Welcomes New Arhat</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Home" asp-action="Cactus">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Home" asp-action="Cactus">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Lyra Publishes New Burial Specifications for Clergy</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Burial" asp-action="Specifics">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Burial" asp-action="Specifics">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Faith and Virtue: A Response to Governor Mourne Kushrenade</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Faith">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Faith">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">The Church Remembers the Fallen on Teuthem</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Teuthem">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Teuthem">Read
+                            &raquo;</a>
                     </div>
                 </div>
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Response to the 12th Debate</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Debate">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Debate">Read
+                            &raquo;</a>
                     </div>
                 </div>
 
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Excommunication of the Apostate Money Lenders</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Excom">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Excom">Read
+                            &raquo;</a>
                     </div>
                 </div>
 
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">Official Statement on Koschei the Deathless</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Koschei">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Koschei">Read
+                            &raquo;</a>
                     </div>
                 </div>
 
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">The Church's Public Statements on Berkmann III</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Berkmann">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Berkmann">Read
+                            &raquo;</a>
                     </div>
                 </div>
 
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">The Spirit of Unity on Andophael</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Unity">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Unity">Read
+                            &raquo;</a>
                     </div>
                 </div>
 
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">20 Questions With the High Church</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Questions">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="PDF" asp-action="Questions">Read
+                            &raquo;</a>
                     </div>
                 </div>
 
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">A Letter From Meret Lyra Pygmalion Blue</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Burial" asp-action="Index">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Burial" asp-action="Index">Read
+                            &raquo;</a>
                     </div>
                 </div>
 
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">A Sermon On Yakiyah</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Sermon" asp-action="SermonYakiyah">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Sermon" asp-action="SermonYakiyah">Read
+                            &raquo;</a>
                     </div>
                 </div>
 
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">From the Desk of the Grand Voice</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Content" asp-action="FromTheDesk">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Content" asp-action="FromTheDesk">Read
+                            &raquo;</a>
                     </div>
                 </div>
 
                 <div class="card border-secondary m-2">
                     <div class="card-body">
                         <h4 class="card-title">The Sermons of High Priest Callixtus Pius</h4>
-                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Sermon" asp-action="Index">Read &raquo;</a>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Sermon" asp-action="Index">Read
+                            &raquo;</a>
                     </div>
                 </div>
             </div>
