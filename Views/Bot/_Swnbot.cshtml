@@ -96,5 +96,146 @@
                         </td>
                     </tr>
                 </tbody>
+            </table><table class="table table-bordered table-responsive d-block mx-auto border-light">
+                <thead class="thead-inverse">
+                    <tr>
+                        <td colspan="3" scope="col" class="text-center">Characters</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Command Text</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Administrator Required?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">
+                            <strong>sb!newcharacter [Name with or without quotation marks]</strong>
+                        </td>
+                        <td scope="row">
+                            Creates a new character with the specified name and dumps the result as a JSON file to the channel.
+                        </td>
+                        <td scope="row">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <strong>sb!uploadcharacter</strong>
+                        </td>
+                        <td scope="row">
+                            Upload your character's JSON file, and in the optional comment put the command in. The server will take the changes to the JSON and apply them to the character specified. This is the preferred way to update a character in bulk, but it is possible to break. When in doubt, use the other update command.
+                        </td>
+                        <td scope="row">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <strong>sb!getcharacter</strong>
+                        </td>
+                        <td scope="row">
+                            Gets your character's JSON, used with the command above.
+                        </td>
+                        <td scope="row">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <strong>sb!deletecharacter [Name]</strong>
+                        </td>
+                        <td scope="row">
+                            Deletes a character from the database
+                        </td>
+                        <td>
+                            <i class="fas fa-check text-center"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <strong>sb!listcharacters [Name]</strong>
+                        </td>
+                        <td scope="row">
+                            Lists all characters by name.
+                        </td>
+                        <td scope="row">
+                                <i class="fas fa-check text-center"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <strong>sb!addweapon [Name]</strong>
+                        </td>
+                        <td scope="row">
+                            Adds a weapon to your character.
+                        </td>
+                        <td scope="row">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <strong>sb!listproperty</strong>
+                        </td>
+                        <td scope="row">
+                            Lists the properties that can be changed with the changeproperty command.
+                        </td>
+                        <td scope="row">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <strong>sb!updateproperty [Property] [Value]</strong>
+                        </td>
+                        <td scope="row">
+                            Updates a property of cour character, like a stat or your AC.
+                        </td>
+                        <td scope="row">
+                        </td>
+                    </tr>
+                </tbody>
             </table>
+            <table class="table table-bordered table-responsive d-block mx-auto border-light">
+                    <thead class="thead-inverse">
+                        <tr>
+                            <td colspan="3" scope="col" class="text-center">Rolling</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Command Text</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Administrator Required?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">
+                                <strong>sb!roll [xdy+-z]</strong>
+                            </td>
+                            <td scope="row">
+                                Rolls the specified dice with the appropriate modifier. Note that it cannot handle the modifier math for you, so instead of using "+1-2", use "-1" instead.
+                            </td>
+                            <td scope="row">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <strong>sb!skillroll [Skill_name] [stat name] [optional modifier]</strong>
+                            </td>
+                            <td scope="row">
+                                Rolls a skillcheck with the given stat and modifier. You may use "dex" instead of "dexterity" etc.
+                            </td>
+                            <td scope="row">
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <strong>sb!attackranged [weapon name] [optional modifier]</strong>
+                            </td>
+                            <td scope="row">
+                                Rolls an attack with a ranged weapon on your character sheet. The first message returned is the roll to hit, the second is the damage roll.
+                            </td>
+                            <td scope="row">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
         </div>
