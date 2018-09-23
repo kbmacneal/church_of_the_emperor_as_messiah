@@ -131,5 +131,11 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult ChrDeclaration (PDFModel model) {
+            model.link = "https://highchurch.space/Documents/chr_announcment.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
