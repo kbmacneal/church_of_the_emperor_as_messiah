@@ -137,5 +137,11 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult RepentantMissive (PDFModel model) {
+            model.link = "https://highchurch.space/Documents/repentant_missive.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
