@@ -143,5 +143,11 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult NewVoice (PDFModel model) {
+            model.link = "https://highchurch.space/Documents/new_grand_voice.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
