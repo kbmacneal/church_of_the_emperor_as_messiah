@@ -14,6 +14,10 @@ namespace emperor_mvc.Controllers {
             return View ();
         }
 
+        public ActionResult AudioSermons () {
+            return View ("AudioSermons");
+        }
+
         [HttpGet]
         public ActionResult SermonYakiyah (SermonSingleColumnModel model) {
             model.sermonheader = "Preamble";

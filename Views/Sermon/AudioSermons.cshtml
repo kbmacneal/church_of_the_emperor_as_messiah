@@ -1,0 +1,27 @@
+@{ViewData["Title"] = "Reading";}
+<div class="container-fluid">
+    <div class="d-flex flex-column">
+        <h3 style="font-weight: bold">The Sermons of The High Church</h3>
+        @Html.Partial("SermonMenu")
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Enemies of the Empire, by Hierophant Godfrey Carrion
+                    </td>
+                    <td>
+                        <a class="btn btn-outline-secondary" asp-area="" asp-controller="Audio" asp-action="EnemiesEmpire">Listen
+                            &raquo;</a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>

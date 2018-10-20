@@ -26,5 +26,11 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult EnemiesEmpire (AudioModel model){
+            model.path = "https://highchurch.space/Assets/Audio/Sermons/enemies_of_the_empire.m4a";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
