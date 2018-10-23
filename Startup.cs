@@ -41,6 +41,7 @@ namespace emperor_mvc {
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public static void Configure (IApplicationBuilder app, IHostingEnvironment env) {
+            System.Console.WriteLine("Launching with environment: " + env.EnvironmentName);
             if (env.IsDevelopment ()) {
                 app.UseDeveloperExceptionPage ();
             } else {
