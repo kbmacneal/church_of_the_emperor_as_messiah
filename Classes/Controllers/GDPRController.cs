@@ -24,6 +24,11 @@ namespace emperor_mvc.Controllers {
                 response.IPData = IPData;
                 response.CheckboxData = CheckboxData;
 
+                if(CheckboxData == false)
+                {
+                    return View("Problem");
+                }
+
                 GDPR.RegisterResponse (response);
             }
             return View ("Success");
