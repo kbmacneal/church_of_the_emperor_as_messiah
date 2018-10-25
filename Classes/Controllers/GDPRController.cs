@@ -8,9 +8,28 @@ using emperor_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
+using JsonFlatFileDataStore;
 
 namespace emperor_mvc.Controllers
 {
+    public class CookieRegister
+    {
+        public string time{get;set;}
+        public string address{get;set;}
+
+        public async void insert_cookie_register ()
+        {
+            // Open database (create new if file doesn't exist)
+            var store = new DataStore ("data.json");
+
+            // Get employee collection
+            var collection = store.GetCollection<CookieRegister> ();
+
+            await collection.InsertOneAsync (this);
+
+            store.Dispose ();
+        }
+    }
 
     public class GDPRController : Controller
     {
@@ -26,6 +45,23 @@ namespace emperor_mvc.Controllers
             return View();
         }
 
+        [HttpGet]
+        public ActionResult CookieRegister()
+        {
+            DateTime now = DateTime.Now.ToUniversalTime();
+
+            string IPData = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+
+            CookieRegister reg = new CookieRegister{
+                time = now.ToString(),
+                address = IPData
+            };
+
+            reg.insert_cookie_register();
+
+            return Ok();
+        }
+
         [HttpPost]
         public ActionResult Index(string EmailData, string IPData, Boolean CheckboxData)
         {
@@ -33,7 +69,7 @@ namespace emperor_mvc.Controllers
             if (ModelState.IsValid)
             {
 
-                if(IPData == null)
+                if (IPData == null)
                 {
                     IPData = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
                 }
@@ -71,10 +107,10 @@ namespace emperor_mvc.Controllers
             int rtner = 0;
             System.Net.IPAddress addr = System.Net.IPAddress.Parse("1.1.1.1");
 
-            if(email != null)
+            if (email != null)
             {
                 if (email.Contains("@")) rtner++;
-            }            
+            }
 
             if (System.Net.IPAddress.TryParse(ip, out addr)) rtner++;
 
