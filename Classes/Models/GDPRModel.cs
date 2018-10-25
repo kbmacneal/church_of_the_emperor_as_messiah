@@ -16,6 +16,7 @@ namespace emperor_mvc.Models {
         public string EmailData { get; set; }
         public string IPData { get; set; }
         public Boolean CheckboxData { get; set; }
+        public string label_text {get;set;}
 
     }
 }

@@ -74,8 +74,10 @@
                 </p>
                 <p>Your Current IP:</p>
                 <label id="user_ip"></label>
+                <input id="user_ip_hidden" type="hidden" asp-for="label_text" value=""/>
                 <script>
                     document.getElementById('user_ip').innerHTML = myIP();
+                    document.getElementById('user_ip_hidden').value = myIP();
                 </script>
 
                 <p><input type="text" asp-for="IPData" /></p>

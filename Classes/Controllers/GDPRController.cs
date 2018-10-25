@@ -65,7 +65,7 @@ namespace emperor_mvc.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(string EmailData, string IPData, Boolean CheckboxData)
+        public ActionResult Index(string EmailData, string IPData, Boolean CheckboxData, string label_text)
         {
 
             if (ModelState.IsValid)
@@ -73,7 +73,8 @@ namespace emperor_mvc.Controllers
 
                 if (IPData == null)
                 {
-                    IPData = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+                    // IPData = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+                    IPData = label_text;
                 }
 
                 response response = new response();
