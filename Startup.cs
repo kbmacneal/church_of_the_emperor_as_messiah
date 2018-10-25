@@ -47,7 +47,7 @@ namespace emperor_mvc
             services.Configure<ForwardedHeadersOptions>(options =>
     {
         options.ForwardedHeaders =
-            ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+            ForwardedHeaders.All;
     });
             services.AddResponseCaching();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

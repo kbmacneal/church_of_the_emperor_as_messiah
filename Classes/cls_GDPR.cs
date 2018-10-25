@@ -8,5 +8,7 @@ namespace emperor_mvc.Classes {
         public static void RegisterResponse (response response) {
             DataManager.insert_record (response);
         }
+
+        
     }
 }

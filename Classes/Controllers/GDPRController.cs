@@ -32,41 +32,10 @@ namespace emperor_mvc.Controllers
         }
     }
 
+    [Produces("application/json")]
     public class GDPRController : Controller
     {
         private IHttpContextAccessor _accessor;
-
-        public T GetHeaderValueAs<T>(string headerName)
-        {
-            StringValues values;
-
-            if (_accessor.HttpContext?.Request?.Headers?.TryGetValue(headerName, out values) ?? false)
-            {
-                string rawValues = values.ToString();   // writes out as Csv when there are multiple.
-
-                if (!IsNullOrWhitespace(rawValues))
-                    return (T)Convert.ChangeType(values.ToString(), typeof(T));
-            }
-            return default(T);
-        }
-
-        public static List<string> SplitCsv(string csvList, bool nullOrWhitespaceInputReturnsNull = false)
-        {
-            if (string.IsNullOrWhiteSpace(csvList))
-                return nullOrWhitespaceInputReturnsNull ? null : new List<string>();
-
-            return csvList
-                .TrimEnd(',')
-                .Split(',')
-                .AsEnumerable<string>()
-                .Select(s => s.Trim())
-                .ToList();
-        }
-
-        public static bool IsNullOrWhitespace(string s)
-        {
-            return String.IsNullOrWhiteSpace(s);
-        }
 
         public GDPRController(IHttpContextAccessor accessor)
         {
@@ -78,13 +47,11 @@ namespace emperor_mvc.Controllers
             return View();
         }
 
-        [HttpGet]
-        public ActionResult CookieRegister()
+        [HttpPost]
+        public ActionResult CookieRegister([FromBody] GDPRModel data)
         {
             DateTime now = DateTime.Now.ToUniversalTime();
-
-            // string IPData = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
-            string IPData = SplitCsv(GetHeaderValueAs<string>("X-Forwarded-For")).FirstOrDefault();
+            string IPData = data.IPData.Trim();
 
             CookieRegister reg = new CookieRegister
             {

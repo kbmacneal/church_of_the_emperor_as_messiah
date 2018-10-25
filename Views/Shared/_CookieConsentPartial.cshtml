@@ -27,17 +27,45 @@
             }
         }
 
+        function myIP() {
+            if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
+            else xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+            xmlhttp.open("GET", "http://api.hostip.info/get_html.php", false);
+            xmlhttp.send();
+
+            hostipInfo = xmlhttp.responseText.split("\n");
+
+            for (i = 0; hostipInfo.length >= i; i++) {
+                ipAddress = hostipInfo[i].split(":");
+                if (ipAddress[0] == "IP") return ipAddress[1];
+            }
+
+            return "";
+        };
+
         (function () {
             document.querySelector("#cookieConsent button[data-cookie-string]").addEventListener("click", function (
                 el) {
                 document.cookie = el.target.dataset.cookieString;
                 document.querySelector("#cookieConsent").classList.add("hidden");
                 hide(document.getElementById('cookieConsent'));
+
+                var data = {
+                    EmailData: '',
+                    IPData: myIP(),
+                    CheckboxData: true
+                };
+
                 $.ajax({
                     url: '/GDPR/CookieRegister',
+                    type: 'POST',
+                    dataType: "json",
+                    contentType: "application/json; charset=utf-8",
+                    data: JSON.stringify(data),
                 });
-            }, false);
 
+            }, false);
 
         })();
     </script>
