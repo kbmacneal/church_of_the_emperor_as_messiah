@@ -35,6 +35,7 @@ namespace emperor_mvc {
             opt.RegisterWebmanifest = true;
 
             services.AddProgressiveWebApp (opt, "manifest.json");
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddResponseCaching ();
             services.AddMvc ().SetCompatibilityVersion (CompatibilityVersion.Version_2_1);
         }
