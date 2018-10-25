@@ -9,31 +9,64 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 using JsonFlatFileDataStore;
+using Microsoft.Extensions.Primitives;
 
 namespace emperor_mvc.Controllers
 {
     public class CookieRegister
     {
-        public string time{get;set;}
-        public string address{get;set;}
+        public string time { get; set; }
+        public string address { get; set; }
 
-        public async void insert_cookie_register ()
+        public async void insert_cookie_register()
         {
             // Open database (create new if file doesn't exist)
-            var store = new DataStore ("data.json");
+            var store = new DataStore("data.json");
 
             // Get employee collection
-            var collection = store.GetCollection<CookieRegister> ();
+            var collection = store.GetCollection<CookieRegister>();
 
-            await collection.InsertOneAsync (this);
+            await collection.InsertOneAsync(this);
 
-            store.Dispose ();
+            store.Dispose();
         }
     }
 
     public class GDPRController : Controller
     {
         private IHttpContextAccessor _accessor;
+
+        public T GetHeaderValueAs<T>(string headerName)
+        {
+            StringValues values;
+
+            if (_accessor.HttpContext?.Request?.Headers?.TryGetValue(headerName, out values) ?? false)
+            {
+                string rawValues = values.ToString();   // writes out as Csv when there are multiple.
+
+                if (!IsNullOrWhitespace(rawValues))
+                    return (T)Convert.ChangeType(values.ToString(), typeof(T));
+            }
+            return default(T);
+        }
+
+        public static List<string> SplitCsv(string csvList, bool nullOrWhitespaceInputReturnsNull = false)
+        {
+            if (string.IsNullOrWhiteSpace(csvList))
+                return nullOrWhitespaceInputReturnsNull ? null : new List<string>();
+
+            return csvList
+                .TrimEnd(',')
+                .Split(',')
+                .AsEnumerable<string>()
+                .Select(s => s.Trim())
+                .ToList();
+        }
+
+        public static bool IsNullOrWhitespace(string s)
+        {
+            return String.IsNullOrWhiteSpace(s);
+        }
 
         public GDPRController(IHttpContextAccessor accessor)
         {
@@ -50,9 +83,11 @@ namespace emperor_mvc.Controllers
         {
             DateTime now = DateTime.Now.ToUniversalTime();
 
-            string IPData = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+            // string IPData = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+            string IPData = SplitCsv(GetHeaderValueAs<string>("X-Forwarded-For")).FirstOrDefault();
 
-            CookieRegister reg = new CookieRegister{
+            CookieRegister reg = new CookieRegister
+            {
                 time = now.ToString(),
                 address = IPData
             };

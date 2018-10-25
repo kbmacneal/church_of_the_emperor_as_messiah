@@ -11,6 +11,7 @@ using Microsoft.Net.Http.Headers;
 using NetEscapades.AspNetCore.SecurityHeaders;
 using WebEssentials.AspNetCore.Pwa;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.HttpOverrides;
 
 namespace emperor_mvc
 {
@@ -43,6 +44,11 @@ namespace emperor_mvc
             services.AddProgressiveWebApp(opt, "manifest.json");
             services.AddHttpContextAccessor();
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            services.Configure<ForwardedHeadersOptions>(options =>
+    {
+        options.ForwardedHeaders =
+            ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+    });
             services.AddResponseCaching();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
