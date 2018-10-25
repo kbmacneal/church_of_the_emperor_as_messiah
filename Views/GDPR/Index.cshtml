@@ -1,5 +1,6 @@
 @model GDPRModel 
 @{ ViewData["Title"] = "GDPR"; } 
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
 <div class="container-fluid">
   <div class="row-fluid">
@@ -47,8 +48,9 @@
       <input type="text" asp-for="EmailData" />
       </p>
       <p>
-        <label for="IPData">IP Address</label>
+        <label for="IPData">IP Address (if none is provided, your current IP will be used.)</label>
       </p>
+      <p>Your Current IP: @HttpContextAccessor.HttpContext.Connection.RemoteIpAddress.ToString()</p>
       <p><input type="text" asp-for="IPData" /></p>
       <p>
         <input type="checkbox" asp-for="CheckboxData" /> <label for="CheckboxData"> I am over the age of 13. I understand that my information stored on all webservers used to serve this website will

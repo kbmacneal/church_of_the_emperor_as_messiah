@@ -11,8 +11,16 @@ using Microsoft.AspNetCore.Http;
 
 namespace emperor_mvc.Controllers
 {
+
     public class GDPRController : Controller
     {
+        private IHttpContextAccessor _accessor;
+
+        public GDPRController(IHttpContextAccessor accessor)
+        {
+            _accessor = accessor;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -24,6 +32,11 @@ namespace emperor_mvc.Controllers
 
             if (ModelState.IsValid)
             {
+
+                if(IPData == null)
+                {
+                    IPData = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+                }
 
                 response response = new response();
                 response.EmailData = EmailData;
@@ -38,13 +51,13 @@ namespace emperor_mvc.Controllers
                 {
                     GDPR.RegisterResponse(response);
                     return View("Success");
-                }                
+                }
             }
             else
             {
                 return View("Problem");
             }
-            
+
         }
 
         [HttpGet]
@@ -58,7 +71,10 @@ namespace emperor_mvc.Controllers
             int rtner = 0;
             System.Net.IPAddress addr = System.Net.IPAddress.Parse("1.1.1.1");
 
-            if (email.Contains("@")) rtner++;
+            if(email != null)
+            {
+                if (email.Contains("@")) rtner++;
+            }            
 
             if (System.Net.IPAddress.TryParse(ip, out addr)) rtner++;
 
