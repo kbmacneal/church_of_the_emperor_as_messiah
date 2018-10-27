@@ -149,5 +149,12 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult FaithfulSeeker (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/faithful_seeker.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
