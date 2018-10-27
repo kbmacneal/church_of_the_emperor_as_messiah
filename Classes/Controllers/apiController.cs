@@ -41,6 +41,13 @@ namespace emperor_mvc.Controllers {
 
             stats stats = collection.AsQueryable().FirstOrDefault();
 
+            if(stats == null)
+            {
+                stats = new stats{
+                    membership_stats = "No stats at this time."
+                };
+            }
+
             store.Dispose();
 
             return stats;
