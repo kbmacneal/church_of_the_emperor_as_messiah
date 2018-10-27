@@ -79,10 +79,12 @@ namespace emperor_mvc.Controllers {
         [HttpPost]
         public ActionResult UpdateMemCount ([FromBody] apiModel model) {
 
+            BadRequestResult bad = new BadRequestResult();
+
             // apiModel model = Newtonsoft.Json.JsonConvert.DeserializeObject<apiModel>(raw);
 
             if (key.get_key (model.api_key) == null) {
-                return null;
+                return bad;
             }
 
             stats s = new stats{
