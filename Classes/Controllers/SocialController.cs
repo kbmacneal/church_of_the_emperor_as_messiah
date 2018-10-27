@@ -12,8 +12,8 @@ namespace emperor_mvc.Controllers {
 
         [HttpGet]
         public ActionResult Index (SocialModel model) {
-
-            return View ();
+            model.stats_text = Controllers.stats.get_stats().membership_stats.Replace(System.Environment.NewLine, "<br />");
+            return View (model);
         }
 
         [HttpGet]

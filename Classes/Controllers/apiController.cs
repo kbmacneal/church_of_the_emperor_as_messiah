@@ -32,6 +32,22 @@ namespace emperor_mvc.Controllers {
             store.Dispose ();
         }
 
+        public static stats get_stats ()
+        {
+            // Open database (create new if file doesn't exist)
+            var store = new DataStore ("stats.json");
+            // Get employee collection
+            var collection = store.GetCollection<stats> ();
+
+            stats stats = collection.AsQueryable().FirstOrDefault();
+
+            store.Dispose();
+
+            return stats;
+
+
+        }
+
     }
 
     public class key {

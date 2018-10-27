@@ -13,5 +13,9 @@ namespace emperor_mvc.Models {
             get;
             set;
         }
+
+        public string stats_text {
+            get;set;
+        }
     }
 }
