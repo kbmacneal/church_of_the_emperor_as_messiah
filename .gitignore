@@ -324,3 +324,5 @@ emperor_mvc/secrets.json
 wwwroot/Audio/test.mp3
 wwwroot/Assets/Audio/Meeting_old.mp3
 data.json
+api.json
+stats.json
