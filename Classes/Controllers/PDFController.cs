@@ -170,5 +170,12 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult MercifulGod (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/merciful_god.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
