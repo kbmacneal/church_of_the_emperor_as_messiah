@@ -163,5 +163,12 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult ChildrenDemnoph (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/children_of_demnoph.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
