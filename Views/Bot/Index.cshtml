@@ -1,0 +1,36 @@
+@{ ViewData["Title"] = "Bot Commands"; }
+
+<div class="container">
+    <div class="row">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Timebot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#profile">SWNBot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#factions">FacSim Factions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#assets">FacSim Assets</a>
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade show active" id="home">
+                @Html.Partial("_Timebot")
+            </div>
+            <div class="tab-pane fade" id="profile">
+                @Html.Partial("_Swnbot")
+            </div>
+            <div class="tab-pane fade" id="factions">
+                @Html.Partial("_Factions")
+            </div>
+            <div class="tab-pane fade" id="assets">
+                @Html.Partial("_Assets")
+            </div>
+        </div>
+    </div>
+</div>
