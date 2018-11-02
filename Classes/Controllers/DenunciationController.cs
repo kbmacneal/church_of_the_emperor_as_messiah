@@ -73,5 +73,8 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Denunciation", model);
         }
+        public IActionResult UnderConstruction (DenunciationModel model) {
+            return View ();
+        }
     }
 }
