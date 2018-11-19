@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 using emperor_mvc.Classes;
 using emperor_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
+using Westwind.Utilities;
 
 namespace emperor_mvc.Controllers {
     public class SocialController : Controller {
 
         [HttpGet]
         public ActionResult Index (SocialModel model) {
-            model.stats_text = Controllers.stats.get_stats().membership_stats.Replace(System.Environment.NewLine, "<br />");
+            model.stats_text = HtmlUtils.DisplayMemo(Controllers.stats.get_stats().membership_stats);
+            
             return View (model);
         }
 
