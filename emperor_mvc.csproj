@@ -26,4 +26,9 @@
     <PackageReference Include="westwind.utilities" Version="3.0.20.7" />
   </ItemGroup>
 
+  <ItemGroup>
+  <None Include="commands.json" CopyToPublishDirectory="Always" />
+
+</ItemGroup>
+
 </Project>
