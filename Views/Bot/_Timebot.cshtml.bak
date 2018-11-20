@@ -1,0 +1,593 @@
+<h3 class="d-block mx-auto text-center" style="font-weight: bold">Frederick the Timebot Command List</h3>
+<div class="d-block mx-auto">
+    <table class="table table-bordered table-responsive d-block mx-auto border-light">
+        <thead class="thead-inverse">
+            <tr>
+                <td colspan="3" scope="col" class="text-center">Admin</th>
+            </tr>
+            <tr>
+                <th scope="col">Command Text</th>
+                <th scope="col">Description</th>
+                <th scope="col">Administrator Required?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">
+                    <strong>tb!sendfactionblast</strong>
+                </td>
+                <td scope="row">
+                    Sends a message to every member of a faction that the bot can see.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!getfactioncount</strong>
+                </td>
+                <td scope="row">
+                    Gets the realtime count of all members of a faction from the SWNBot API.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!cleanfaclists</strong>
+                </td>
+                <td scope="row">
+                    Can be run either against everyone on a server or against a specific user (at the user as a parameter to use the latter). Will check and make sure the faction roles match with the main FV server.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!listfaction</strong>
+                </td>
+                <td scope="row">
+                    Returns the list of all factions available to the addfaction command.
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!addfaction "faction with spaces"</strong>
+                </td>
+                <td scope="row">
+                    Adds the sender to the selected faction. Administrators can at an individual then specify the faction and the bot will add the user to the faction. This is the preferred way to add, since the bot with check with the FV server to make sure that the user
+                    is a part of that faction.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!removefaction "faction with spaces"</strong>
+                </td>
+                <td scope="row">
+                    Exactly like the addfaction command, but removes. Has the same at user overload.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!removeentirefaction faction</strong>
+                </td>
+                <td scope="row">
+                    Kicks an entire faction from the server.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!tracker</strong>
+                </td>
+                <td scope="row">
+                    Pastes the link to the faction tracker in chat
+                </td>
+                <td scope="row">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!sector</strong>
+                </td>
+                <td scope="row">
+                    Pastes the link to the sector map in the chat.
+                </td>
+                <td scope="row">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!xkcd [optional number]</strong>
+                </td>
+                <td scope="row">
+                    Pastes a random xkcd comic into chat. If no number is provided a random one is selected.
+                </td>
+                <td scope="row">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!rulings</strong>
+                </td>
+                <td scope="row">
+                    Pastes the WoA rulings link into chat.
+                </td>
+                <td scope="row">
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!archivechannel</strong>
+                </td>
+                <td scope="row">
+                    Takes a complete record of the channel, converts it to json, and dumps the result as an attachment to the channel.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!addtorightfaction</strong>
+                </td>
+                <td scope="row">
+                    Goes through all users on the server and adds them to the faction they are a part of on the main Far Verona server.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!monthlychanges</strong>
+                </td>
+                <td scope="row">
+                    runs the cleanfaclists then the addtorightfaction command, useful for running on the first of the month after the turn has been run by the main FV server.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-responsive d-block mx-auto border-light">
+        <thead class="thead-inverse">
+            <tr>
+                <td colspan="3" scope="col" class="text-center">Bingo</th>
+            </tr>
+            <tr>
+                <th scope="col">Command Text</th>
+                <th scope="col">Description</th>
+                <th scope="col">Administrator Required?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">
+                    <strong>tb!playbingo</strong>
+                </td>
+                <td scope="row">
+                    Starts a game of bingo.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!playwinner</strong>
+                </td>
+                <td scope="row">
+                    Indicates to the bot that you have won the game.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!iwanttoplay</strong>
+                </td>
+                <td scope="row">
+                    Indicates to the bot that you want to join the game currently going on in the channel.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-responsive d-block mx-auto border-light">
+        <thead class="thead-inverse">
+            <tr>
+                <td colspan="3" scope="col" class="text-center">Meeting</th>
+            </tr>
+            <tr>
+                <th scope="col">Command Text</th>
+                <th scope="col">Description</th>
+                <th scope="col">Administrator Required?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">
+                    <strong>tb!postmeeting "title" "datetime"</strong>
+                </td>
+                <td scope="row">
+                    Proposes that a meeting with the specified name and time be held. Currently the only server to have this feature is the IFDS.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!acknowledge "meeting#" "faction"</strong>
+                </td>
+                <td scope="row">
+                    Indicates to the bot that your representative has received the meeting notice.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!attend "meeting#" "faction"</strong>
+                </td>
+                <td scope="row">
+                    Indicates to the bot that your faction will attend the meeting.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!timetill "meeting#"</strong>
+                </td>
+                <td scope="row">
+                    Gets the time, in hours, until the meeting.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-responsive d-block mx-auto border-light">
+        <thead class="thead-inverse">
+            <tr>
+                <td colspan="3" scope="col" class="text-center">NACHO</th>
+            </tr>
+            <tr>
+                <th scope="col">Command Text</th>
+                <th scope="col">Description</th>
+                <th scope="col">Administrator Required?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">
+                    <strong>tb!addrepresentative "faction"</strong>
+                </td>
+                <td scope="row">
+                    Adds you as the representative of your faction. There can only be one representative per faction. Can also be targeted at another user to add them.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!removerepresentative</strong>
+                </td>
+                <td scope="row">
+                    Removes you as a representative for a faction. Can also be targeted at a user.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-responsive d-block mx-auto border-light">
+        <thead class="thead-inverse">
+            <tr>
+                <td colspan="3" scope="col" class="text-center">Proposal</th>
+            </tr>
+            <tr>
+                <th scope="col">Command Text</th>
+                <th scope="col">Description</th>
+                <th scope="col">Administrator Required?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">
+                    <strong>tb!propose "proposal_text"</strong>
+                </td>
+                <td scope="row">
+                    Only for representatives. Calls a matter for the vote.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-responsive d-block mx-auto border-light">
+        <thead class="thead-inverse">
+            <tr>
+                <td colspan="3" scope="col" class="text-center">Setup</th>
+            </tr>
+            <tr>
+                <th scope="col">Command Text</th>
+                <th scope="col">Description</th>
+                <th scope="col">Administrator Required?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">
+                    <strong>tb!setcolors</strong>
+                </td>
+                <td scope="row">
+                    Initializes the server, creating all the standard factions with standard colors (if ran on a server with factions already configured, it will simply make sure they have the right colors).
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-responsive d-block mx-auto border-light">
+        <thead class="thead-inverse">
+            <tr>
+                <td colspan="3" scope="col" class="text-center">Timebot</th>
+            </tr>
+            <tr>
+                <th scope="col">Command Text</th>
+                <th scope="col">Description</th>
+                <th scope="col">Administrator Required?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">
+                    <strong>tb!ping</strong>
+                </td>
+                <td scope="row">
+                    Makes sure the bot is awake.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!commands</strong>
+                </td>
+                <td scope="row">
+                    Puts in the link to this page
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!addspeaker "at user"</strong>
+                </td>
+                <td scope="row">
+                    Adds the user as a speaker for the purposes of starting a timer.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!changedefaults "# minutes"</strong>
+                </td>
+                <td scope="row">
+                    Changes the default timer time for all speakers.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!starttimer "at user"</strong>
+                </td>
+                <td scope="row">
+                    Starts a timer for a speaker, letting them know that time has started and that time is over when the timer has run out.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!clearspeakers</strong>
+                </td>
+                <td scope="row">
+                    Clears all speakers from the database.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!clearchannel "Count Limit"</strong>
+                </td>
+                <td scope="row">
+                    Delets the last X messages from the channel. Without a parameter, it will remove the last two weeks of messages.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!cactus</strong>
+                </td>
+                <td scope="row">
+                    :cactusemo:
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!virtues</strong>
+                </td>
+                <td scope="row">
+                    Displays the Ten Virtues
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!savior</strong>
+                </td>
+                <td scope="row">
+                    Lets you know where the emperox stands with Trill.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!opensource</strong>
+                </td>
+                <td scope="row">
+                    Puts a link to the github repo into the chat.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!churchapproved</strong>
+                </td>
+                <td scope="row">
+                    Drops a whole helping of ten blessings.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!vote "Faction name" "question#" "option#"</strong>
+                </td>
+                <td scope="row">
+                    Casts your vote for a question.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!tally "question#"</strong>
+                </td>
+                <td scope="row">
+                    Tallies all the votes for the question.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!deletequestion "#"</strong>
+                </td>
+                <td scope="row">
+                    Deletes the vote in question from the database.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!asset [asset name with or without quotes] </strong>
+                </td>
+                <td scope="row">
+                    Displays asset information.
+                </td>
+                <td scope="row">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!synth [at user mention]</strong>
+                </td>
+                <td scope="row">
+                    Determines whether someone is a synth.
+                </td>
+                <td scope="row">
+                    <i class="fas fa-check text-center"></i>
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!tag [tag name]</strong>
+                </td>
+                <td scope="row">
+                    Searches the DB for the tag with that specific name and displays the tag's effect.
+                </td>
+                <td scope="row">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!badbot</strong>
+                </td>
+                <td scope="row">
+                    Fred's a bit of a masochist.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <strong>tb!roll "xdy +/- mod"</strong>
+                </td>
+                <td scope="row">
+                    Performs a dice roll.
+                </td>
+                <td scope="row">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -8,8 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace emperor_mvc.Controllers {
     public class BotController : Controller {
-        public IActionResult Index () {
-            return View ();
+        public IActionResult Index (BotModel model) {
+
+            // model.commands = Newtonsoft.Json.JsonConvert.DeserializeObject<List<emperor_mvc.Models.command_help>>(System.IO.File.ReadAllText("commands.json"));
+
+            return View (Newtonsoft.Json.JsonConvert.DeserializeObject<List<emperor_mvc.Models.command_help>>(System.IO.File.ReadAllText("commands.json")));
         }
     }
 }
