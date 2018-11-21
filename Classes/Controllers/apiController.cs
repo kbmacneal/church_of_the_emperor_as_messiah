@@ -142,7 +142,7 @@ namespace emperor_mvc.Controllers {
                 System.IO.File.Delete("commands.json");
             }
 
-            System.IO.File.WriteAllText("commands.json", commands);
+            System.IO.File.WriteAllText("commands.json", commands.json_text);
 
             OkResult ok = new OkResult();
 
