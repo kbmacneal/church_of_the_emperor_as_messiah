@@ -44,7 +44,7 @@ namespace emperor_mvc.Controllers {
             }
             else
             {
-                commands= Newtonsoft.Json.JsonConvert.DeserializeObject<List<command_help>>(content).DistinctBy(e=>e.name).ToList();
+                commands= Newtonsoft.Json.JsonConvert.DeserializeObject<List<command_help>>(content).DistinctBy(e=>e.name).OrderBy(e=>e.name).ToList();
             }            
 
             ViewBag.commands = commands;
