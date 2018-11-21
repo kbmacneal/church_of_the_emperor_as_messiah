@@ -15,10 +15,36 @@ namespace emperor_mvc.Controllers {
         public bool admin_required {get;set;}
     }
         public IActionResult Index () {
+            List<command_help> commands = new List<command_help>();
 
             var path = "commands.json";
-            var content = System.IO.File.ReadAllText(path);
-            List<command_help> commands = Newtonsoft.Json.JsonConvert.DeserializeObject<List<command_help>>(content);
+            string content = "";
+            
+            if(!System.IO.File.Exists(path))
+            {
+                commands.Add(new command_help{name="Update commands",summary="",admin_required=false});
+
+                ViewBag.commands = commands;
+
+                return View ();
+            }
+            else
+            {
+                content = System.IO.File.ReadAllText(path);
+            }
+
+            if(content == "")
+            {
+                commands.Add(new command_help{name="Update commands",summary="",admin_required=false});
+
+                ViewBag.commands = commands;
+
+                return View ();
+            }
+            else
+            {
+                commands= Newtonsoft.Json.JsonConvert.DeserializeObject<List<command_help>>(content);
+            }            
 
             ViewBag.commands = commands;
 
