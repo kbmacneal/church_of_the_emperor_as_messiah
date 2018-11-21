@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using emperor_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
+using MoreLinq;
 
 namespace emperor_mvc.Controllers {
     public class BotController : Controller {
@@ -43,7 +44,7 @@ namespace emperor_mvc.Controllers {
             }
             else
             {
-                commands= Newtonsoft.Json.JsonConvert.DeserializeObject<List<command_help>>(content);
+                commands= Newtonsoft.Json.JsonConvert.DeserializeObject<List<command_help>>(content).DistinctBy(e=>e.name).ToList();
             }            
 
             ViewBag.commands = commands;
