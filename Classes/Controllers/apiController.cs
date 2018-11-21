@@ -121,14 +121,19 @@ namespace emperor_mvc.Controllers {
             return ok;
         }
 
+        public class commands_json {
+            public string api_key {get;set;}
+            public string json_text{get;set;}
+        }
+
         [HttpPost]
-        public ActionResult update_commands ([FromBody] string commands) {
+        public ActionResult update_commands ([FromBody] commands_json commands) {
 
             BadRequestResult bad = new BadRequestResult();
 
             // apiModel model = Newtonsoft.Json.JsonConvert.DeserializeObject<apiModel>(raw);
 
-            if (key.get_key (commands) == null) {
+            if (key.get_key (commands.api_key) == null) {
                 return bad;
             }
 
