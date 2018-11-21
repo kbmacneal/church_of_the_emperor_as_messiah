@@ -12,7 +12,7 @@
             @foreach (var item in ViewBag.commands)
             {
             <tr>
-                <td>@Html.Raw(item.name)</td>
+                <td class="font-weight-bold"><text>tb&#33;</text>@Html.Raw(item.name)</td>
                 <td>@Html.Raw(item.summary)</td>
                 <td>
                     @if (item.admin_required)
