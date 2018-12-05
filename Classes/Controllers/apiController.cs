@@ -121,5 +121,33 @@ namespace emperor_mvc.Controllers {
             return ok;
         }
 
+        public class commands_json {
+            public string api_key {get;set;}
+            public string json_text{get;set;}
+        }
+
+        [HttpPost]
+        public ActionResult update_commands ([FromBody] commands_json commands) {
+
+            BadRequestResult bad = new BadRequestResult();
+
+            // apiModel model = Newtonsoft.Json.JsonConvert.DeserializeObject<apiModel>(raw);
+
+            if (key.get_key (commands.api_key) == null) {
+                return bad;
+            }
+
+            if(System.IO.File.Exists("commands.json"))
+            {
+                System.IO.File.Delete("commands.json");
+            }
+
+            System.IO.File.WriteAllText("commands.json", commands.json_text);
+
+            OkResult ok = new OkResult();
+
+            return ok;
+        }
+
     }
 }

@@ -2,23 +2,27 @@
 <h3 class="d-block mx-auto text-center" style="font-weight: bold">Frederick the Timebot Command List</h3>
 <div class="d-block mx-auto">
     <table class="table table-bordered table-responsive d-block mx-auto border-light">
-        <tr>
-            <th scope="col">Command Text</th>
-            <th scope="col">Description</th>
-            <th scope="col">Administrator Required?</th>
-        </tr>
+        <thead class="thead-inverse">
+            <tr>
+                <th scope="col">Command Text</th>
+                <th scope="col">Description</th>
+                <th scope="col">Administrator Required?</th>
+            </tr>
         </thead>
         <tbody>
-            @foreach (var item in Model)
+            @foreach (var item in ViewBag.commands)
             {
-                <tr>
-                    <td>@item.name</td>
-                    <td>@item.summary</td>
-                    <!-- @item.admin_required -->
-                    <td>@if(item.admin_required){@Html.Raw("<i class=\"fas fa-check text-center\"></i>")}</td>
-                </tr>
+            <tr>
+                <td class="font-weight-bold"><text>tb&#33;</text>@Html.Raw(item.name)</td>
+                <td>@Html.Raw(item.summary)</td>
+                <td>
+                    @if (item.admin_required)
+                    {
+                    @Html.Raw("<i class=\"fas fa-check text-center\"></i>")
+                    }
+                </td>
+            </tr>
             }
-            
         </tbody>
     </table>
 </div>

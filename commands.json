@@ -1,273 +1,342 @@
-[{
+[
+  {
     "name": "startholdem",
-    "summary": null,
+    "summary": "Starts a holdem game in the channel.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "joinholdem",
-    "summary": null,
+    "summary": "Adds your user id to the list of players at the holdem table.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "startround",
-    "summary": null,
+    "summary": "Once the players are all gathered, starts the holdem round.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "holdemtable",
-    "summary": null,
+    "summary": "Lists the players at the table.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "holdemchips",
-    "summary": null,
+    "summary": "Shows the amount of chips you have.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "holdempot",
-    "summary": null,
+    "summary": "How many chips are in the pot right now.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "holdembet",
-    "summary": null,
+    "summary": "Starts the betting",
     "admin_required": false
-}, {
+  },
+  {
     "name": "holdemcheck",
-    "summary": null,
+    "summary": "Advances betting without betting chips. Can only be used at the start of a round or after a check.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "holdemcall",
-    "summary": null,
+    "summary": "Calls the last bet made.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "holdemraise",
-    "summary": null,
+    "summary": "Raises the previous bet by the amount indicated.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "holdemallin",
-    "summary": null,
+    "summary": "For the truly brave.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "holdemfold",
-    "summary": null,
+    "summary": "For lily-livered pole-cats.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "holdemleave",
-    "summary": null,
+    "summary": "Indicate to the bot that you cant take it anymore.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "sendfactionblast",
-    "summary": null,
+    "summary": "Sends a message to every member of a faction that the bot can see.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "getfactioncount",
-    "summary": null,
+    "summary": "Gets the realtime count of all members of a faction from the SWNBot API.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "monthlychanges",
-    "summary": null,
+    "summary": "A command that runs both the cleanfaclists command and the addtorightfaction commands one after the other",
     "admin_required": true
-}, {
+  },
+  {
     "name": "addtorightfaction",
-    "summary": null,
+    "summary": "Adds a user to the faction they are a part of in the main server.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "cleanfaclists",
-    "summary": null,
+    "summary": "Can be run either against everyone on a server or against a specific user (at the user as a parameter to use the latter). Will check and make sure the faction roles match with the main FV server.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "cleanfaclists",
-    "summary": null,
+    "summary": "Can be run either against everyone on a server or against a specific user (at the user as a parameter to use the latter). Will check and make sure the faction roles match with the main FV server.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "listfaction",
-    "summary": null,
+    "summary": "Returns the list of all factions available to the addfaction command.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "addfaction",
-    "summary": null,
-    "admin_required": true
-}, {
+    "summary": "Adds the sender to the selected faction. Administrators can at an individual then specify the faction and the bot will add the user to the faction. This is the preferred way to add, since the bot with check with the FV server to make sure that the user is a part of that faction.",
+    "admin_required": false
+  },
+  {
     "name": "addfaction",
-    "summary": null,
+    "summary": "Adds a user to the selected faction.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "removefaction",
-    "summary": null,
-    "admin_required": true
-}, {
+    "summary": "Exactly like the addfaction command, but removes. Has the same at user overload.",
+    "admin_required": false
+  },
+  {
     "name": "removefaction",
-    "summary": null,
+    "summary": "Exactly like the addfaction command, but removes. Has the same at user overload.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "removeentirefaction",
-    "summary": null,
+    "summary": "Kicks and entire faction from the server",
     "admin_required": true
-}, {
+  },
+  {
     "name": "tracker",
-    "summary": null,
+    "summary": "Pastes the link to the faction tracker in chat.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "rulings",
-    "summary": null,
+    "summary": "Pastes the link to the rulings doc in chat.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "archivechannel",
-    "summary": null,
+    "summary": "Dumps a json log of the channel into chat.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "playbingo",
-    "summary": null,
+    "summary": "Starts the bingo game.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "playwinner",
-    "summary": null,
+    "summary": "Indicates to the bot that you have BINGO.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "iwanttoplay",
-    "summary": null,
+    "summary": "Indicates to the bot that you wish to play in the bingo game.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "postmeeting",
-    "summary": null,
+    "summary": "Posts a meeting in the right channel indicating the date time and agenda.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "acknowledge",
-    "summary": null,
+    "summary": "For representatives, indicates that your faction knows that the meeting was called.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "attend",
-    "summary": null,
+    "summary": "Indicates that your faction will attend the meeting.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "timetill",
-    "summary": null,
+    "summary": "Calculates the time til a meeting in hours.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "addrepresentative",
-    "summary": null,
+    "summary": "Adds a user as the representative of a faction.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "addrepresentative",
-    "summary": null,
+    "summary": "Adds a user as the representative of a faction.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "removerepresentative",
-    "summary": null,
+    "summary": "Removes a user as a faction representative.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "removerepresentative",
-    "summary": null,
+    "summary": "Removes a user as a faction representative.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "propose",
-    "summary": null,
+    "summary": "Propose a topic for a meeting to the other representatives.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "setcolors",
-    "summary": null,
+    "summary": "Initializes the factions with their correct, official colors.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "setbotusername",
-    "summary": null,
+    "summary": "Makes the bot all fancy",
     "admin_required": true
-}, {
+  },
+  {
     "name": "ping",
-    "summary": null,
+    "summary": "Test whether or no the bot is awake.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "commands",
-    "summary": null,
+    "summary": "Pastes a link to the help page in the chat.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "addspeaker",
-    "summary": null,
+    "summary": "Adds the user as a speaker for meeting purposes.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "changedefaults",
-    "summary": null,
+    "summary": "Changes the default speaking time, if needed.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "starttimer",
-    "summary": null,
+    "summary": "Starts the timer against a user.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "clearspeakers",
-    "summary": null,
+    "summary": "Resets the speaker list.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "clearchannel",
-    "summary": null,
+    "summary": "Clears the channel of chat messages.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "clearchannel",
-    "summary": null,
+    "summary": "Clears the channel of chat messages.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "cactus",
-    "summary": null,
+    "summary": "You should use this wherever possible.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "virtues",
-    "summary": null,
+    "summary": "Ten Blessings yall.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "churchapproved",
-    "summary": null,
+    "summary": "The only way to express approval.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "savior",
-    "summary": null,
+    "summary": "Answers that age-old question.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "opensource",
-    "summary": null,
+    "summary": "Pastes a link to the github repo in the chat.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "vote",
-    "summary": null,
+    "summary": "Handles multifation voting.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "tally",
-    "summary": null,
+    "summary": "Tallies the votes.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "deletequestion",
-    "summary": null,
+    "summary": "Removes a question from the database.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "synth",
-    "summary": null,
+    "summary": "Determines whether or not someone is a synth.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "tag",
-    "summary": null,
+    "summary": "Searches for a tag and displays the summary in chat.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "asset",
-    "summary": null,
+    "summary": "Search for an asset and display it in chat.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "badbot",
-    "summary": null,
+    "summary": "At this point, I'm pretty sure the bot likes it.",
     "admin_required": true
-}, {
+  },
+  {
     "name": "roll",
-    "summary": null,
+    "summary": "Rolls some dice.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "sector",
-    "summary": null,
+    "summary": "Pastes the link to the sectorswithoutnumber page in chat.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "trilljoke",
-    "summary": null,
+    "summary": "Nuff said.",
     "admin_required": false
-}, {
+  },
+  {
     "name": "xkcd",
-    "summary": null,
+    "summary": "Random web comic anyone?",
     "admin_required": false
-}, {
+  },
+  {
     "name": "xkcd",
-    "summary": null,
+    "summary": "Random web comic anyone?",
     "admin_required": false
-}, {
+  },
+  {
     "name": "dumpcommands",
-    "summary": null,
+    "summary": "Updates the command help page.",
     "admin_required": true
-}]
+  }
+]
