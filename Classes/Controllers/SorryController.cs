@@ -12,22 +12,34 @@ using System.IO;
 namespace emperor_mvc.Controllers {
     public class SorryController : Controller {
 
+        public class file {
+            public int id {get;set;}
+            public string location {get;set;}
+        }
+
         [HttpGet]
         public ActionResult Index (SorryModel model) {
 
             var filenames = Directory.GetFiles("wwwroot/Assets/Sorry/").ToList();
 
-            string[] sanitized = new string[filenames.Count()];
-
             string item = "";
+
+            List<file> ordered = new List<file>();
 
             try
             {
-                foreach (var name in sanitized)
+                foreach (var name in filenames)
                 {
-                    item = name.Replace(".jpeg","").Replace(".gif","").Replace("wwwroot/Assets/Sorry/","");
-                    model.FileList.Add(item.Replace("wwwroot/",""));
+                    item = name;
+                    file f = new file()
+                    {
+                        location = name,
+                        id = Convert.ToInt32(name.Replace(".jpeg","").Replace(".gif","").Replace("wwwroot/Assets/Sorry/",""))
+                    };
+                    ordered.Add(f);
                 }
+
+                model.FileList = ordered.OrderBy(e=>e.id).Select(e=>e.location).ToList();
             }
             catch (System.Exception)
             {
