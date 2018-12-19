@@ -19,11 +19,27 @@ namespace emperor_mvc.Controllers {
 
             string[] sanitized = new string[filenames.Count()];
 
-            filenames.OrderBy(e=>Int32.Parse(e.Replace(".jpeg","").Replace(".gif","").Replace("wwwroot/Assets/Sorry/",""))).Where(e=>!e.Contains(".mp4")).ToList().CopyTo(sanitized);
+            string item = "";
 
-            model.FileList = sanitized.Select(e=>e.Replace("wwwroot/","")).ToList();
+            try
+            {
+                foreach (var name in sanitized)
+                {
+                    item = name.Replace(".jpeg","").Replace(".gif","").Replace("wwwroot/Assets/Sorry/","");
+                    model.FileList.Add(item.Replace("wwwroot/",""));
+                }
+            }
+            catch (System.Exception)
+            {
+                Console.WriteLine(item);
+                return View(new SorryModel());
+            }
 
-            System.IO.File.WriteAllLines("debug.txt", model.FileList);
+            // filenames.OrderBy(e=>Int32.Parse().Where(e=>!e.Contains(".mp4")).ToList().CopyTo(sanitized);
+
+            // model.FileList = sanitized.Select(e=>e.Replace("wwwroot/","")).ToList();
+
+            // System.IO.File.WriteAllLines("debug.txt", model.FileList);
 
             return View (model);
         }
