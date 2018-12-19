@@ -20,7 +20,7 @@ namespace emperor_mvc.Controllers {
         [HttpGet]
         public ActionResult Index (SorryModel model) {
 
-            var filenames = Directory.GetFiles("wwwroot/Assets/Sorry/").Where(e=>!e.Contains(".mp4")).ToList();
+            var filenames = Directory.GetFiles("wwwroot/Assets/Sorry/").Where(e=>!e.Contains(".mp4") && !e.Contains(".jpg")).ToList();
 
             string item = "";
 
