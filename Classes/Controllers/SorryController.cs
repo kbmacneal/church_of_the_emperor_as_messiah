@@ -23,6 +23,8 @@ namespace emperor_mvc.Controllers {
 
             model.FileList = sanitized.Select(e=>e.Replace("wwwroot/","")).ToList();
 
+            System.IO.File.WriteAllLines("debug.txt", model.FileList);
+
             return View (model);
         }
     }
