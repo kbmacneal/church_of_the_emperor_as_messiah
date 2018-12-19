@@ -2,9 +2,9 @@
 @{ ViewData["Title"] = "We Are Sorry"; }
 
 
-<div class="container-fluid">
-            <div class="d-block mx-auto" style="height:50vh;">
-                <div id="carouselExampleIndicators" class="carousel slide h-100 w-100 border rounded" data-interval="false">
+<div class="container-fluid" style="max-height:75vh;">
+            <div class="d-block mx-auto h-100" style="max-height:75vh;">
+                <div id="carouselExampleIndicators" class="carousel slide border rounded" data-interval="false">
                     <div class="carousel-inner">
 @{
           var i = 1;
@@ -19,7 +19,7 @@
           else
           {
               <div class="carousel-item">
-            <img class="d-block mx-auto img-scaled" src=@x.Replace("wwwroot/","") >
+            <img class="img-scaled h-100 d-block mx-auto" style="max-height:100%" src=@x.Replace("wwwroot/","") >
         </div>
           }
         i++;
