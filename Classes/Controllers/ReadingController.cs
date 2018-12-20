@@ -16,6 +16,8 @@ namespace emperor_mvc.Controllers {
             model.ages_text = cls_markdown.ConvertMDtoTXT (filename);
             filename = "wwwroot/Documents/Readings/qasim.md";
             model.qasim_text = cls_markdown.ConvertMDtoTXT (filename);
+            filename = "wwwroot/Documents/Readings/creation.md";
+            model.creation_text = cls_markdown.ConvertMDtoTXT (filename);
 
             return View (model);
         }

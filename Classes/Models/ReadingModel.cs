@@ -17,5 +17,9 @@ namespace emperor_mvc.Models {
             get;
             set;
         }
+        public string creation_text {
+            get;
+            set;
+        }
     }
 }
