@@ -17,4 +17,12 @@ namespace emperor_mvc.Classes {
         public string FeedbackText { get; set; }
         public string UserName { get; set; }
     }
+
+    public class cls_markdown {
+        public static string ConvertMDtoTXT (string filename) {
+            string text = System.IO.File.ReadAllText (filename);
+
+            return CommonMark.CommonMarkConverter.Convert (text);
+        }
+    }
 }

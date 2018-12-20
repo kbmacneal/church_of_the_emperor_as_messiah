@@ -68,5 +68,15 @@ namespace emperor_mvc.Controllers {
 
             return View ("SermonSingleColumn", model);
         }
+
+        [HttpGet]
+        public ActionResult SermonCreation (SermonSingleColumnModel model) {
+            model.sermonheader = "";
+
+            var filename = "wwwroot/Documents/Readings/creation.md";
+            model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
+
+            return View ("SermonSingleColumn", model);
+        }
     }
 }
