@@ -25,4 +25,24 @@ namespace emperor_mvc.Classes {
             return CommonMark.CommonMarkConverter.Convert (text);
         }
     }
+
+    public class Feedback {
+        public static void RegisterResponse (feedback feedback) {
+            DataManager.insert_record (feedback);
+        }
+    }
+
+    public class GDPR {
+        public static void RegisterResponse (response response) {
+            DataManager.insert_record (response);
+        }
+
+        
+    }
+
+    public class Question {
+        public static void RegisterResponse (question question) {
+            DataManager.insert_record (question);
+        }
+    }
 }
