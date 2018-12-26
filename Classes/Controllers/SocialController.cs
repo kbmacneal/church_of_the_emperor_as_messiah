@@ -13,7 +13,7 @@ namespace emperor_mvc.Controllers {
 
         [HttpGet]
         public ActionResult Index (SocialModel model) {
-            ViewBag.stats = HtmlUtils.DisplayMemo(Controllers.stats.get_stats().membership_stats);
+            ViewBag.stats = Controllers.stats.get_stats().membership_stats;
             
             return View (model);
         }

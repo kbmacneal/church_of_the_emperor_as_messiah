@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace emperor_mvc.Models {
     public class apiModel {
-        public string membershipstring{get;set;}
+        public List<Controllers.faction_stat> membershipstring{get;set;}
 
         public string api_key {get;set;}
     }

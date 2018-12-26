@@ -43,6 +43,9 @@
     <table class="table table-bordered table-responsive d-block mx-auto border-light">
         <thead class="thead-inverse">
             <tr>
+                <th>Live Count of Members of Factions</th>
+            </tr>
+            <tr>
                 <th scope="col">Faction</th>
                 <th scope="col">Count</th>
             </tr>
@@ -51,8 +54,8 @@
             @foreach (var item in ViewBag.stats)
             {
             <tr>
-                <td>item.name</td>
-                <td>item.count</td>
+                <td>@item.name</td>
+                <td>@item.count</td>
             </tr>
             }
         </tbody>
