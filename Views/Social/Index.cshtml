@@ -43,20 +43,27 @@
     <table class="table table-bordered table-responsive d-block mx-auto border-light">
         <thead class="thead-inverse">
             <tr>
-                <th>Live Count of Members of Factions</th>
+                <th colspan="3">Live Count of Members of Factions</th>
             </tr>
             <tr>
+                <th scope="col">Place</th>
                 <th scope="col">Faction</th>
                 <th scope="col">Count</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in ViewBag.stats)
+            @{
+                var i = 1;
+            
+            foreach (var item in ViewBag.stats)
             {
             <tr>
+                <td>@i</td>
                 <td>@item.name</td>
                 <td>@item.count</td>
             </tr>
+            i++;
+            }
             }
         </tbody>
     </table>
