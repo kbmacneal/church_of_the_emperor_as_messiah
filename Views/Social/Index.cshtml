@@ -39,7 +39,25 @@
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </p>
             <p>
-                @Html.Raw(Model.stats_text)
+                <div class="d-block mx-auto">
+    <table class="table table-bordered table-responsive d-block mx-auto border-light">
+        <thead class="thead-inverse">
+            <tr>
+                <th scope="col">Faction</th>
+                <th scope="col">Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.stats)
+            {
+            <tr>
+                <td>item.name</td>
+                <td>item.count</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
             </p>
 
         </div>

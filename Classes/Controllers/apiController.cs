@@ -14,7 +14,12 @@ namespace emperor_mvc.Controllers {
 
     public class stats {
         int ID { get; set; }
-        public string membership_stats { get; set; }
+        public List<faction_stat> membership_stats { get; set; }
+        public class faction_stat
+        {
+            public string name {get;set;}
+            public int count{get;set;}
+        }
 
         public static async Task update_stats (stats s) {
             // Open database (create new if file doesn't exist)
