@@ -78,5 +78,15 @@ namespace emperor_mvc.Controllers {
 
             return View ("SermonSingleColumn", model);
         }
+
+        [HttpGet]
+        public ActionResult SermonBruce1 (SermonSingleColumnModel model) {
+            model.sermonheader = "";
+
+            var filename = "wwwroot/Documents/Readings/bruce_1.md";
+            model.sermontext = cls_markdown.ConvertMDtoTXT (filename);
+
+            return View ("SermonSingleColumn", model);
+        }
     }
 }
