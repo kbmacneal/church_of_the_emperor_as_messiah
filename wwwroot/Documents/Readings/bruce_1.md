@@ -18,6 +18,6 @@ In the morning, with the rising of the Sun, the Arhat prepared to go. "Please do
 
 "No, no," said the Holy One. "I need neither comfort nor style where I go. But I would be a poor guest if I did not repay your kindness." Taking the officer's hand, the Holy One taught him the secrets of his martial art, showing him its power and Virtue. When they were complete, the sun was at its height. "Holy One, please, stay and rest" the officer said. Again, the Arhat declined. "I have a long ways to go, and many miles ahead. Practice what I have taught you, and you will be rewarded."
 
-Though that officer's name was not recorded in tale or annal, though we know neither his face or name, to this day the legions practice what the officer learned that fateful, directly from the Holy One himself.
+Though that officer's name was not recorded in tale or annal, though we know neither his face or name, to this day the legions practice what the officer learned that fateful day, directly from the Holy One himself.
 
 Praise Be The Emperox!
