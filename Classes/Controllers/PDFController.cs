@@ -184,5 +184,18 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult FinalSunset (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/the_final_sunset.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
+        public IActionResult MoralAndAlien (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/moral_and_alien_mind.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
