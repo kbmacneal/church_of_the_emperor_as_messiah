@@ -197,10 +197,22 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
-        
+
         public IActionResult TextTour (PDFModel model)
         {
             model.link = "https://highchurch.space/Documents/end_day_text_tour.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
+        public IActionResult ACREAcceptance (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/acre_surrender_accept.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
+        public IActionResult ACREPR (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/acre_surrender_pr.pdf";
             model.set_html ();
             return View ("Index", model);
         }
