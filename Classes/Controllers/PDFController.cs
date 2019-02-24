@@ -216,5 +216,11 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+        public IActionResult PRISMSurrender (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/prism_surrender_accpetance.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
