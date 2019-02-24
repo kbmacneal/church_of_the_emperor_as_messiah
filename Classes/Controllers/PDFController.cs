@@ -218,7 +218,7 @@ namespace emperor_mvc.Controllers {
         }
         public IActionResult PRISMSurrender (PDFModel model)
         {
-            model.link = "https://highchurch.space/Documents/prism_surrender_accpetance.pdf";
+            model.link = "https://highchurch.space/Documents/prism_surrender_acceptance.pdf";
             model.set_html ();
             return View ("Index", model);
         }
