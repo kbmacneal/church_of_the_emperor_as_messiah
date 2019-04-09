@@ -222,5 +222,12 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult VirtueWeeds (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/WeedsOnThePathOfVirtue.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
