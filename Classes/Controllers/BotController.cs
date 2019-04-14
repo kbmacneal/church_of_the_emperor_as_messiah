@@ -6,50 +6,50 @@ using System.Threading.Tasks;
 using emperor_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using MoreLinq;
+using Newtonsoft.Json;
+using Npgsql;
 
-namespace emperor_mvc.Controllers {
-    public class BotController : Controller {
-        public class command_help
+namespace emperor_mvc.Controllers
+{
+    public class BotController : Controller
     {
-        public string name {get;set;}
-        public string summary {get;set;}
-        public bool admin_required {get;set;}
-    }
-        public IActionResult Index () {
+        public class command_help
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+            public string summary { get; set; }
+            public bool admin_required { get; set; }
+        }
+
+        public IActionResult Index()
+        {
             List<command_help> commands = new List<command_help>();
 
-            var path = "commands.json";
-            string content = "";
-            
-            if(!System.IO.File.Exists(path))
+            using (Npgsql.NpgsqlConnection conn = new NpgsqlConnection(JsonConvert.DeserializeObject<Dictionary<string, string>>(System.IO.File.ReadAllText(@"churchsite.json"))["connection_string"]))
             {
-                commands.Add(new command_help{name="Update commands",summary="",admin_required=false});
+                conn.Open();
 
-                ViewBag.commands = commands;
-
-                return View ();
+                using (var cmd = new NpgsqlCommand(@"select * from commands", conn))
+                {
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            commands.Add(new command_help()
+                            {
+                                id = reader.GetInt32(0),
+                                name = reader.GetString(1),
+                                summary = reader.GetString(2),
+                                admin_required = reader.GetBoolean(3)
+                            });
+                        }
+                    }
+                }
             }
-            else
-            {
-                content = System.IO.File.ReadAllText(path);
-            }
-
-            if(content == "")
-            {
-                commands.Add(new command_help{name="Update commands",summary="",admin_required=false});
-
-                ViewBag.commands = commands;
-
-                return View ();
-            }
-            else
-            {
-                commands= Newtonsoft.Json.JsonConvert.DeserializeObject<List<command_help>>(content).DistinctBy(e=>e.name).OrderBy(e=>e.name).ToList();
-            }            
 
             ViewBag.commands = commands;
 
-            return View ();
+            return View();
         }
     }
 }

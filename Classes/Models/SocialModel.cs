@@ -7,15 +7,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace emperor_mvc.Models {
-    public class SocialModel {
-        public string andophael_text {
+namespace emperor_mvc.Models
+{
+    public class SocialModel
+    {
+        public string andophael_text
+        {
             get;
             set;
-        }
-
-        public string stats_text {
-            get;set;
         }
     }
 }
