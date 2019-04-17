@@ -236,5 +236,12 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult HandBird (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/ABirdInTheHand.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
