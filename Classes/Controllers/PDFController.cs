@@ -243,5 +243,12 @@ namespace emperor_mvc.Controllers {
             model.set_html ();
             return View ("Index", model);
         }
+
+        public IActionResult RememberGats (PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/remember_gats.pdf";
+            model.set_html ();
+            return View ("Index", model);
+        }
     }
 }
