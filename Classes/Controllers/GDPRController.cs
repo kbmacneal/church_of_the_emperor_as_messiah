@@ -48,10 +48,10 @@ namespace emperor_mvc.Controllers
         }
 
         [HttpPost]
-        public ActionResult CookieRegister([FromBody] GDPRModel data)
+        public ActionResult CookieRegister()
         {
             DateTime now = DateTime.Now.ToUniversalTime();
-            string IPData = data.IPData.Trim();
+            string IPData = this.Request.HttpContext.Connection.RemoteIpAddress.ToString(); 
 
             CookieRegister reg = new CookieRegister
             {
@@ -61,7 +61,7 @@ namespace emperor_mvc.Controllers
 
             reg.insert_cookie_register();
 
-            return Ok();
+            return RedirectToAction("Index","Home");
         }
 
         [HttpPost]

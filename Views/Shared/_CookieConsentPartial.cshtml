@@ -12,10 +12,11 @@
                 information if you continue to use this site.
                 Please accept the cookie policy before continuing.
             </p>
-            <div class="navbar-right">
+
+            <form asp-action="CookieRegister" asp-controller="GDPR">
                 <a asp-controller="GDPR" asp-action="Index" class="btn btn-secondary">Learn More</a>
-                <button type="button" class="btn btn-success" data-cookie-string="@cookieString">Accept</button>
-            </div>
+                <input type="submit" value="Accept" class="btn btn-success" />
+            </form>
         </div>
 
     </div>
@@ -27,42 +28,5 @@
                 elements[index].style.display = 'none';
             }
         }
-
-        function myIP() {
-        if (window.XMLHttpRequest) xmlhttp = new XMLHttpRequest();
-        else xmlhttp = new ActiveXObject("Microsoft.JSON");
-
-        xmlhttp.open("GET", "https://extreme-ip-lookup.com/json/", false);
-        xmlhttp.send();
-
-        hostipInfo = JSON.parse(xmlhttp.responseText);
-
-        return hostipInfo.query;
-    };
-
-        (function () {
-            document.querySelector("#cookieConsent button[data-cookie-string]").addEventListener("click", function (
-                el) {
-                document.cookie = el.target.dataset.cookieString;
-                document.querySelector("#cookieConsent").classList.add("hidden");
-                hide(document.getElementById('cookieConsent'));
-
-                var data = {
-                    EmailData: '',
-                    IPData: myIP(),
-                    CheckboxData: true
-                };
-
-                $.ajax({
-                    url: '/GDPR/CookieRegister',
-                    type: 'POST',
-                    dataType: "json",
-                    contentType: "application/json; charset=utf-8",
-                    data: JSON.stringify(data),
-                });
-
-            }, false);
-
-        })();
     </script>
     }

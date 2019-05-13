@@ -4,20 +4,21 @@ using System.Linq;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Net.Http.Headers;
 using NetEscapades.AspNetCore.SecurityHeaders;
 using WebEssentials.AspNetCore.Pwa;
-using Microsoft.AspNetCore.Mvc.Infrastructure;
-using Microsoft.AspNetCore.HttpOverrides;
+using System.Net;
 
 namespace emperor_mvc
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup (IConfiguration configuration)
         {
             Configuration = configuration;
         }
@@ -25,78 +26,88 @@ namespace emperor_mvc
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public static void ConfigureServices(IServiceCollection services)
+        public static void ConfigureServices (IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
+            services.Configure<CookiePolicyOptions> (options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
             });
 
-            services.AddSingleton(typeof(IHttpContextAccessor), typeof(HttpContextAccessor));
-            WebEssentials.AspNetCore.Pwa.PwaOptions opt = new WebEssentials.AspNetCore.Pwa.PwaOptions();
+            services.AddSingleton (typeof (IHttpContextAccessor), typeof (HttpContextAccessor));
+            WebEssentials.AspNetCore.Pwa.PwaOptions opt = new WebEssentials.AspNetCore.Pwa.PwaOptions ();
 
             opt.OfflineRoute = "/";
             opt.RegisterServiceWorker = true;
             opt.RegisterWebmanifest = true;
 
-            services.AddProgressiveWebApp(opt, "manifest.json");
-            services.AddHttpContextAccessor();
-            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
-            services.Configure<ForwardedHeadersOptions>(options =>
-    {
-        options.ForwardedHeaders =
-            ForwardedHeaders.All;
-    });
-            services.AddResponseCaching();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddProgressiveWebApp (opt, "manifest.json");
+            services.AddHttpContextAccessor ();
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor> ();
+            services.Configure<ForwardedHeadersOptions> (options =>
+            {
+                options.ForwardedHeaders =
+                    ForwardedHeaders.All;
+            });
+            services.AddResponseCaching ();
+            services.AddMvc ().SetCompatibilityVersion (CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public static void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public static void Configure (IApplicationBuilder app, IHostingEnvironment env)
         {
-            System.Console.WriteLine("Launching with environment: " + env.EnvironmentName);
-            if (env.IsDevelopment())
+            System.Console.WriteLine ("Launching with environment: " + env.EnvironmentName);
+            if (env.IsDevelopment ())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage ();
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler ("/Home/Error");
             }
 
-            var policyCollection = new HeaderPolicyCollection()
-                .AddXssProtectionEnabled()
-                .AddFrameOptionsDeny()
-                .AddXssProtectionBlock()
-                .AddContentTypeOptionsNoSniff()
-                .AddReferrerPolicyStrictOriginWhenCrossOrigin()
-                .RemoveServerHeader()
-                .AddContentSecurityPolicy(builder =>
+            app.UseForwardedHeaders (new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.All,
+                    RequireHeaderSymmetry = false,
+                    ForwardLimit = null,
+                    KnownProxies = { IPAddress.Parse ("127.0.0.1")},
+            });
+
+            var policyCollection = new HeaderPolicyCollection ()
+                .AddXssProtectionEnabled ()
+                .AddFrameOptionsDeny ()
+                .AddXssProtectionBlock ()
+                .AddContentTypeOptionsNoSniff ()
+                .AddReferrerPolicyStrictOriginWhenCrossOrigin ()
+                .RemoveServerHeader ()
+                .AddContentSecurityPolicy (builder =>
                 {
-                    builder.AddFrameAncestors().None();
+                    builder.AddFrameAncestors ().None ();
                 });
 
-            app.UseSecurityHeaders(policyCollection);
+            app.UseSecurityHeaders (policyCollection);
 
-            app.UseResponseCaching();
+            app.UseResponseCaching ();
 
-            app.Use(async (context, next) =>
+            app.Use (async (context, next) =>
             {
-                context.Response.GetTypedHeaders().CacheControl =
-                new Microsoft.Net.Http.Headers.CacheControlHeaderValue()
+                context.Response.GetTypedHeaders ().CacheControl =
+                new Microsoft.Net.Http.Headers.CacheControlHeaderValue ()
                 {
-                    Public = true,
-                    MaxAge = TimeSpan.FromSeconds(10)
-                };
+                Public = true,
+                MaxAge = TimeSpan.FromSeconds (10)
+                    };
                 context.Response.Headers[Microsoft.Net.Http.Headers.HeaderNames.Vary] =
                     new string[] { "Accept-Encoding" };
 
-                await next();
+                await next ();
             });
 
-            app.UseStaticFiles(new StaticFileOptions
+            
+
+            app.UseStaticFiles (new StaticFileOptions
             {
                 OnPrepareResponse = ctx =>
                 {
@@ -105,11 +116,11 @@ namespace emperor_mvc
                         "public,max-age=" + durationInSeconds;
                 }
             });
-            app.UseCookiePolicy();
+            app.UseCookiePolicy ();
 
-            app.UseMvc(routes =>
+            app.UseMvc (routes =>
             {
-                routes.MapRoute(
+                routes.MapRoute (
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
