@@ -5,67 +5,33 @@ using System.Linq;
 using System.Threading.Tasks;
 using emperor_mvc.Classes;
 using emperor_mvc.Models;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using Microsoft.AspNetCore.Http;
 using JsonFlatFileDataStore;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
+using Newtonsoft.Json;
+using Npgsql;
 
 namespace emperor_mvc.Controllers
 {
-    public class CookieRegister
-    {
-        public string time { get; set; }
-        public string address { get; set; }
 
-        public async void insert_cookie_register()
-        {
-            // Open database (create new if file doesn't exist)
-            var store = new DataStore("data.json");
-
-            // Get employee collection
-            var collection = store.GetCollection<CookieRegister>();
-
-            await collection.InsertOneAsync(this);
-
-            store.Dispose();
-        }
-    }
-
-    [Produces("application/json")]
+    [Produces ("application/json")]
     public class GDPRController : Controller
     {
         private IHttpContextAccessor _accessor;
 
-        public GDPRController(IHttpContextAccessor accessor)
+        public GDPRController (IHttpContextAccessor accessor)
         {
             _accessor = accessor;
         }
 
-        public IActionResult Index()
+        public IActionResult Index ()
         {
-            return View();
+            return View ();
         }
 
         [HttpPost]
-        public ActionResult CookieRegister()
-        {
-            DateTime now = DateTime.Now.ToUniversalTime();
-            string IPData = this.Request.HttpContext.Connection.RemoteIpAddress.ToString(); 
-
-            CookieRegister reg = new CookieRegister
-            {
-                time = now.ToString(),
-                address = IPData
-            };
-
-            reg.insert_cookie_register();
-
-            return RedirectToAction("Index","Home");
-        }
-
-        [HttpPost]
-        public ActionResult Index(string EmailData, string IPData, Boolean CheckboxData, string label_text)
+        public ActionResult Index (string EmailData, string IPData, Boolean CheckboxData, string label_text)
         {
 
             if (ModelState.IsValid)
@@ -77,45 +43,45 @@ namespace emperor_mvc.Controllers
                     IPData = label_text;
                 }
 
-                response response = new response();
+                response response = new response ();
                 response.EmailData = EmailData;
                 response.IPData = IPData;
                 response.CheckboxData = CheckboxData;
 
-                if (!validate_request(EmailData, IPData, CheckboxData))
+                if (!validate_request (EmailData, IPData, CheckboxData))
                 {
-                    return View("Problem");
+                    return View ("Problem");
                 }
                 else
                 {
-                    GDPR.RegisterResponse(response);
-                    return View("Success");
+                    GDPR.RegisterResponse (response);
+                    return View ("Success");
                 }
             }
             else
             {
-                return View("Problem");
+                return View ("Problem");
             }
 
         }
 
         [HttpGet]
-        public ActionResult Success()
+        public ActionResult Success ()
         {
-            return View();
+            return View ();
         }
 
-        private bool validate_request(string email, string ip, Boolean CheckboxData)
+        private bool validate_request (string email, string ip, Boolean CheckboxData)
         {
             int rtner = 0;
-            System.Net.IPAddress addr = System.Net.IPAddress.Parse("1.1.1.1");
+            System.Net.IPAddress addr = System.Net.IPAddress.Parse ("1.1.1.1");
 
             if (email != null)
             {
-                if (email.Contains("@")) rtner++;
+                if (email.Contains ("@")) rtner++;
             }
 
-            if (System.Net.IPAddress.TryParse(ip, out addr)) rtner++;
+            if (System.Net.IPAddress.TryParse (ip, out addr)) rtner++;
 
             if (CheckboxData) rtner++;
 
@@ -123,8 +89,7 @@ namespace emperor_mvc.Controllers
             {
                 return true;
             }
-            else
-            { return false; }
+            else { return false; }
         }
     }
 }
