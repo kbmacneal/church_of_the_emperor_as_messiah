@@ -312,5 +312,12 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+
+        public IActionResult MoreMeetings(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/MoreMeetings.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
