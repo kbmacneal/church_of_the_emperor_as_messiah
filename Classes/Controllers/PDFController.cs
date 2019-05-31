@@ -319,5 +319,12 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+
+        public IActionResult MianshaContinues(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/MianshaContinues.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
