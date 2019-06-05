@@ -326,5 +326,12 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+
+        public IActionResult BadApples(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/BadApples.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
