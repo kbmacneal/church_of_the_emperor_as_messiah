@@ -1,7 +1,7 @@
 @{ ViewData["Title"] = "High Church Art Gallery"; }
 
 <div class="container-fluid" style="font-size: 16pt;">
-     @Html.Partial("_GalleryMenu")
+     @await Html.PartialAsync("_GalleryMenu")
     <div class="row row-fluid mb-4">
         <div class="col-md-3">
             <div class="card">

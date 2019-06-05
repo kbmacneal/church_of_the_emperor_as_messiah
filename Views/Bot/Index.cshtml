@@ -20,16 +20,16 @@
     <div class="row">
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade show active" id="home">
-                @Html.Partial("_Timebot")
+                @await Html.PartialAsync("_Timebot")
             </div>
             <div class="tab-pane fade" id="profile">
-                @Html.Partial("_Swnbot")
+                @await Html.PartialAsync("_Swnbot")
             </div>
             <div class="tab-pane fade" id="factions">
-                @Html.Partial("_Factions")
+                @await Html.PartialAsync("_Factions")
             </div>
             <div class="tab-pane fade" id="assets">
-                @Html.Partial("_Assets")
+                @await Html.PartialAsync("_Assets")
             </div>
         </div>
     </div>
