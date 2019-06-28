@@ -6,30 +6,12 @@
             <li class="nav-item">
                 <a class="nav-link active" data-toggle="tab" href="#home">Timebot</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#profile">SWNBot</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#factions">FacSim Factions</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#assets">FacSim Assets</a>
-            </li>
         </ul>
     </div>
     <div class="row">
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade show active" id="home">
                 @await Html.PartialAsync("_Timebot")
-            </div>
-            <div class="tab-pane fade" id="profile">
-                @await Html.PartialAsync("_Swnbot")
-            </div>
-            <div class="tab-pane fade" id="factions">
-                @await Html.PartialAsync("_Factions")
-            </div>
-            <div class="tab-pane fade" id="assets">
-                @await Html.PartialAsync("_Assets")
             </div>
         </div>
     </div>
