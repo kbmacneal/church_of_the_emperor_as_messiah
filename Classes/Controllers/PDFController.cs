@@ -333,5 +333,12 @@ namespace emperor_mvc.Controllers
             model.set_html();
             return View("Index", model);
         }
+
+        public IActionResult WeHaveAWinner(PDFModel model)
+        {
+            model.link = "https://highchurch.space/Documents/WeHaveAWinner.pdf";
+            model.set_html();
+            return View("Index", model);
+        }
     }
 }
