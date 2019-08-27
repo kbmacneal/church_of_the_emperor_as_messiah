@@ -24,5 +24,8 @@ namespace emperor_mvc.Controllers {
         public IActionResult Privacy () {
             return View ();
         }
+        public IActionResult LeavingMessage () {
+            return View ();
+        }
     }
 }
