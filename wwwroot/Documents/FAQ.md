@@ -1,51 +1,38 @@
-## Is the Emperox God?
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
 
-This question gets asked a lot, and the answer depends on who you ask and in what context. Since the High Church is a multi-faceted organization, incorporating the beliefs of many different earth religions and cultures, different branches will have different answers.
+# The High Church of Messiah-as-Emperox Lore Guide
 
-For example, the Karmists believe that the Emperox is a piece of the divine soul, incarnated into human flesh. The Purists believe that the Emperox is the prime ideal, the perfect human, and in that way becomes "divine". Some others may yet hold to the idea that the Emperox is not technically a god, but is sent on a holy mission to rule humanity.
+<a href="FAQ/FAQOld" target="_blank">A copy of the old FAQ can be found here</a>
 
-What all branches hold, in the end, is that the Emperox is "divine" (whatever they mean that to be), that they have the right to rule humanity, and that this right extends from the divine (either the Divine Right of Kings or via the Will of Heaven, read their respective wikipedia articles for more information).
+The following is considered to be WoA Canon:
 
-## What is the Church's position towards the other noble houses? The Corporatists? The CHR?
+<hr />
 
-The Church's primary aim in relations with the other faction is to further stabilize the Empire. The Church sees its goal as serving as the anchor. While the other factions decide who will rule, what to do with non-imperial forces etc, the Church focuses on making sure the essential services the Church provides are provided. In so doing, they seek to make sure the Empire doesn't fall into anarchy or civil war.
+The High Church of Messiah-as-Emperox is the state religion of the Empire. It’s function in official and bureaucratic processes is vital. Truly, the only way to separate Church from State would be the destruction of the state itself.Officially, all in the Empire are of this faith.
 
-## Does the Church want to destroy my faction?
+The great majority of people within Acheron Rho profess faith in the High Church of Messiah-as-Emperox, even if their practical application of that faith is variable. Some may only attend the large festivals and functionary events, while others attend religious gatherings with their community every week.
 
-No. Really, no. We aim to stabilize the empire, so unless your faction threatens to undermine that stability it is highly unlikely the Church is trying to kill off your faction. Even during the synth war, the Church didn't land troops on Cygnus-held planets. Nothing said IC should be construed to mean that we are "going after" a faction. We express our political ambitions purely through the faction turn and official diplomatic channels.
+A universal constant, however, is the act of Tithing. While not a legally mandated requirement, the act of donating a portion of your income to the High Church is culturally ingrained. Even the most tight fisted of scrupulous nobles reluctantly parts with their wealth. ‘It is better poor than damned’, or so a common saying goes. The High Church is responsible for Marriage, for Baptism, and for the maintaining of Noble genealogy and records. This is along with many other of the Empire’s Bureaucratic processes.
 
-## Are members of the Church Noble?
+The Empire’s Religion is a greatly syncretic organisation. It’s preferred method of dealing with dissent or deviance is the absorption and redirection of beliefs into forms more appropriate and more useful to the theocratic hierarchy. It is this quality that leads to a vast amount of local variance in worship format and structure. As long as an individual's form of worship does not contradict the core tenets of the Church - the most basic of which can be found in their Credo and Virtues - it is likely to be accepted as a small part of the larger whole.
 
-That is actually a very difficult question, one that we have not completely sorted out, so this answer may be edited at a later date to better reflect current thinking and rulings. However, here is what we have so far:
+Cults and other faiths that are not part of the High Church of Messiah-as-Emperox are under threat. With the successful election of a new Emperox, the Church is able to focus on the people of Acheron Rho instead of its political situation. With this in mind it is now more than a social faux pas to declare different beliefs. The time of Religious Freedom has ended in Acheron Rho, and all those who cannot allow themselves to be absorbed into the Mother Church face potentially severe repercussions.
 
-No, you give up your nobility to enter the clergy. However, your status will be evident in your behaviour, family, contacts, upbringing, personal wealth and other such identifiers that mean the serf/noble distinction still exists informally within the ranks of the clergy. In rare cases, a serf may find themselves rising to be on par with nobles in power and influence. They'll still never really be viewed as a respected noble peer.
+The High Church of Messiah-as-Emperox is the cultural underpinning and backbone to the structure of society. The ‘Chain of Being’ is as much a theological teaching as it is a practical reality of how things in Acheron Rho are structured.
 
-## Are the Inquisitors going around killing/imprisoning people?
+The Serfdom is governed by the Nobility. The Nobility is governed by House and by Emperox. The Emperox is guided by God and Church.Any creature with the misfortune to not be human is devoid of rights and privileges, with any Human having theological authority over their being.
 
-No, that's the wrong sense of the word. When we named the Order, we were under the impression that we would have sort of ecclesiastical law enforcement unit, not a gang of guys (and girls, girls can torture too) running around the sector burning people at the stake.
+The High Church is very supportive of the nobility. In times of trouble for noble families and noble houses, the Church has often stepped in to advise and support. As one High Exarch stated during the silence "The arms of the High Church are open to the noble houses in the time of their greatest despair." as the new Emperox continues into their reign, the High Church will continue to be shepherds, advisors, and protectors to the Empire and it's Nobility.
 
-The Inquisition is more like the ecclesiastical FBI. They maintain investigations on threats to the Church, the Emperor, or the spiritual wellbeing of the Sector.
+While the Church has withdrawn from the political realm, the Holy Planet of Andophael remains as a beacon and headquarters of the faith. The entire focus of the High Church on Andophael has turned to the Holy City of Rhapsody and the Grand Temple Complex. Such is the strength of the Theocracy on this planet and the faith within the sector that none would dare to oppose the Holy City of the Church. Fearful lest they draw the wrath of the Council of Exarchs who rule as philosophers and prophets devoted to the High Exarch and to the Emperox.
 
-## Is the Emperox God? 
+Following the events regarding the Betrayer of Humanity, the High Church swiftly moved to become the Government of Gats. While the political focus of the High Church turns to the people, their popular movement of devoted clergy and pilgrims watches over the planet. It is declared a Holy Place, a place of God’s evident wrath, an example that none should cross God or Church again, and it should remain a Holy Place for the Faithful within Acheron Rho.
 
-No! The Emperox is chosen by God
+With the excommunication of House Cygnus and Exigo of House Vela so fresh in recent memory, the people of the sector are steadfast in their Faith. The Empire believes some consequences are too great for their post-war Rebuilding. Instead, the ideological conflict in the sector resolved, the focus falls to the Emperox and their court. The Favour of the Empire's ruler is a prize many seek to attain, while those who fall out of favour face stark social consequences.
 
-## But isn't the Emperox Messiah? 
+Across the Sector, the High Church presence is increased. Their Messiah has been found, and now they turn to the people of the sector in ever greater numbers to preach their message.
 
-Yes, and it is understandable that many will have Messiah and God meaning the same thing due to the culture of Trinitarian Christian beliefs, and people thinking 'Jesus' when they think 'Messiah'. Messiah means 'saviour' and there are many people known as a Messiah throughout religions today. A more apt analogy for the Emperox would be Moses or King David.
+<p class="text-right" style="font-size:3rem;font-family: 'Great Vibes', cursive;">Ten Blessings</p>
+<img src="Assets/wax_seal.png" class="d-block ml-auto img-scaled" style="margin-bottom:2rem;width:20%;">
 
-## What about Cygnus, are they a Messiah? 
 
-Yes! One of the theological problems that the setting has handed to us is a Messiah that has done things the Church does not support. Technically we should be following everything they say. We had the same problem with the Blood Eagle, and other "Bad" Emperox, where we have to publically support their actions regardless or have our belief system suspended. 
-
-## What's this whole assassin situation? 
-
-The assassin was secretly approved of by the Church, but we are in a difficult position. If we approve of someone killing God's chosen, we are casting into doubt the Church's spiritual authority. Clearly we would then be incapable as an empire of choosing the correct Messiah. However, if we go on to punish Serpens, they know that we secretly approve! They have the pre-cog council who have saved the empire many times. They are an ally of the Church. We are stuck between two hard places and it will not be possible to find a "good" solution. 
-
-## How does the Church feel about aliens? 
-
-We are Pro-Human, with Anti-Alien being secondary. As part of our teachings as Humans being the only creature with a soul we therefore must be the best creature. Aliens that are no threat are allowed to exist. They range from beloved household pet, to livestock, to vermin. 
-
-## Why are synthetic humans a problem, but synthetic animals are not? 
-
-Synthetic animals do not challenge the idea of Humans being uniquely ensouled. The problem with Synthetic Humans is the intelligence, behaviour and skill shown making people question if Humans are that unique after all. They call into question the power of God, for if Humans can make a ensouled creature....  (Synthetics are of course, identical to humans and the idea of a soul is religious guff to make us all feel unique and special.)

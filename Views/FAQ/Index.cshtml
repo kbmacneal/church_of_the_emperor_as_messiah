@@ -1,25 +1,15 @@
 ﻿@model FAQModel
 @{
-    ViewData["Title"] = "FAQ";
+ViewData["Title"] = "FAQ";
 }
 
 <div class="container-fluid">
-    
-    <div class="row-fluid">
-        <div class="col-3 d-block mx-auto">            
-            <img class="img-scaled mx-auto d-block" src="~/Assets/crusader_bot.jpg"></img>
-        </div>
-        
-        
+    <div class="row">
+        <img src="Assets/high_order.png" class="d-block mx-auto img-scaled" style="margin-bottom:2rem;width:20%;"></img>
     </div>
     <div class="row-fluid">
         <div class="col">
-            <h2>FAQ</h2>
+            @Html.Raw(Model.FAQtext)
         </div>
     </div>
-    <div class="row-fluid">
-            <div class="col">
-                @Html.Raw(Model.FAQtext)
-            </div>
-        </div>
 </div>

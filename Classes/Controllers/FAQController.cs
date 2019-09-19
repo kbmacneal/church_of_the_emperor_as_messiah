@@ -17,5 +17,13 @@ namespace emperor_mvc.Controllers {
 
             return View (model);
         }
+
+        [HttpGet]
+        public ActionResult FAQOld (FAQModel model) {
+            var filename = "wwwroot/Documents/FAQOld.md";
+            model.FAQtext = cls_markdown.ConvertMDtoTXT (filename);
+
+            return View (model);
+        }
     }
 }
