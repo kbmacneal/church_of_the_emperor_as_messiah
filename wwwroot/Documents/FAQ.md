@@ -2,7 +2,7 @@
 
 # The High Church of Messiah-as-Emperox Lore Guide
 
-<a href="FAQ/FAQOld" target="_blank">A copy of the old FAQ can be found here</a>
+A copy of the old FAQ can be found <a href="FAQ/FAQOld" target="_blank">here</a>
 
 The following is considered to be WoA Canon:
 
