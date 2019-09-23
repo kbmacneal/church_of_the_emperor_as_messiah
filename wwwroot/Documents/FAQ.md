@@ -57,5 +57,3 @@ Across the Sector, the High Church presence is increased. Their Messiah has been
 <p class="text-right" style="font-size:2rem;font-family: 'Great Vibes', cursive;">Ten Blessings</p>
 <p class="text-right" style="font-size:2rem;font-family: 'Great Vibes', cursive;">From all within The High Church of Messiah-as-Emperox</p>
 <img src="Assets/wax_seal.png" class="d-block ml-auto img-scaled" style="margin-bottom:2rem;width:20%;">
-
-
