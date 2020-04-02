@@ -1,10 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using emperor_mvc.Classes;
 using emperor_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 

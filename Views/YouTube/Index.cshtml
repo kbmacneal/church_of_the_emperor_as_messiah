@@ -1,4 +1,4 @@
-@model YouTubeModel 
+@model YouTubeModel
 @{ ViewData["Title"] = "View Video"; }
 
 <div class="container-fluid">
@@ -8,11 +8,9 @@
         </div>
         <div class="d-flex flex-row" style="flex:2; max-height: 100vh; min-height: 100vh;">
             <div class="d-block mx-auto">
-               @Html.Raw(Model.embed) 
+               @Html.Raw(Model.embed)
             </div>
         </div>
-        
-
     </div>
 </div>
 </div>

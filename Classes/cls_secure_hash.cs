@@ -9,10 +9,12 @@ namespace emperor_mvc.Classes.Helpers
         /// Size of salt
         /// </summary>
         private const int SaltSize = 16;
+
         /// <summary>
         /// Size of hash
         /// </summary>
         private const int HashSize = 20;
+
         /// <summary>
         /// Creates a hash from a password
         /// </summary>
@@ -36,6 +38,7 @@ namespace emperor_mvc.Classes.Helpers
             //format hash with extra information
             return string.Format("$MYHASH$V1${0}${1}", iterations, base64Hash);
         }
+
         /// <summary>
         /// Creates a hash from a password with 10000 iterations
         /// </summary>
@@ -45,6 +48,7 @@ namespace emperor_mvc.Classes.Helpers
         {
             return Hash(password, 10000);
         }
+
         /// <summary>
         /// Check if hash is supported
         /// </summary>
@@ -54,6 +58,7 @@ namespace emperor_mvc.Classes.Helpers
         {
             return hashString.Contains("$MYHASH$V1$");
         }
+
         /// <summary>
         /// verify a password against a hash
         /// </summary>

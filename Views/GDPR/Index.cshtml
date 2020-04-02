@@ -46,7 +46,6 @@
                             <a href="https://www.nginx.com/privacy-policy/" target="_blank">https://www.nginx.com/privacy-policy/</a>
                         </li>
                     </ul>
-
                 </li>
             </ul>
         </p>
@@ -69,7 +68,7 @@
                 </p>
                 <p>Your Current IP:</p>
                 <label id="user_ip"></label>
-                <input id="user_ip_hidden" type="hidden" asp-for="label_text" value=""/>
+                <input id="user_ip_hidden" type="hidden" asp-for="label_text" value="" />
                 <script>
                     document.getElementById('user_ip').innerHTML = myIP();
                     document.getElementById('user_ip_hidden').value = myIP();
@@ -82,7 +81,6 @@
                         be permanently deleted, and that future visits to the site will constitute agreement to my data
                         being collected
                         again.</label>
-
                 </p>
                 <p>
                     <!-- @Html.ValidationMessageFor(m => m.CheckboxData, "Please Agree to the above terms", new { @class = "alert alert-warning" }) -->
@@ -90,10 +88,7 @@
                 <p>
                     <input class="btn btn-outline-secondary" type="submit" value="Submit" />
                 </p>
-
             </form>
-            
-
         </div>
     </div>
 </div>

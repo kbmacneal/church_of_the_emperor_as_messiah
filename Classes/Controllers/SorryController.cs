@@ -1,26 +1,24 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using emperor_mvc.Classes;
 using emperor_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
-using Westwind.Utilities;
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
-namespace emperor_mvc.Controllers {
-    public class SorryController : Controller {
-
-        public class file {
-            public int id {get;set;}
-            public string location {get;set;}
+namespace emperor_mvc.Controllers
+{
+    public class SorryController : Controller
+    {
+        public class file
+        {
+            public int id { get; set; }
+            public string location { get; set; }
         }
 
         [HttpGet]
-        public ActionResult Index (SorryModel model) {
-
-            var filenames = Directory.GetFiles("wwwroot/Assets/Sorry/").Where(e=>!e.Contains(".mp4") && !e.Contains(".jpg")).ToList();
+        public ActionResult Index(SorryModel model)
+        {
+            var filenames = Directory.GetFiles("wwwroot/Assets/Sorry/").Where(e => !e.Contains(".mp4") && !e.Contains(".jpg")).ToList();
 
             string item = "";
 
@@ -34,12 +32,12 @@ namespace emperor_mvc.Controllers {
                     file f = new file()
                     {
                         location = name,
-                        id = Convert.ToInt32(name.Replace(".jpeg","").Replace(".gif","").Replace("wwwroot/Assets/Sorry/",""))
+                        id = Convert.ToInt32(name.Replace(".jpeg", "").Replace(".gif", "").Replace("wwwroot/Assets/Sorry/", ""))
                     };
                     ordered.Add(f);
                 }
 
-                model.FileList = ordered.OrderBy(e=>e.id).Select(e=>e.location).ToList();
+                model.FileList = ordered.OrderBy(e => e.id).Select(e => e.location).ToList();
             }
             catch (System.Exception)
             {
@@ -53,7 +51,7 @@ namespace emperor_mvc.Controllers {
 
             // System.IO.File.WriteAllLines("debug.txt", model.FileList);
 
-            return View (model);
+            return View(model);
         }
     }
 }

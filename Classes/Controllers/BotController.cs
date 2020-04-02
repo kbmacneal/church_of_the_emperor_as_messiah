@@ -1,13 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using emperor_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
-using MoreLinq;
 using Newtonsoft.Json;
 using Npgsql;
+using System.Collections.Generic;
 
 namespace emperor_mvc.Controllers
 {

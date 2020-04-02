@@ -1,49 +1,48 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using emperor_mvc.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace emperor_mvc.Controllers {
-    public class ContentController : Controller {
-        public IActionResult Index () {
-            return View ();
+namespace emperor_mvc.Controllers
+{
+    public class ContentController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
         }
 
         [HttpGet]
-        public IActionResult About () {
-            return View ();
+        public IActionResult About()
+        {
+            return View();
         }
 
         [HttpGet]
-        public ActionResult Blessings () {
-
-            return View ();
+        public ActionResult Blessings()
+        {
+            return View();
         }
 
         [HttpGet]
-        public ActionResult FromTheDesk () {
-
-            return View ();
+        public ActionResult FromTheDesk()
+        {
+            return View();
         }
 
         [HttpGet]
-        public ActionResult Join () {
-
-            return View ();
+        public ActionResult Join()
+        {
+            return View();
         }
 
         [HttpGet]
-        public ActionResult Support () {
-
-            return View ();
+        public ActionResult Support()
+        {
+            return View();
         }
 
         [HttpGet]
-        public IActionResult Templates () {
-            return View ();
+        public IActionResult Templates()
+        {
+            return View();
         }
     }
 }
